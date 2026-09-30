@@ -7,8 +7,9 @@
 | 코드 | `U5L_COM08_ETNF_sample+project.zip` → `U5L_ETNF_01_T1S_COM` (App), `R_driver/ETNF`, `R_device_U5L/ETNF` | ETNF 관련 소스 전부 정독 |
 | User's Manual | `r01uh1109ej0100-r-caru5x-etnf.pdf` (R-Car U5x ETNF IP UM, Rev.0.40) | 텍스트 전체 정독 (그림은 텍스트로 추출된 범위만) |
 | 레지스터 맵 | `R_device_U5L/cmsis/U5L_UM04pre4_ver0.5.h` (SVD 기반 디바이스 헤더) 중 `ETNF0_inst_0`, `SELB_ETNF0_inst_0` | UM이 "레지스터 상세는 SVD / Appendix_ETNF.xlsx 참조"라고 하므로 이 헤더를 레지스터 맵 기준으로 사용 |
+| 레지스터 맵 (추가 대조) | `RCar_U5L_UM_rev1.02_noRSIP_ver1.0.svd` (SVD 원본, 리셋값 포함) | 첫 리뷰 뒤에 받은 자료. 리셋값이 필요했던 m5·m12를 이것으로 확정함 (§7) |
 
-> `Appendix_ETNF.xlsx`(레지스터 리셋값, PHY 메모리 맵)는 Drive에서 찾지 못했습니다. 그래서 **리셋값이 필요한 항목은 "확인 필요"** 로 표시했습니다.
+> 처음 리뷰할 때는 리셋값 자료가 없어서 **리셋값이 필요한 항목을 "확인 필요"** 로 표시했습니다. 그 뒤 rev1.02 SVD로 확인한 결과는 §7에 있습니다.
 
 ---
 
@@ -87,7 +88,7 @@ ETNF는 크게 3층입니다.
 | **TCCR** (0x304) | TSRQ0-3[3:0], TFEN[8], TFR[9], MFEN[16], MFR[17] | TFEN=1, MFEN=0 | ✅ (단 CSEL=00이라 타임스탬프 무의미 [M3]) |
 | **DIC** (0x350) | DPE1-15[15:1] | **DPE2** | ❌ TX 디스크립터는 DIE=1 사용 → 불일치 [C6] |
 | **RIC0** (0x360) | FRE0-17 | 0x3F (큐 0~5) | ✅ |
-| **T1SCTL0** (SELB+0x000) | PHY_ADD[4:0], MDIO_SHARE[16], PMA_CFG[24], 예약 [15:5]·[23:17] ("리셋값 그대로 쓰기") | PHY_ADD=2, MDIO_SHARE=1 (RX_MDC/ED_MDIO 공유), PMA_CFG=1(filtered), 예약비트=1 | ⚠️ 예약 비트 리셋값 확인 필요 [m5] |
+| **T1SCTL0** (SELB+0x000) | PHY_ADD[4:0], MDIO_SHARE[16], PMA_CFG[24], 예약 [15:5]·[23:17] ("리셋값 그대로 쓰기") | PHY_ADD=2, MDIO_SHARE=1 (RX_MDC/ED_MDIO 공유), PMA_CFG=1(filtered), 예약비트=1 | ✅ 리셋값 0x01FF_FFFF → 예약 비트 리셋값 1 (rev1.02 SVD) [m5] |
 
 ### 3.3 내장 T1S PHY (MDIO) 레지스터 — UM 5.5.1 대조
 
@@ -189,14 +190,14 @@ ETNF는 크게 3층입니다.
 | m2 | `App_sub.c:207`, `R_driver_ETNF.c:378/430/441` | `Reg32WRC` 리드백 결과를 버립니다. 레지스터 리드백 검증(FuSa 관점 안전 메커니즘)이 사실상 무효입니다. |
 | m3 | `R_driver_ETNF.c:234` | ECMR 리드백 마스크 `0x04BF00C3`에 예약 bit7과 RE(bit6)가 들어가 있습니다. 의도는 `0x04BF0003`입니다. |
 | m4 | `R_driver_ETNF.c:378` | 마스크 `0x01FFF003F`(16진 9자리) 오타입니다. 값이 우연히 `0x1FFF003F`와 같아서 동작합니다. |
-| m5 | `R_driver_ETNF.c:264-268` | T1SCTL0 예약 비트[23:17]·[15:5]에 1을 씁니다. UM은 "리셋값으로 쓰기"라고 하는데 리셋값은 Appendix_ETNF.xlsx에만 있어 **확인이 필요**합니다. 주석은 "14 to 5"지만 실제로는 15:5를 설정하며, 이것이 UM 예약 영역과 일치합니다. |
+| m5 | `R_driver_ETNF.c:264-268` | ~~T1SCTL0 예약 비트 리셋값 확인 필요~~ → **해결 (문제 없음)**. rev1.02 SVD의 T1SCTL0 리셋값이 `0x01FF_FFFF`여서 예약 비트[23:17]·[15:5]의 리셋값은 1입니다. 코드가 1을 쓰는 것은 UM의 "리셋값으로 쓰기" 규칙에 맞습니다. 주석("14 to 5")만 실제 범위(15:5)와 다릅니다. |
 | m6 | `R_driver_ETNF.c:87` | 주석은 "DTS=0까지 대기"인데 코드는 DTS=1을 기다립니다. **코드가 맞습니다** (UM Fig 3.40). |
 | m7 | `R_driver_ETNF.h:605`, `App_interrupt.c:53` | 프로토타입 이름(`_IntFunc…`)과 정의 이름(`IntFunc…`)이 다릅니다. `#pragma interrupt … channel=`은 RH850(CC-RH) 문법이라 Cortex-M33/GCC에서는 무시됩니다 (벡터 테이블이 실제 연결 지점). `ETNF_s_frame`이 `union`이라 SA/DA/ET가 겹칩니다 (미사용). |
 | m8 | `R_driver_ETNF.c:562` | MDC 주기를 CPU 루프(1000회)로 만듭니다. 클럭이 바뀌면 IEEE 802.3 Clause 22 상한(2.5 MHz)을 넘을 수 있으니 타이머 기반으로 바꾸기를 권장합니다. |
 | m9 | 전역 | **모든 폴링 루프에 타임아웃이 없습니다** (모드 전환, PHY 리셋, PLCA 상태, `App_RxCount` 대기). `INTETNF0ERR`는 dummy라 `ESR/EIS/RIS2(QFF)` 에러 처리도 없습니다. 차량용(ISO 26262)으로 쓰려면 타임아웃과 에러 보고, DEM 연계가 필요합니다. |
 | m10 | `App_main.c:74-92` | RxTx 분기의 P13_7 핸드셰이크에 `#if (NORMAL && T1S)` 가드가 없습니다. 그래서 루프백 모드에서 RxTx를 고르면 GPIO 입력을 영원히 기다립니다. |
 | m11 | UM 자체 | ECMR.ZPF 설명에 "(DM = 1) … in T1S mode"라고 되어 있지만 DM=0이 T1S입니다. **UM 표기 오류로 보이며 Renesas 확인이 필요**합니다. 드라이버 enum 주석도 같은 표기를 따릅니다. |
-| m12 | UM 확인 불가 | RIS0/DIS/TIS 플래그를 지우는 방식(0 쓰기)이 UM/SVD 본문에 명시되어 있지 않습니다. R-Car AVB 관례(write-0-clear)와 코드는 일치하지만 Appendix로 확인이 필요합니다. |
+| m12 | rev1.02 SVD | ~~플래그 클리어 방식 확인 필요~~ → **해결 (문제 없음)**. rev1.02 SVD의 DIS·EIS·RIS0~3·TIS·GIS 플래그 설명에 "Only 0 can be written to the bit"라고 되어 있어 0 쓰기로 클리어(W0C)가 맞습니다. 코드의 클리어 방식과 일치합니다. |
 
 ---
 
@@ -212,5 +213,34 @@ ETNF는 크게 3층입니다.
 ---
 
 ## 6. 확인이 필요한 항목 (자료 부족)
-- `Appendix_ETNF.xlsx` (레지스터 리셋값, PHY 메모리 맵): T1SCTL0 예약 비트 리셋값과 인터럽트 플래그 클리어 방식.
+- ~~T1SCTL0 예약 비트 리셋값과 인터럽트 플래그 클리어 방식~~ → rev1.02 SVD로 해결 (§7).
 - AVB_LB + T1S 조합(현재 기본 설정)에서 DM=RMII로 바꾸는데, RMII REFCLK 핀은 열지 않습니다. UM 3.1.10은 "루프백 시 Tx clock 또는 RMII ref clock 공급 필요"라고 합니다. 실보드에서 이 조합이 동작했다면 내부 클럭이 공급되는 것으로 보이지만, 제품 UM의 클럭 섹션으로 확인해야 합니다.
+
+---
+
+## 7. rev1.02 SVD로 추가 확인한 결과
+
+`RCar_U5L_UM_rev1.02_noRSIP_ver1.0.svd`는 리셋값(`resetValue`/`resetMask`)이 들어 있는 SVD 원본입니다. 이것으로 샘플 헤더(`U5L_UM04pre4_ver0.5.h`)와 다시 대조했습니다.
+
+### 7.1 확인 항목 정리
+
+| 항목 | rev1.02 SVD 내용 | 결론 |
+|---|---|---|
+| m5 T1SCTL0 예약 비트 | 리셋값 `0x01FF_FFFF` → [23:17]·[15:5] 리셋값 = 1. 리셋 직후 PHY_ADD=0x1F, MDIO_SHARE=1, PMA_CFG=1 | 코드가 1을 쓰는 것이 맞음 |
+| m12 플래그 클리어 | 플래그 설명마다 "Only 0 can be written to the bit" | 0 쓰기 클리어(W0C) 확정. 코드와 일치 |
+| C4 RPC 예약 비트 | RPC 리셋값 `0x0000_0100` → [31:24] 리셋값 = 0 | RPC에 RCR 값(`0x1800_0027`)을 다시 쓰는 문제는 그대로 유효 |
+| RCR.RFCL | RCR 리셋값 `0x1800_0000` → RFCL 리셋값 0x1800 | 샘플 값과 같음 |
+| TGC.TBD | TGC 리셋값 `0x0022_2200` → TBD0~3 = 2 | 샘플 값과 같음 |
+| CSR.OPS | CSR 리셋값 `0x0000_0001` (Reset 모드) | C1(`CSR != 0` 대기)의 원인을 다시 확인해 줌 |
+
+### 7.2 rev0.5 헤더 → rev1.02 SVD에서 ETNF가 바뀐 곳
+
+| 레지스터 | 변경 | 샘플 코드 영향 |
+|---|---|---|
+| `SELB_ETNF0.WUPCTL` (+0x4), `WUPSTS` (+0x8) | 새로 보임: T1S 웨이크업(WUP) 송신 요청·상태 | 쓰지 않음 |
+| `RIMR` | MODE[1] → **TSEL[2]** (0: MII 타임스탬프 / 1: T1S 타임스탬프, T1S면 1 권장) | RIMR을 쓰지 않음. 드라이버 enum은 이미 TSEL 기준. gPTP를 T1S에서 쓰려면 TSEL=1 설정 필요 |
+| `RQC4`, `UFCV4`, `UFCD4` | 큐 18·19 필드 삭제 (큐는 0~17) | 없음 (큐 0~5만 사용) |
+| `GTO2`, `GCT2` | 필드 [31:0] → [15:0] (80bit 타이머 상위 16bit) | 없음 (gPTP 미사용) |
+| `TLFRCR` | 필드 이름 TLFC → TLFRC | 없음 |
+
+ETNF0 레지스터 166개의 이름과 오프셋은 바뀌지 않았습니다. 따라서 §3의 오프셋 대조와 C1~C7, M1~M7 결론은 rev1.02에서도 그대로입니다.
