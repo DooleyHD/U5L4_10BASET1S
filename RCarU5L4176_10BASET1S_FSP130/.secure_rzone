@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rzone>
+    <device Dvendor="Renesas" Dname="RCARU5X">
+        <processor Pname="CM33" Dcore="Cortex-M33" Dfpu="1" Dmpu="1" Dtz="NO_TZ" Ddsp="1" Dendian="Little-endian" Dclock="160000000" DcoreVersion="r1p0" DnumInterrupts="196" DnumSauRegions="0"/>
+    </device>
+    <resources>
+        <memories>
+            <memory name="RAM_SELF" type="RAM" start="0x200E0000" size="0x20000" security=""/>
+            <memory name="RAM" type="RAM" start="0x204E0000" size="0x20000" security=""/>
+            <memory name="GRAM" type="RAM" start="0x28000000" size="0xB0000" security=""/>
+            <memory name="RRAM" type="RAM" start="0x2C000000" size="0x8000" security=""/>
+            <memory name="DATA_FLASH" type="ROM" start="0x40000000" size="0x40000" security=""/>
+            <memory name="DATA_FLASH_1" type="ROM" start="0x400C0000" size="0x10000" security=""/>
+            <memory name="OPBYTE_AREA" type="ROM" start="0x40121300" size="0x160" security=""/>
+            <memory name="ROM_SINGLE_BANKA" type="ROM" start="0x00000000" size="0x200000" security=""/>
+            <memory name="ROM_SINGLE_BANKB" type="ROM" start="0x00400000" size="0x200000" security=""/>
+            <memory name="ROM_DOUBLE" type="ROM" start="0x00000000" size="0x200000" security=""/>
+        </memories>
+        <peripherals/>
+    </resources>
+</rzone>

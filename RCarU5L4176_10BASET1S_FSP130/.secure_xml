@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<raConfiguration version="12">
+  <generalSettings>
+    <option key="#Board#" value="board.u5l4_176_pb_eth_t1s"/>
+    <option key="CPU" value="RCARU5L4"/>
+    <option key="Core" value="CM33"/>
+    <option key="#TargetName#" value="R7F711002EBFP"/>
+    <option key="#TargetARCHITECTURE#" value="cortex-m33"/>
+    <option key="#DeviceCommand#" value="R7F711002EBFP"/>
+    <option key="#RTOS#" value="_none"/>
+    <option key="#pinconfiguration#" value="R7F711002EBFP.pincfg"/>
+    <option key="#FSPVersion#" value="1.3.0"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##u5l4_176_pb_eth_t1s##"/>
+    <option key="#SELECTED_TOOLCHAIN#" value="clang_arm"/>
+    <option key="#ToolchainVersion#" value="21.1.1"/>
+  </generalSettings>
+  <raBspConfiguration/>
+  <raClockConfiguration>
+    <node id="board.clock.lsiosc.freq" option="board.clock.lsiosc.freq.value"/>
+    <node id="board.clock.hsiosc.freq" option="board.clock.hsiosc.freq.value"/>
+    <node id="board.clock.mosc.in" option="board.clock.mosc.in.20"/>
+    <node id="board.clock.mosc.freq" option="board.clock.mosc.freq.enabled"/>
+    <node id="board.clock.sosc.in" option="board.clock.sosc.in.value"/>
+    <node id="board.clock.sosc.freq" option="board.clock.sosc.freq.disabled"/>
+    <node id="board.clock.iosc0.src" option="board.clock.iosc0.src.hsiosc_div2"/>
+    <node id="board.clock.iosc0.freq" option="board.clock.iosc0.src.value"/>
+    <node id="board.clock.iosc1.src" option="board.clock.iosc1.src.hsiosc"/>
+    <node id="board.clock.iosc1.freq" option="board.clock.iosc1.src.value"/>
+    <node id="board.clock.pllin.src" option="board.clock.pllin.src.mosc"/>
+    <node id="board.clock.pll0.freq" option="board.clock.pll0.freq.480"/>
+    <node id="board.clock.pll1.freq" option="board.clock.pll1.freq.800"/>
+    <node id="board.clk.pll0o.freq" option="board.clk.pll0o.value"/>
+    <node id="board.clock.sys0.src" option="board.clock.sys0.src.pll0o"/>
+    <node id="board.clk.sys0.freq" option="board.clk.sys0.value"/>
+    <node id="board.clk.pll1o.freq" option="board.clk.pll1o.value"/>
+    <node id="board.clock.sys1.src" option="board.clock.sys1.src.pll1o"/>
+    <node id="board.clk.sys1.freq" option="board.clk.sys1.value"/>
+    <node id="board.clock.cpu.freq" option="board.clock.cpu.freq.value"/>
+    <node id="board.clock.bus2.freq" option="board.clock.bus2.freq.value"/>
+    <node id="board.clock.bus4.freq" option="board.clock.bus4.freq.value"/>
+    <node id="board.clock.bus8.freq" option="board.clock.bus8.freq.value"/>
+    <node id="board.clock.bus16.freq" option="board.clock.bus16.freq.value"/>
+    <node id="board.clock.p100.freq" option="board.clock.p100.freq.value"/>
+    <node id="board.clock.p160.freq" option="board.clock.p160.freq.value"/>
+    <node id="board.clock.p080.freq" option="board.clock.p080.freq.value"/>
+    <node id="board.clock.p040.freq" option="board.clock.p040.freq.value"/>
+    <node id="board.clock.fli.freq" option="board.clock.fli.freq."/>
+    <node id="board.clock.faci.freq" option="board.clock.faci.freq."/>
+    <node id="board.clock.rtca.src" option="board.clock.rtca.src.lsiosc"/>
+    <node id="board.clock.rtca.freq" option="board.clock.rtca.freq."/>
+    <node id="board.clock.rlin3.src" option="board.clock.rlin3.src.mosc"/>
+    <node id="board.clock.rlin3.freq" option="board.clock.rlin3.freq."/>
+    <node id="board.clock.wdtb.div" option="board.clock.wdtb.div.64"/>
+    <node id="board.clock.wdtb.freq" option="board.clock.wdtb.freq.value"/>
+    <node id="board.clock.wdtba.div" option="board.clock.wdtb.div.64"/>
+    <node id="board.clock.wdtba.freq" option="board.clock.wdtb.freq.value"/>
+    <node id="board.clock.extclk0.src" option="board.clock.extclk0.src.hsiosc_div2"/>
+    <node id="board.clock.extclk0.div" option="board.clock.extclk0.div.disabled"/>
+    <node id="board.clock.extclk0.freq" option="board.clock.extclk0.freq."/>
+    <node id="board.clock.extclk1.src" option="board.clock.extclk1.src.bus8"/>
+    <node id="board.clock.extclk1.div" option="board.clock.extclk1.div.disabled"/>
+    <node id="board.clock.extclk1.freq" option="board.clock.extclk1.freq."/>
+    <node id="board.clock.lps.src" option="board.clock.lps.src.iosc0"/>
+    <node id="board.clock.lps.freq" option="board.clock.lps.freq."/>
+    <node id="board.clock.adc0.src" option="board.clock.adc0.src.p040"/>
+    <node id="board.clock.adc0.freq" option="board.clock.adc0.freq."/>
+    <node id="board.clock.ecm.div" option="board.clock.ecm.div.2"/>
+    <node id="board.clock.ecm.freq" option="board.clock.ecm.freq.value"/>
+    <node id="board.clock.operation.runmode" option="board.clock.operation.runmode.mode"/>
+    <node id="board.clock.sys0_cyclicrun.src" option="board.clock.sys0_cyclicrun.src.hsintosc"/>
+    <node id="board.clock.sys1_cyclicrun.src" option="board.clock.sys1_cyclicrun.src.hsintosc"/>
+    <node id="board.clock.cpu_cyclicrun.freq" option="board.clock.cpu_cyclicrun.freq.value"/>
+    <node id="board.clock.bus2_cyclicrun.freq" option="board.clock.bus2_cyclicrun.freq.value"/>
+    <node id="board.clock.bus4_cyclicrun.freq" option="board.clock.bus4_cyclicrun.freq.value"/>
+    <node id="board.clock.bus8_cyclicrun.freq" option="board.clock.bus8_cyclicrun.freq.value"/>
+    <node id="board.clock.bus16_cyclicrun.freq" option="board.clock.bus16_cyclicrun.freq.value"/>
+    <node id="board.clock.fli_cyclicrun.freq" option="board.clock.fli_cyclicrun.freq"/>
+    <node id="board.clock.faci_cyclicrun.freq" option="board.clock.faci_cyclicrun.freq"/>
+    <node id="board.clock.p100_cyclicrun.freq" option="board.clock.p100_cyclicrun.freq.value"/>
+    <node id="board.clock.p160_cyclicrun.freq" option="board.clock.p160_cyclicrun.freq.value"/>
+    <node id="board.clock.p080_cyclicrun.freq" option="board.clock.p080_cyclicrun.freq.value"/>
+    <node id="board.clock.p040_cyclicrun.freq" option="board.clock.p040_cyclicrun.freq.value"/>
+    <node id="board.clock.rlin3_cyclicrun.src" option="board.clock.rlin3_cyclicrun.src.mosc"/>
+    <node id="board.clock.rlin3_cyclicrun.freq" option="board.clock.rlin3_cyclicrun.freq."/>
+    <node id="board.clock.extclk1_cyclicrun.src" option="board.clock.extclk1_cyclicrun.src.bus8"/>
+    <node id="board.clock.extclk1_cyclicrun.div" option="board.clock.extclk1_cyclicrun.div.disabled"/>
+    <node id="board.clock.extclk1_cyclicrun.freq" option="board.clock.extclk1_cyclicrun.freq"/>
+    <node id="board.clock.adc0_cyclicrun.src" option="board.clock.adc0_cyclicrun.src.p040"/>
+    <node id="board.clock.adc0_cyclicrun.freq" option="board.clock.adc0_cyclicrun.freq."/>
+  </raClockConfiguration>
+  <raPinConfiguration>
+    <pincfg active="true" name="" symbol="">
+      <configSetting altId="etnf0.ets0_ed_mdio.p10_1" configurationId="etnf0.ets0_ed_mdio" isUsedByDriver="true" peripheral="ETNF0"/>
+      <configSetting altId="etnf0.ets0_rx_mdc.p10_0" configurationId="etnf0.ets0_rx_mdc" isUsedByDriver="true" peripheral="ETNF0"/>
+      <configSetting altId="etnf0.ets0_tx.p10_2" configurationId="etnf0.ets0_tx" isUsedByDriver="true" peripheral="ETNF0"/>
+      <configSetting altId="jp0_0.gpio_mode.gpio_mode_peripheral" configurationId="jp0_0.gpio_mode"/>
+      <configSetting altId="jp0_1.gpio_speed.gpio_speed_high" configurationId="jp0_1.gpio_drivecapacity"/>
+      <configSetting altId="jp0_1.gpio_mode.gpio_mode_peripheral" configurationId="jp0_1.gpio_mode"/>
+      <configSetting altId="jp0_2.gpio_mode.gpio_mode_peripheral" configurationId="jp0_2.gpio_mode"/>
+      <configSetting altId="jp0_3.gpio_mode.gpio_mode_peripheral" configurationId="jp0_3.gpio_mode"/>
+      <configSetting altId="jtag_fslash_swd.tck.jp0_2" configurationId="jtag_fslash_swd.tck" peripheral="JTAG/SWD"/>
+      <configSetting altId="jtag_fslash_swd.tdi.jp0_0" configurationId="jtag_fslash_swd.tdi" peripheral="JTAG/SWD"/>
+      <configSetting altId="jtag_fslash_swd.tdo.jp0_1" configurationId="jtag_fslash_swd.tdo" peripheral="JTAG/SWD"/>
+      <configSetting altId="jtag_fslash_swd.tms.jp0_3" configurationId="jtag_fslash_swd.tms" peripheral="JTAG/SWD"/>
+      <configSetting altId="p10_0.gpio_speed.gpio_speed_high" configurationId="p10_0.gpio_drivecapacity"/>
+      <configSetting altId="p10_0.gpio_mode.gpio_mode_peripheral" configurationId="p10_0.gpio_mode"/>
+      <configSetting altId="p10_0.pipc.pipc_peripheral" configurationId="p10_0.pipc"/>
+      <configSetting altId="p10_1.gpio_speed.gpio_speed_high" configurationId="p10_1.gpio_drivecapacity"/>
+      <configSetting altId="p10_1.gpio_mode.gpio_mode_peripheral" configurationId="p10_1.gpio_mode"/>
+      <configSetting altId="p10_1.pipc.pipc_peripheral" configurationId="p10_1.pipc"/>
+      <configSetting altId="p10_2.gpio_speed.gpio_speed_high" configurationId="p10_2.gpio_drivecapacity"/>
+      <configSetting altId="p10_2.gpio_mode.gpio_mode_peripheral" configurationId="p10_2.gpio_mode"/>
+      <configSetting altId="p18_0.output.low" configurationId="p18_0"/>
+      <configSetting altId="p18_0.gpio_mode.gpio_mode_out.low" configurationId="p18_0.gpio_mode"/>
+      <configSetting altId="p18_1.output.low" configurationId="p18_1"/>
+      <configSetting altId="p18_1.gpio_mode.gpio_mode_out.low" configurationId="p18_1.gpio_mode"/>
+      <configSetting altId="p18_2.output.low" configurationId="p18_2"/>
+      <configSetting altId="p18_2.gpio_mode.gpio_mode_out.low" configurationId="p18_2.gpio_mode"/>
+      <configSetting altId="p18_3.output.low" configurationId="p18_3"/>
+      <configSetting altId="p18_3.gpio_mode.gpio_mode_out.low" configurationId="p18_3.gpio_mode"/>
+      <configSetting altId="p18_4.output.low" configurationId="p18_4"/>
+      <configSetting altId="p18_4.gpio_mode.gpio_mode_out.low" configurationId="p18_4.gpio_mode"/>
+      <configSetting altId="p18_5.output.low" configurationId="p18_5"/>
+      <configSetting altId="p18_5.gpio_mode.gpio_mode_out.low" configurationId="p18_5.gpio_mode"/>
+      <configSetting altId="p18_6.output.low" configurationId="p18_6"/>
+      <configSetting altId="p18_6.gpio_mode.gpio_mode_out.low" configurationId="p18_6.gpio_mode"/>
+      <configSetting altId="p18_7.output.low" configurationId="p18_7"/>
+      <configSetting altId="p18_7.gpio_mode.gpio_mode_out.low" configurationId="p18_7.gpio_mode"/>
+    </pincfg>
+  </raPinConfiguration>
+</raConfiguration>

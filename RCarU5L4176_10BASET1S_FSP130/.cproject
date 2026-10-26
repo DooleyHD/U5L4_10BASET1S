@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.toolchainInfo">
+				<option id="toolchain.id" value="clang_arm"/>
+				<option id="toolchain.version" value="21.1.1"/>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" id="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982" name="Debug" parent="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug">
+					<folderInfo id="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.managedbuild.llvm.arm.toolchain.debug.2057056649" name="LLVM for ARM" superClass="com.renesas.cdt.managedbuild.llvm.arm.toolchain.debug">
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize.734697025" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.113215720" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.speedCodeSize" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections.272847412" name="Data sections (-fdata-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.1894023688" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat" value="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.Default" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian.237861903" name="Endian" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.endian.little" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics.1459710477" name="Fixit error parser (-fdiagnostics-parseable-fixits)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics" value="false" valueType="boolean"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization.199027601" name="Other optimization flags" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization" valueType="stringList">
+								<listOptionValue builtIn="false" value="-fmessage-length=0"/>
+								<listOptionValue builtIn="false" value="-funsigned-char"/>
+							</option>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing.2000493756" name="Disable optimizations based on the type of expressions (-fno-strict-aliasing)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing" value="true" valueType="boolean"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags.1621338362" name="Other flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags" valueType="stringList">
+								<listOptionValue builtIn="false" value="-g3"/>
+							</option>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused.717992445" name="Warn for various unused elements (-Wunused)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized.216147333" name="Warn for uninitialized variables (-Wuninitialized)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn.1531498996" name="Enable all warnings (-Wall)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn.1206557851" name="Enable extra warnings (-Wextra)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration.1209150260" name="Warn for undeclared global functions (-Wmissing-declarations)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion.1263773054" name="Warn for implicit conversions (-Wconversion)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith.637092217" name="Warn if it depends on the “size of” a function(-Wpointer-arith)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow.687184422" name="Warn for shadowed variables (-Wshadow)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn.1614265873" name="Warn if structures are returned (-Waggregate-return)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn" value="true" valueType="boolean"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags.1575427170" name="Other Flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags" valueType="stringList">
+								<listOptionValue builtIn="false" value="-Wno-parentheses-equality"/>
+								<listOptionValue builtIn="false" value="-Wfloat-equal"/>
+							</option>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family.1946454617" name="ARM family" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.family.cortex-m33" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType.537306298" name="FPU Type" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.fpu.unit.fpv5spd16" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu.843934235" name="Float ABI" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.fpu.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.renesas.cdt.managedbuild.llvm.core.targetPlatform.657023856" isAbstract="false" osList="all" superClass="com.renesas.cdt.managedbuild.llvm.core.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/RCarU5L4176_10BASET1S_FSP130}/Debug" id="com.renesas.cdt.managedbuild.llvm.core.builder.645916832" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="LLVM  for Renesas Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.renesas.cdt.managedbuild.llvm.core.builder"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm.398968695" name="SMS Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen.1007697125" name="Library Generator" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen">
+								<option id="com.renesas.cdt.managedbuild.llvm.arm.option.libraryType.1756563192" name="Library type" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.libraryType" value="com.renesas.cdt.managedbuild.llvm.core.option.librarygenerator.settings.libraryType.preBuilt" valueType="enumerated"/>
+							</tool>
+							<tool commandLinePattern="${COMMAND} ${toolchain_flags} ${FLAGS} -x c ${INPUTS} ${command_c_compiler} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" id="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1432097828" name="Compiler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat.995302692" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.Default" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel.1173063016" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.speedCodeSize" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.std.1545559996" name="Language standard" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.std" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.compiler.common.c99" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.229327830" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles.400121593" name="Include file directories (-I)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/rcarmcuu5l4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/arm/CMSIS_6/CMSIS/Core/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/all}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.macro.2015081351" name="Macro Defines (-D)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.macro" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RENESAS_RCARMCUU5X_"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_CORE=CM33"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_ORDINAL=1"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c.1277387461" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c"/>
+							</tool>
+							<tool commandLinePattern="${COMMAND} ${toolchain_flags} ${FLAGS} -x c++ ${INPUTS} ${command_cpp_compiler} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler.1628738102" name="Compiler CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat.849133689" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.Default" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel.1561044125" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.speedCodeSize" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.cpp.language.1439173706" name="Language standard" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.cpp.language" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.compiler.cpp.c11" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.2033375799" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles.cpp.73544816" name="Include file directories (-I)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles.cpp" useByScannerDiscovery="false" valueType="includePath"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler.1580561368" name="Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.assembler.source.usepreprocessor.695202688" name="Use preprocessor (-x assembler-with-cpp)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.assembler.source.usepreprocessor"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.assembler.includes.symbolDefines.433161366" name="Define a symbol (-D)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.assembler.includes.symbolDefines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RENESAS_RCARMCUU5X_"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_CORE=CM33"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_ORDINAL=1"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.assembler.includes.includeFileDirectories.1645928933" name="Include file directories (-I)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.assembler.includes.includeFileDirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/rcarmcuu5l4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/arm/CMSIS_6/CMSIS/Core/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/all}&quot;"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler.1043825620" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.linker.647082841" name="Linker" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.linker">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections.1448814445" name="Enable garbage collection of unused input sections(-gc-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles.2123525607" name="Archive (library) files (-l) [Only the library's name, without the &quot;lib&quot; prefix and &quot;.a&quot;extension]" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles" valueType="libs">
+									<listOptionValue builtIn="false" value="crt0"/>
+									<listOptionValue builtIn="false" value="c++abi"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc.1916504499" name="Do not use the standard system startup files when linking" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc" value="false" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint.945518605" name="Entry point:" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint" value="" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.includes.includeFileDir.cpp.1819825491" name="Include file directories" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.includes.includeFileDir.cpp" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/rcarmcuu5l4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/arm/CMSIS_6/CMSIS/Core/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/all}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript.551657303" name="Linker script" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;fsp.lld&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.linker.archiveSearchDirectories.1485987806" name="Archive search directories (-L) [Only the path to the library]" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.linker.archiveSearchDirectories" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/script&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CWD}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkOrderList.1074931506" name="Linkage Order List" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkOrderList" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;.\src\hal_entry.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcuu5x_gen\common_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcuu5x_gen\hal_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcuu5x_gen\main.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcuu5x_gen\pin_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcuu5x_gen\vector_data.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/r_ioport\r_ioport.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l\bsp_clocks_driver.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l\bsp_cpu.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l\bsp_guard_driver.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l\bsp_imf_table.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l\bsp_module_standby_driver.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l\bsp_opbt.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_clocks.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_common.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_delay.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_group_irq.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_guard.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_io.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_irq.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_mcu_reset.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_mdlc.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_module_standby.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_mpu.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/mcu/all\bsp_sbrk.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source\startup.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source\system.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/board/u5l4_176_pb\board_init.o&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.\rcarmcu/board/u5l4_176_pb\board_leds.o&quot;"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.linker.c.1443454617" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.linker.c">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LINKER_SCRIPT)"/>
+								</inputType>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker.194480360" name="Linker CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections.1842800381" name="Enable garbage collection of unused input sections(-gc-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles.75073630" name="Archive (library) files (-l) [Only the library's name, without the &quot;lib&quot; prefix and &quot;.a&quot;extension]" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles" valueType="libs">
+									<listOptionValue builtIn="false" value="crt0"/>
+									<listOptionValue builtIn="false" value="c++abi"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc.473345731" name="Do not use the standard system startup files when linking" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc" value="false" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint.1616984472" name="Entry point:" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint" value="" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript.547363341" name="Linker script" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;fsp.lld&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.linker.cpp.option.archiveSearchDirectories.127036231" name="Archive search directories (-L) [Only the path to the library]" superClass="com.renesas.cdt.managedbuild.llvm.arm.linker.cpp.option.archiveSearchDirectories" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/script&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CWD}&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy.1098509885" name="Objcopy" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver.1994305532" name="Archiver" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize.1917548302" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.printSize.general.sizeFormat.918276416" name="Size Format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.printSize.general.sizeFormat"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.core.tool.readelf.1573359963" name="Readelf" superClass="com.renesas.cdt.managedbuild.llvm.core.tool.readelf"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump.1432469902" name="Objdump" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982./rcarmcu/arm" name="arm" resourcePath="rcarmcu/arm">
+						<toolChain id="com.renesas.cdt.managedbuild.llvm.arm.toolchain.debug.1004014792" name="LLVM for ARM" superClass="com.renesas.cdt.managedbuild.llvm.arm.toolchain.debug" unusedChildren="">
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize.734697025.275917771" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize.734697025"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.113215720.1767646915" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.113215720"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections.272847412.1869494056" name="Data sections (-fdata-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections.272847412"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.1894023688.1082524504" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.1894023688"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian.237861903.362338778" name="Endian" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian.237861903"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics.1459710477.174847444" name="Fixit error parser (-fdiagnostics-parseable-fixits)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics.1459710477"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization.199027601.1596223339" name="Other optimization flags" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization.199027601"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing.2000493756.223386954" name="Disable optimizations based on the type of expressions (-fno-strict-aliasing)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing.2000493756"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags.1621338362.1526097511" name="Other flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags.1621338362"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused.717992445.1308690674" name="Warn for various unused elements (-Wunused)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused.717992445"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized.216147333.499041270" name="Warn for uninitialized variables (-Wuninitialized)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized.216147333"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn.1531498996.1639989092" name="Enable all warnings (-Wall)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn.1531498996"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn.1206557851.11403502" name="Enable extra warnings (-Wextra)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn.1206557851"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration.1209150260.1856538348" name="Warn for undeclared global functions (-Wmissing-declarations)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration.1209150260"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion.1263773054.2134745647" name="Warn for implicit conversions (-Wconversion)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion.1263773054"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith.637092217.1732298621" name="Warn if it depends on the “size of” a function(-Wpointer-arith)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith.637092217"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow.687184422.1619506078" name="Warn for shadowed variables (-Wshadow)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow.687184422"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn.1614265873.1043738968" name="Warn if structures are returned (-Waggregate-return)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn.1614265873"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags.1575427170.1323742299" name="Other Flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags.1575427170"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family.1946454617.176871375" name="ARM family" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family.1946454617"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType.537306298.205168628" name="FPU Type" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType.537306298"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu.843934235.1404829366" name="Float ABI" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu.843934235"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm.363619793" name="SMS Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm.398968695"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen.1068368472" name="Library Generator" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen.1007697125"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1131479339" name="Compiler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1432097828">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.606566753" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+									<listOptionValue builtIn="false" value="-w"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c.1293791805" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler.1764036454" name="Compiler CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler.1628738102">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.158112462" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+									<listOptionValue builtIn="false" value="-w"/>
+								</option>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler.1597768734" name="Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler.1580561368">
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler.154239590" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.linker.1335911144" name="Linker" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.linker.647082841"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker.686317162" name="Linker CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker.194480360"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy.90279973" name="Objcopy" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy.1098509885"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver.862797895" name="Archiver" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver.1994305532"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize.1924832961" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize.1917548302"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.core.tool.readelf.1577175161" name="Readelf" superClass="com.renesas.cdt.managedbuild.llvm.core.tool.readelf.1573359963"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump.40508527" name="Objdump" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump.1432469902"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rcarmcu"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rcarmcuu5x_gen"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="com.renesas.cdt.managedbuild.core.toolchainInfo">
+				<option id="toolchain.id" value="clang_arm"/>
+				<option id="toolchain.version" value="21.1.1"/>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683" name="Release" parent="com.renesas.cdt.managedbuild.llvm.arm.configuration.release">
+					<folderInfo id="com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683." name="/" resourcePath="">
+						<toolChain id="com.renesas.cdt.managedbuild.llvm.arm.toolchain.release.878969167" name="LLVM for ARM" superClass="com.renesas.cdt.managedbuild.llvm.arm.toolchain.release">
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize.2110570411" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.1685652474" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.speedCodeSize" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections.1879239655" name="Data sections (-fdata-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.1036510931" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat" value="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.Default" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian.346483412" name="Endian" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.endian.little" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics.93971984" name="Fixit error parser (-fdiagnostics-parseable-fixits)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics" value="false" valueType="boolean"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization.65564073" name="Other optimization flags" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization" valueType="stringList">
+								<listOptionValue builtIn="false" value="-fmessage-length=0"/>
+								<listOptionValue builtIn="false" value="-funsigned-char"/>
+							</option>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing.586439742" name="Disable optimizations based on the type of expressions (-fno-strict-aliasing)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing" value="true" valueType="boolean"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags.66346875" name="Other flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags" valueType="stringList">
+								<listOptionValue builtIn="false" value="-g3"/>
+							</option>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused.725415179" name="Warn for various unused elements (-Wunused)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized.535132686" name="Warn for uninitialized variables (-Wuninitialized)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn.1913493674" name="Enable all warnings (-Wall)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn.897891175" name="Enable extra warnings (-Wextra)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration.887075951" name="Warn for undeclared global functions (-Wmissing-declarations)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion.509918273" name="Warn for implicit conversions (-Wconversion)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith.1344938324" name="Warn if it depends on the “size of” a function(-Wpointer-arith)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow.60967977" name="Warn for shadowed variables (-Wshadow)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow" value="true" valueType="boolean"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn.778609467" name="Warn if structures are returned (-Waggregate-return)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn" value="true" valueType="boolean"/>
+							<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags.1496393397" name="Other Flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags" valueType="stringList">
+								<listOptionValue builtIn="false" value="-Wno-parentheses-equality"/>
+								<listOptionValue builtIn="false" value="-Wfloat-equal"/>
+							</option>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family.119193830" name="ARM family" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.family.cortex-m33" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType.2110077481" name="FPU Type" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.fpu.unit.fpv5spd16" valueType="enumerated"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu.1130163728" name="Float ABI" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu" value="com.renesas.cdt.managedbuild.llvm.arm.option.armspecific.fpu.hard" valueType="enumerated"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.renesas.cdt.managedbuild.llvm.core.targetPlatform.952555344" isAbstract="false" osList="all" superClass="com.renesas.cdt.managedbuild.llvm.core.targetPlatform"/>
+							<builder buildPath="${workspace_loc:/RCarU5L4176_10BASET1S_FSP130}/Release" id="com.renesas.cdt.managedbuild.llvm.core.builder.1562112555" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="LLVM  for Renesas Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.renesas.cdt.managedbuild.llvm.core.builder"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm.53772519" name="SMS Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen.725841511" name="Library Generator" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen">
+								<option id="com.renesas.cdt.managedbuild.llvm.arm.option.libraryType.1614563092" name="Library type" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.libraryType" value="com.renesas.cdt.managedbuild.llvm.core.option.librarygenerator.settings.libraryType.preBuilt" valueType="enumerated"/>
+							</tool>
+							<tool commandLinePattern="${COMMAND} ${toolchain_flags} ${FLAGS} -x c ${INPUTS} ${command_c_compiler} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" id="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1677252356" name="Compiler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel.1649179632" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.speedCodeSize" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat.1737644217" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.Default" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.std.844856620" name="Language standard" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.std" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.compiler.common.c99" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.812562071" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles.926929594" name="Include file directories (-I)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/rcarmcuu5l4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/arm/CMSIS_6/CMSIS/Core/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/all}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.macro.308668960" name="Macro Defines (-D)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.macro" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RENESAS_RCARMCUU5X_"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_CORE=CM33"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_ORDINAL=1"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c.438916326" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c"/>
+							</tool>
+							<tool commandLinePattern="${COMMAND} ${toolchain_flags} ${FLAGS} -x c++ ${INPUTS} ${command_cpp_compiler} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT}" id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler.2104222127" name="Compiler CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel.1952035954" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.optimizationLevel" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.speedCodeSize" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat.999616047" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.debugFormat" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.Default" valueType="enumerated"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.cpp.language.1826411232" name="Language standard" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.cpp.language" useByScannerDiscovery="true" value="com.renesas.cdt.managedbuild.llvm.core.option.compiler.cpp.c11" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.188838324" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" useByScannerDiscovery="false" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="true" id="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles.cpp.1951239649" name="Include file directories (-I)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.compiler.includesFiles.cpp" useByScannerDiscovery="false" valueType="includePath"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler.1869389833" name="Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.assembler.source.usepreprocessor.2052571178" name="Use preprocessor (-x assembler-with-cpp)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.assembler.source.usepreprocessor"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.assembler.includes.symbolDefines.60683660" name="Define a symbol (-D)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.assembler.includes.symbolDefines" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RENESAS_RCARMCUU5X_"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_CORE=CM33"/>
+									<listOptionValue builtIn="false" value="_RCARMCUU5X_ORDINAL=1"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.assembler.includes.includeFileDirectories.185092316" name="Include file directories (-I)" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.assembler.includes.includeFileDirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/rcarmcuu5l4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/arm/CMSIS_6/CMSIS/Core/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/all}&quot;"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler.1618321565" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.linker.1604079318" name="Linker" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.linker">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections.1011836815" name="Enable garbage collection of unused input sections(-gc-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles.2122841818" name="Archive (library) files (-l) [Only the library's name, without the &quot;lib&quot; prefix and &quot;.a&quot;extension]" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles" valueType="libs">
+									<listOptionValue builtIn="false" value="crt0"/>
+									<listOptionValue builtIn="false" value="c++abi"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc.1917600435" name="Do not use the standard system startup files when linking" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc" value="false" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint.1036905604" name="Entry point:" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint" value="" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.includes.includeFileDir.cpp.1706273898" name="Include file directories" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.includes.includeFileDir.cpp" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg/bsp}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;.&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_gen}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcuu5x_cfg/fsp_cfg}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/rcarmcuu5l4}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/arm/CMSIS_6/CMSIS/Core/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/api}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/inc/instances}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/rcarmcu/fsp/src/bsp/mcu/all}&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript.1378767501" name="Linker script" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;fsp.lld&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.option.linker.archiveSearchDirectories.787095277" name="Archive search directories (-L) [Only the path to the library]" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.linker.archiveSearchDirectories" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/script&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CWD}&quot;"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.linker.c.886343990" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.linker.c">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+									<additionalInput kind="additionalinputdependency" paths="$(LIBRARY_GENERATOR_OUTPUTTYPE_OUTPUTS)"/>
+									<additionalInput kind="additionaldependency" paths="$(LINKER_SCRIPT)"/>
+								</inputType>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker.182287922" name="Linker CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections.30767248" name="Enable garbage collection of unused input sections(-gc-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.misc.inputsections"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles.327241883" name="Archive (library) files (-l) [Only the library's name, without the &quot;lib&quot; prefix and &quot;.a&quot;extension]" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.archives.archiveLibraryFiles" valueType="libs">
+									<listOptionValue builtIn="false" value="crt0"/>
+									<listOptionValue builtIn="false" value="c++abi"/>
+								</option>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc.349602213" name="Do not use the standard system startup files when linking" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkUsingGcc" value="false" valueType="boolean"/>
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint.1193123085" name="Entry point:" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.entrypoint" value="" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript.1965229202" name="Linker script" superClass="com.renesas.cdt.managedbuild.llvm.core.option.linker.source.linkerScript" valueType="stringList">
+									<listOptionValue builtIn="false" value="&quot;fsp.lld&quot;"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.arm.linker.cpp.option.archiveSearchDirectories.1658821382" name="Archive search directories (-L) [Only the path to the library]" superClass="com.renesas.cdt.managedbuild.llvm.arm.linker.cpp.option.archiveSearchDirectories" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/script&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CWD}&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy.486713599" name="Objcopy" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver.556918249" name="Archiver" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize.135008111" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize">
+								<option id="com.renesas.cdt.managedbuild.llvm.core.option.printSize.general.sizeFormat.1280666242" name="Size Format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.printSize.general.sizeFormat"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.core.tool.readelf.536368021" name="Readelf" superClass="com.renesas.cdt.managedbuild.llvm.core.tool.readelf"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump.1360169849" name="Objdump" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump"/>
+						</toolChain>
+					</folderInfo>
+					<folderInfo id="com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683./rcarmcu/arm" name="arm" resourcePath="rcarmcu/arm">
+						<toolChain id="com.renesas.cdt.managedbuild.llvm.arm.toolchain.release.1193690211" name="LLVM for ARM" superClass="com.renesas.cdt.managedbuild.llvm.arm.toolchain.release" unusedChildren="">
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize.2110570411.845151379" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.core.option.cpu.printsize.2110570411"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.1685652474.737903994" name="Optimization Level" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.optimizationLevel.1685652474"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections.1879239655.1904224635" name="Data sections (-fdata-sections)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fdatasections.1879239655"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.1036510931.776441823" name="Debug format" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.debugFormat.1036510931"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian.346483412.1932483539" name="Endian" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.endian.346483412"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics.93971984.118281740" name="Fixit error parser (-fdiagnostics-parseable-fixits)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.fdiagnostics.93971984"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization.65564073.42404582" name="Other optimization flags" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.otherOptimization.65564073"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing.586439742.1435126477" name="Disable optimizations based on the type of expressions (-fno-strict-aliasing)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.optimization.fnoaliasing.586439742"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags.66346875.110836844" name="Other flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.debug.otherFlags.66346875"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused.725415179.145120827" name="Warn for various unused elements (-Wunused)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.unused.725415179"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized.535132686.1316715309" name="Warn for uninitialized variables (-Wuninitialized)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.uninitialized.535132686"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn.1913493674.1729477430" name="Enable all warnings (-Wall)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.allwarn.1913493674"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn.897891175.1671610328" name="Enable extra warnings (-Wextra)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.extrawarn.897891175"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration.887075951.198319906" name="Warn for undeclared global functions (-Wmissing-declarations)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.missingdeclaration.887075951"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion.509918273.507380557" name="Warn for implicit conversions (-Wconversion)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.conversion.509918273"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith.1344938324.107889246" name="Warn if it depends on the “size of” a function(-Wpointer-arith)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.pointerarith.1344938324"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow.60967977.122737030" name="Warn for shadowed variables (-Wshadow)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.shadow.60967977"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn.778609467.1072182394" name="Warn if structures are returned (-Waggregate-return)" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.agreggatereturn.778609467"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags.1496393397.522350273" name="Other Flags" superClass="com.renesas.cdt.managedbuild.llvm.core.option.warnings.otherFlags.1496393397"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family.119193830.2024576792" name="ARM family" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.family.119193830"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType.2110077481.1464848622" name="FPU Type" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpuType.2110077481"/>
+							<option id="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu.1130163728.1149851813" name="Float ABI" superClass="com.renesas.cdt.managedbuild.llvm.arm.option.cpu.fpu.1130163728"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm.115116594" name="SMS Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.smsAsm.53772519"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen.2039217482" name="Library Generator" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.libgen.725841511"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1195291695" name="Compiler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1677252356">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.65355326" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+									<listOptionValue builtIn="false" value="-w"/>
+								</option>
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c.1304627344" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler.420870749" name="Compiler CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.compiler.2104222127">
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions.348882925" name="User defined compiler options" superClass="com.renesas.cdt.managedbuild.llvm.core.option.compiler.source.userDefinedCompilerOptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="-fshort-enums"/>
+									<listOptionValue builtIn="false" value="-fno-unroll-loops"/>
+									<listOptionValue builtIn="false" value="-w"/>
+								</option>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler.1125915590" name="Assembler" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.assembler.1869389833">
+								<inputType id="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler.153126496" superClass="com.renesas.cdt.managedbuild.llvm.core.inputType.assembler"/>
+							</tool>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.linker.1552162476" name="Linker" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.linker.1604079318"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker.1480037866" name="Linker CPP" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.cpp.linker.182287922"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy.1112811796" name="Objcopy" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.Objcopy.486713599"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver.1149153393" name="Archiver" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.archiver.556918249"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize.412613617" name="Print Size" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.PrintSize.135008111"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.core.tool.readelf.853859042" name="Readelf" superClass="com.renesas.cdt.managedbuild.llvm.core.tool.readelf.536368021"/>
+							<tool id="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump.858949671" name="Objdump" superClass="com.renesas.cdt.managedbuild.llvm.arm.tool.objdump.1360169849"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rcarmcu"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rcarmcuu5x_gen"/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="RCarU5L4176_10BASET1S_FSP130.com.renesas.cdt.managedbuild.llvm.arm.projectType.Id.928560612" name="Executable" projectType="com.renesas.cdt.managedbuild.llvm.arm.projectType.Id"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683;com.renesas.cdt.managedbuild.llvm.arm.configuration.release.420273683.;com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1677252356;com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c.438916326">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982;com.renesas.cdt.managedbuild.llvm.arm.configuration.debug.587419982.;com.renesas.cdt.managedbuild.llvm.arm.tool.compiler.1432097828;com.renesas.cdt.managedbuild.llvm.core.inputType.compiler.c.1277387461">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

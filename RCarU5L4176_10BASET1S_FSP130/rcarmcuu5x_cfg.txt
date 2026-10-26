@@ -1,0 +1,918 @@
+FSP Configuration
+  Board "R-Car U5L4|176PIN-PB|PB R-CAR U5L4 176 PIN - ETH-T1S"
+  R7F711002EBFP
+    Part Number: R7F711002EBFP
+    Global RAM Size (byte): 720896
+    CPU RAM Size (byte): 131072
+    Retention RAM Size (byte): 32768
+    Trace RAM (byte): 32768
+    Instruction Cache RAM (byte): 8192
+    package_style: LQFP
+    Package Pin: 176
+    Use the Model Hardware in VLAB: False
+    Guard: Data and Memory: CRG Write Access: Enable
+    Guard: Data and Memory: GRG Write Access: Enable
+    Guard: Data and Memory: RRG Write Access: Enable
+    Guard: Data and Memory: IBG Write Access: Enable
+    Guard: Peripheral: DTS Write Access: Enable
+    Guard: Peripheral: DMA Write Access: Enable
+    Guard: Peripheral: BSP Write Access: Enable
+    Guard: Peripheral: VMON Write Access: Enable
+    Guard: Peripheral: CLMA Write Access: Enable
+    Guard: Peripheral: IOPORT Write Access: Enable
+    Guard: Peripheral: WDT Write Access: Enable
+    Guard: Peripheral: RTCA Write Access: Enable
+    Guard: Peripheral: RSENT Write Access: Enable
+    Guard: Peripheral: CRC Write Access: Enable
+    Guard: Peripheral: OSTM Write Access: Enable
+    Guard: Peripheral: ENCA Write Access: Enable
+    Guard: Peripheral: TAUD Write Access: Enable
+    Guard: Peripheral: TAUJ Write Access: Enable
+    Guard: Peripheral: TAPA Write Access: Enable
+    Guard: Peripheral: PIC Write Access: Enable
+    Guard: Peripheral: RLIN3 Write Access: Enable
+    Guard: Peripheral: CXPI Write Access: Enable
+    Guard: Peripheral: PSI5 Write Access: Enable
+    Guard: Peripheral: MMCA Write Access: Enable
+    Guard: Peripheral: ECM Write Access: Enable
+    Guard: Peripheral: CSIH Write Access: Enable
+    Guard: Peripheral: SSIF Write Access: Enable
+    Guard: Peripheral: ADC Write Access: Enable
+    Guard: Peripheral: TSN Write Access: Enable
+    Guard: Peripheral: ETH-T1S Write Access: Enable
+    Guard: Peripheral: ETH-TSN Write Access: Enable
+    Guard: Peripheral: I3C Write Access: Enable
+    Guard: Peripheral: CAN-FD Write Access: Enable
+    Guard: Peripheral: PWM-Diag Write Access: Enable
+    Guard: Peripheral: I2C Write Access: Enable
+    Guard: Peripheral: SFMA Write Access: Enable
+    Module Standby: Enable clock supply for ADC: Enable
+    Module Standby: Enable clock supply for CANFD: Enable
+    Module Standby: Enable clock supply for CSIH: Enable
+    Module Standby: Enable clock supply for CXPI: Enable
+    Module Standby: Enable clock supply for ENCA: Enable
+    Module Standby: Enable clock supply for ETH-T1S: Enable
+    Module Standby: Enable clock supply for ETH-TSN: Enable
+    Module Standby: Enable clock supply for I2C: Enable
+    Module Standby: Enable clock supply for I3C: Enable
+    Module Standby: Enable clock supply for MMCA: Enable
+    Module Standby: Enable clock supply for OSTM: Enable
+    Module Standby: Enable clock supply for PSI5: Enable
+    Module Standby: Enable clock supply for PWM-DIAG: Enable
+    Module Standby: Enable clock supply for RLIN: Enable
+    Module Standby: Enable clock supply for RSENT: Enable
+    Module Standby: Enable clock supply for RTCA: Enable
+    Module Standby: Enable clock supply for SFMA: Enable
+    Module Standby: Enable clock supply for SSIF: Enable
+    Module Standby: Enable clock supply for TAPA: Enable
+    Module Standby: Enable clock supply for TAUD: Enable
+    Module Standby: Enable clock supply for TAUJ: Enable
+    Module Standby: Enable clock supply for WDT: Enable
+    Enable clock support in CyclicRUN mode: Disable
+    Enable Configuration Setting Area: False
+    Configuration Setting Area: Software Configuration Option Byte: n = 0: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 1: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 2: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 3: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 4: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 5: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 6: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 7: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 8: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 9: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 10: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 11: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 12: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 13: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 14: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 15: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 16: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 17: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 18: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 19: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 20: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 21: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 22: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 23: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 24: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 25: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 26: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 27: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 28: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 29: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 30: 0x00000000
+    Configuration Setting Area: Software Configuration Option Byte: n = 31: 0x00000000
+    Configuration Setting Area: Vector Table Base Address (CPU0): 0x00000000
+    Configuration Setting Area: OPBT 0: OPWDRUNA[31]: WDTBA software trigger start mode
+    Configuration Setting Area: OPBT 0: OPWDWMSA[30]: Window Size of Window Open function is set by WDTBAWS[1:0]
+    Configuration Setting Area: OPBT 0: OPWDOVFA[29:27]: 2^16/WDTBTCKI
+    Configuration Setting Area: OPBT 0: OPWDINTA[26]: WDTBATIT enabled
+    Configuration Setting Area: OPBT 0: OPWDWSA[24:23]: 100%
+    Configuration Setting Area: OPBT 0: WDTBARES_EN[20]: Enable
+    Configuration Setting Area: OPBT 0: OPWDVACA[18]: WDTBAWDTE (fixed)
+    Configuration Setting Area: OPBT 0: OPWDENA[16]: WDTBA is enabled
+    Configuration Setting Area: OPBT 0: OPWDWOSTA[15:0]: 0x0010
+    Configuration Setting Area: OPBT 1: OPWDRUN0[24]: WDTB0 software trigger start mode
+    Configuration Setting Area: OPBT 1: OPWDRUN0[23]: Window Size of Window Open function is set by WDTB0WS[1:0]
+    Configuration Setting Area: OPBT 1: OPWDOVF[22:20]: 2^16/WDTBTCKI
+    Configuration Setting Area: OPBT 1: OPWDINT0[19]: WDTB0TIT enabled
+    Configuration Setting Area: OPBT 1: OPWDVAC[18]: WDTB0EVAC (variable)
+    Configuration Setting Area: OPBT 1: OPWDWS0[17:16]: 25%
+    Configuration Setting Area: OPBT 1: OPWDWISA[15:0]: 0x0000
+    Configuration Setting Area: OPBT 3: STMSEL[1]: Normal Operating Mode is selected
+    Configuration Setting Area: OPBT 4: ISOVDDHDE[25]: ISOVDD High voltage detection enable
+    Configuration Setting Area: OPBT 4: ISOVDDLDE[24]: ISOVDD Low voltage detection enable
+    Configuration Setting Area: OPBT 6: OSC_USERTRM[31:23]: 0x1FF
+    Configuration Setting Area: OPBT 8: ETND0_IF_SEL[26:25]: MII
+    Configuration Setting Area: OPBT 8: CLMA1SEL[22]: CLK_LSIOSC
+    Configuration Setting Area: OPBT 8: RESET_PD_EN[1]: Pull-down resistor of RESET: Enable
+    Configuration Setting Area: OPBT 10: MOSC_EXCLKINPUT[28]: Normal crystal oscillation. Main OSC amplifier is enabled
+    Configuration Setting Area: OPBT 10: MOSC_FREQ[26:24]: 20MHz
+    Configuration Setting Area: OPBT 10: MOSC_AMP_SEL_A[22:20]: 0x7
+    Configuration Setting Area: OPBT 10: MOSC_AMP_SEL_B[18:16]: 0x7
+    Configuration Setting Area: OPBT 10: MOSC_RD_SEL_A[9:8]: 0x0
+    Configuration Setting Area: OPBT 10: MOSC_RD_SEL_B[5:4]: 0x0
+    Configuration Setting Area: OPBT 10: SOSC_XMSEL[2]: High drive mode
+    Configuration Setting Area: OPBT 10: MOSC_SHTSTBY_A[1]: Default
+    Configuration Setting Area: OPBT 10: MOSC_SHTSTBY_B[0]: Default
+    Configuration Setting Area: OPBT 11: CKDIVMD[31:30]: 240 MHz
+    Configuration Setting Area: OPBT 11: STARTUPPLL[28]: Main OSC and PLL are enabled
+    Configuration Setting Area: OPBT 12: MAPMODE[1:0]: Single Map Mode
+    Configuration Setting Area: OPBT 13: DBMAPSW0[0]: Bank A is mapped in valid area
+    Configuration Setting Area: OPBT 26: OPWDWOST0[15:0]: 0x0010
+    Configuration Setting Area: OPBT 27: OPWDWIS0[15:0]: 0x0000
+    Configuration Setting Area: OPBT 42: ADCK0ENDP[16]: ADCK0 Enable
+    Configuration Setting Area: OPBT 43: OUI[31:26]: 0x0A
+    Configuration Setting Area: OPBT 43: IC_MODEL[25:20]: 0x30
+    Configuration Setting Area: OPBT 43: IC_REVISION[19:16]: 0x1
+    Configuration Setting Area: OPBT 43: OUI[15:0]: 0xB824
+    Configuration Setting Area: OPBT 44: RESV0_CRUN[31:0]: 0x00000000
+    Configuration Setting Area: OPBT 45: GRAM_SIZE[16]: 704KB
+    Configuration Setting Area: OPBT 45: RRAM_SIZE[1:0]: 32KB
+    Configuration Setting Area: OPBT 47: DECOME[16]: Decommissioning of microcontroller is disabled
+    
+  R-Car MCU U5L4
+    CPU MPU: Attribute: Attribute 0: Normal Memory: Inner: Memory Attribute Indirection: Write-Through non-transient
+    CPU MPU: Attribute: Attribute 0: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 0: Normal Memory: Inner: Write: Do not allocate
+    CPU MPU: Attribute: Attribute 0: Normal Memory: Outer: Memory Attribute Indirection: Write-Through non-transient
+    CPU MPU: Attribute: Attribute 0: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 0: Normal Memory: Outer: Write: Do not allocate
+    CPU MPU: Attribute: Attribute 0: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 0: Memory type: Normal memory
+    CPU MPU: Attribute: Attribute 1: Normal Memory: Inner: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 1: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 1: Normal Memory: Inner: Write: Allocate
+    CPU MPU: Attribute: Attribute 1: Normal Memory: Outer: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 1: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 1: Normal Memory: Outer: Write: Allocate
+    CPU MPU: Attribute: Attribute 1: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 1: Memory type: Normal memory
+    CPU MPU: Attribute: Attribute 2: Normal Memory: Inner: Memory Attribute Indirection: Non-Cacheable
+    CPU MPU: Attribute: Attribute 2: Normal Memory: Inner: Read: Do not allocate
+    CPU MPU: Attribute: Attribute 2: Normal Memory: Inner: Write: Do not allocate
+    CPU MPU: Attribute: Attribute 2: Normal Memory: Outer: Memory Attribute Indirection: Non-Cacheable
+    CPU MPU: Attribute: Attribute 2: Normal Memory: Outer: Read: Do not allocate
+    CPU MPU: Attribute: Attribute 2: Normal Memory: Outer: Write: Do not allocate
+    CPU MPU: Attribute: Attribute 2: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 2: Memory type: Normal memory
+    CPU MPU: Attribute: Attribute 3: Normal Memory: Inner: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 3: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 3: Normal Memory: Inner: Write: Allocate
+    CPU MPU: Attribute: Attribute 3: Normal Memory: Outer: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 3: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 3: Normal Memory: Outer: Write: Allocate
+    CPU MPU: Attribute: Attribute 3: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 3: Memory type: Device memory
+    CPU MPU: Attribute: Attribute 4: Normal Memory: Inner: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 4: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 4: Normal Memory: Inner: Write: Allocate
+    CPU MPU: Attribute: Attribute 4: Normal Memory: Outer: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 4: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 4: Normal Memory: Outer: Write: Allocate
+    CPU MPU: Attribute: Attribute 4: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 4: Memory type: Normal memory
+    CPU MPU: Attribute: Attribute 5: Normal Memory: Inner: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 5: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 5: Normal Memory: Inner: Write: Allocate
+    CPU MPU: Attribute: Attribute 5: Normal Memory: Outer: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 5: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 5: Normal Memory: Outer: Write: Allocate
+    CPU MPU: Attribute: Attribute 5: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 5: Memory type: Normal memory
+    CPU MPU: Attribute: Attribute 6: Normal Memory: Inner: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 6: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 6: Normal Memory: Inner: Write: Allocate
+    CPU MPU: Attribute: Attribute 6: Normal Memory: Outer: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 6: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 6: Normal Memory: Outer: Write: Allocate
+    CPU MPU: Attribute: Attribute 6: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 6: Memory type: Normal memory
+    CPU MPU: Attribute: Attribute 7: Normal Memory: Inner: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 7: Normal Memory: Inner: Read: Allocate
+    CPU MPU: Attribute: Attribute 7: Normal Memory: Inner: Write: Allocate
+    CPU MPU: Attribute: Attribute 7: Normal Memory: Outer: Memory Attribute Indirection: Write-Back non-transient
+    CPU MPU: Attribute: Attribute 7: Normal Memory: Outer: Read: Allocate
+    CPU MPU: Attribute: Attribute 7: Normal Memory: Outer: Write: Allocate
+    CPU MPU: Attribute: Attribute 7: Device Memory: Device-nGnRnE memory
+    CPU MPU: Attribute: Attribute 7: Memory type: Normal memory
+    CPU MPU: Region: Region 00: Name: CODE_FLASH_0
+    CPU MPU: Region: Region 00: Base: 0x00000000
+    CPU MPU: Region: Region 00: Size: 0x00200000
+    CPU MPU: Region: Region 00: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 00: Access Permission: Read-Only / Read-Only
+    CPU MPU: Region: Region 00: Execute never: Execute enable
+    CPU MPU: Region: Region 00: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 00: Region enable: Enable
+    CPU MPU: Region: Region 01: Name: CODE_FLASH_1
+    CPU MPU: Region: Region 01: Base: 0x00400000
+    CPU MPU: Region: Region 01: Size: 0x00200000
+    CPU MPU: Region: Region 01: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 01: Access Permission: Read-Only / Read-Only
+    CPU MPU: Region: Region 01: Execute never: Execute enable
+    CPU MPU: Region: Region 01: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 01: Region enable: Enable
+    CPU MPU: Region: Region 02: Name: RAM_CPU0
+    CPU MPU: Region: Region 02: Base: 0x204E0000
+    CPU MPU: Region: Region 02: Size: 0x00020000
+    CPU MPU: Region: Region 02: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 02: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 02: Execute never: Execute enable
+    CPU MPU: Region: Region 02: Attribute Index: Attribute 1
+    CPU MPU: Region: Region 02: Region enable: Enable
+    CPU MPU: Region: Region 03: Name: GLOBAL_RAM
+    CPU MPU: Region: Region 03: Base: 0x28000000
+    CPU MPU: Region: Region 03: Size: 0x000B0000
+    CPU MPU: Region: Region 03: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 03: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 03: Execute never: Execute enable
+    CPU MPU: Region: Region 03: Attribute Index: Attribute 1
+    CPU MPU: Region: Region 03: Region enable: Enable
+    CPU MPU: Region: Region 04: Name: RETENTION_RAM
+    CPU MPU: Region: Region 04: Base: 0x2C000000
+    CPU MPU: Region: Region 04: Size: 0x00008000
+    CPU MPU: Region: Region 04: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 04: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 04: Execute never: Execute enable
+    CPU MPU: Region: Region 04: Attribute Index: Attribute 1
+    CPU MPU: Region: Region 04: Region enable: Enable
+    CPU MPU: Region: Region 05: Name: PERIPHERAL
+    CPU MPU: Region: Region 05: Base: 0x40400000
+    CPU MPU: Region: Region 05: Size: 0x1EC00000
+    CPU MPU: Region: Region 05: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 05: Access Permission: ReadWrite / None
+    CPU MPU: Region: Region 05: Execute never: Execute disable
+    CPU MPU: Region: Region 05: Attribute Index: Attribute 3
+    CPU MPU: Region: Region 05: Region enable: Enable
+    CPU MPU: Region: Region 06: Name: CODE_FLASH_BLANK_CHECK_AREA
+    CPU MPU: Region: Region 06: Base: 0x0C000000
+    CPU MPU: Region: Region 06: Size: 0x00600000
+    CPU MPU: Region: Region 06: Sharebility fields: Non Shareable
+    CPU MPU: Region: Region 06: Access Permission: Read-Only / Read-Only
+    CPU MPU: Region: Region 06: Execute never: Execute disable
+    CPU MPU: Region: Region 06: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 06: Region enable: Enable
+    CPU MPU: Region: Region 07: Name: Not Used
+    CPU MPU: Region: Region 07: Base: 0x00000000
+    CPU MPU: Region: Region 07: Size: 0x00000000
+    CPU MPU: Region: Region 07: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 07: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 07: Execute never: Execute enable
+    CPU MPU: Region: Region 07: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 07: Region enable: Disable
+    CPU MPU: Region: Region 08: Name: Not Used
+    CPU MPU: Region: Region 08: Base: 0x00000000
+    CPU MPU: Region: Region 08: Size: 0x00000000
+    CPU MPU: Region: Region 08: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 08: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 08: Execute never: Execute enable
+    CPU MPU: Region: Region 08: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 08: Region enable: Disable
+    CPU MPU: Region: Region 09: Name: Not Used
+    CPU MPU: Region: Region 09: Base: 0x00000000
+    CPU MPU: Region: Region 09: Size: 0x00000000
+    CPU MPU: Region: Region 09: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 09: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 09: Execute never: Execute enable
+    CPU MPU: Region: Region 09: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 09: Region enable: Disable
+    CPU MPU: Region: Region 10: Name: Not Used
+    CPU MPU: Region: Region 10: Base: 0x00000000
+    CPU MPU: Region: Region 10: Size: 0x00000000
+    CPU MPU: Region: Region 10: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 10: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 10: Execute never: Execute enable
+    CPU MPU: Region: Region 10: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 10: Region enable: Disable
+    CPU MPU: Region: Region 11: Name: Not Used
+    CPU MPU: Region: Region 11: Base: 0x00000000
+    CPU MPU: Region: Region 11: Size: 0x00000000
+    CPU MPU: Region: Region 11: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 11: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 11: Execute never: Execute enable
+    CPU MPU: Region: Region 11: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 11: Region enable: Disable
+    CPU MPU: Region: Region 12: Name: Not Used
+    CPU MPU: Region: Region 12: Base: 0x00000000
+    CPU MPU: Region: Region 12: Size: 0x00000000
+    CPU MPU: Region: Region 12: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 12: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 12: Execute never: Execute enable
+    CPU MPU: Region: Region 12: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 12: Region enable: Disable
+    CPU MPU: Region: Region 13: Name: Not Used
+    CPU MPU: Region: Region 13: Base: 0x00000000
+    CPU MPU: Region: Region 13: Size: 0x00000000
+    CPU MPU: Region: Region 13: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 13: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 13: Execute never: Execute enable
+    CPU MPU: Region: Region 13: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 13: Region enable: Disable
+    CPU MPU: Region: Region 14: Name: Not Used
+    CPU MPU: Region: Region 14: Base: 0x00000000
+    CPU MPU: Region: Region 14: Size: 0x00000000
+    CPU MPU: Region: Region 14: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 14: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 14: Execute never: Execute enable
+    CPU MPU: Region: Region 14: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 14: Region enable: Disable
+    CPU MPU: Region: Region 15: Name: Not Used
+    CPU MPU: Region: Region 15: Base: 0x00000000
+    CPU MPU: Region: Region 15: Size: 0x00000000
+    CPU MPU: Region: Region 15: Sharebility fields: Outer Shareable
+    CPU MPU: Region: Region 15: Access Permission: ReadWrite / ReadWrite
+    CPU MPU: Region: Region 15: Execute never: Execute enable
+    CPU MPU: Region: Region 15: Attribute Index: Attribute 0
+    CPU MPU: Region: Region 15: Region enable: Disable
+    CPU MPU: MPU Enable: Enable
+    
+  R-Car MCU U5L
+  R-Car MCU U5L Family
+    Cache: Instruction cache: Enabled
+    
+  R-Car MCU Common
+    Main stack size (bytes): 0x400
+    Heap size (bytes): 0x400
+    MCU Vcc (mV): 3300
+    Parameter checking: Disabled
+    Assert Failures: Return FSP_ERR_ASSERTION
+    Error Log: No Error Log
+    C Runtime Initialization : Enabled
+    Early BSP Initialization : Disabled
+    Heap region Initialization : Enabled
+    
+  U5L4 Clock (SOSC is available)
+  R-Car U5L events data
+  R-Car U5L DTSC Event Activation Source
+  R-Car U5L DMAC Event Activation Source
+  Clocks
+    Main OSC: 20MHz
+    Main OSC: Enabled
+    Sub OSC: Disabled
+    CLK PLLIN: MainOSC
+    PLL0: 480MHz
+    PLL1: 800MHz
+    SYS0 Src: PLL0O
+    SYS1 Src: PLL1O
+    RTCA Src: LS IntOSC
+    RLIN3 Src: Main OSC
+    EXTCLK0 Src: HS IntOSC/2
+    EXTCLK0 Div: Disabled
+    EXTCLK1 Src: BUS8
+    EXTCLK1 Div: Disabled
+    LPS Src: Int OSC0
+    ADC0 Src: P040
+    RLIN3 Src: Main OSC
+    (CyclicRUN) EXTCLK1 Src: BUS8
+    (CyclicRUN) EXTCLK1 Div: Disabled
+    (CyclicRUN) ADC0 Src: P040
+    
+  Pin Configurations
+    U5L4_176_PB_ETH_T1S.pincfg -> g_bsp_pin_cfg
+      A0VREFH 90 SYSTEM_A0VREFH - - - - - - - - IO "Read only" - 
+      A0VSS 89 SYSTEM_A0VSS - - - - - - - - IO "Read only" - 
+      A1VREFH 138 SYSTEM_A1VREFH - - - - - - - - IO "Read only" - 
+      A1VSS 139 SYSTEM_A1VSS - - - - - - - - IO "Read only" - 
+      AP0_0 106 - - - - Disabled - - "ADCK0: ADCK0I0" - None - - 
+      AP0_1 105 - - - - Disabled - - "ADCK0: ADCK0I1" - None - - 
+      AP0_10 96 - - - - Disabled - - "ADCK0: ADCK0I10" - None - - 
+      AP0_11 95 - - - - Disabled - - "ADCK0: ADCK0I11" - None - - 
+      AP0_12 94 - - - - Disabled - - "ADCK0: ADCK0I12" - None - - 
+      AP0_13 93 - - - - Disabled - - "ADCK0: ADCK0I13" - None - - 
+      AP0_14 92 - - - - Disabled - - "ADCK0: ADCK0I14" - None - - 
+      AP0_15 91 - - - - Disabled - - "ADCK0: ADCK0I15" - None - - 
+      AP0_2 104 - - - - Disabled - - "ADCK0: ADCK0I2" - None - - 
+      AP0_3 103 - - - - Disabled - - "ADCK0: ADCK0I3" - None - - 
+      AP0_4 102 - - - - Disabled - - "ADCK0: ADCK0I4" - None - - 
+      AP0_5 101 - - - - Disabled - - "ADCK0: ADCK0I5" - None - - 
+      AP0_6 100 - - - - Disabled - - "ADCK0: ADCK0I6" - None - - 
+      AP0_7 99 - - - - Disabled - - "ADCK0: ADCK0I7" - None - - 
+      AP0_8 98 - - - - Disabled - - "ADCK0: ADCK0I8" - None - - 
+      AP0_9 97 - - - - Disabled - - "ADCK0: ADCK0I9" - None - - 
+      AP2_0 133 - - - - Disabled - - "ADCK1: ADCK1I0" - None - - 
+      AP2_1 132 - - - - Disabled - - "ADCK1: ADCK1I1" - None - - 
+      AP2_10 123 - - - - Disabled - - "ADCK1: ADCK1I10" - None - - 
+      AP2_11 122 - - - - Disabled - - "ADCK1: ADCK1I11" - None - - 
+      AP2_12 137 - - - - Disabled - - "ADCK1: ADCK1I12" - None - - 
+      AP2_13 136 - - - - Disabled - - "ADCK1: ADCK1I13" - None - - 
+      AP2_14 135 - - - - Disabled - - "ADCK1: ADCK1I14" - None - - 
+      AP2_15 134 - - - - Disabled - - "ADCK1: ADCK1I15" - None - - 
+      AP2_2 131 - - - - Disabled - - "ADCK1: ADCK1I2" - None - - 
+      AP2_3 130 - - - - Disabled - - "ADCK1: ADCK1I3" - None - - 
+      AP2_4 129 - - - - Disabled - - "ADCK1: ADCK1I4" - None - - 
+      AP2_5 128 - - - - Disabled - - "ADCK1: ADCK1I5" - None - - 
+      AP2_6 127 - - - - Disabled - - "ADCK1: ADCK1I6" - None - - 
+      AP2_7 126 - - - - Disabled - - "ADCK1: ADCK1I7" - None - - 
+      AP2_8 125 - - - - Disabled - - "ADCK1: ADCK1I8" - None - - 
+      AP2_9 124 - - - - Disabled - - "ADCK1: ADCK1I9" - None - - 
+      AWOVCL 59 SYSTEM_AWOVCL - - - - - - - - IO "Read only" - 
+      E0VCC 121 SYSTEM_E0VCC - - - - - - - - IO "Read only" - 
+      E0VCC 22 SYSTEM_E0VCC - - - - - - - - IO "Read only" - 
+      E0VCC 55 SYSTEM_E0VCC - - - - - - - - IO "Read only" - 
+      E1VCC 4 SYSTEM_E1VCC - - - - - - - - IO "Read only" - 
+      E1VCC 140 SYSTEM_E1VCC - - - - - - - - IO "Read only" - 
+      E1VCC 172 SYSTEM_E1VCC - - - - - - - - IO "Read only" - 
+      EVSS 5 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 37 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 151 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 173 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 71 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 107 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      FLMD 63 SYSTEM_FLMD - - - - - - - - I "Read only" - 
+      IP0_0 56 - - - - Disabled - - "SYSTEM: XT1" - None - - 
+      IP0_1 57 - - - - Disabled - - "SYSTEM: XT2" - None - - 
+      ISOVCL 13 SYSTEM_ISOVCL - - - - - - - - IO "Read only" - 
+      ISOVCL 141 SYSTEM_ISOVCL - - - - - - - - IO "Read only" - 
+      ISOVCL 73 SYSTEM_ISOVCL - - - - - - - - IO "Read only" - 
+      JP0_0 47 JTAG/SWD_TDI - Low - "Peripheral mode" - - "Flash_Programming_Interface: FPDR; IRQ: IRQ0; JTAG/SWD: TDI; TAUJ2: TAUJ2I0; TAUJ2: TAUJ2O2" - I - - 
+      JP0_1 46 JTAG/SWD_TDO - High - "Peripheral mode" - - "ETM: SWO; Flash_Programming_Interface: FPDT; IRQ: IRQ1; JTAG/SWD: TDO; TAUJ3: TAUJ3I0; TAUJ3: TAUJ3O2" - O - - 
+      JP0_2 45 JTAG/SWD_TCK - Low - "Peripheral mode" - - "Flash_Programming_Interface: FPCK; IRQ: IRQ2; JTAG/SWD: SWCLK; JTAG/SWD: TCK; TAUJ3: TAUJ3I1; TAUJ3: TAUJ3O3" - I - - 
+      JP0_3 44 JTAG/SWD_TMS - Low - "Peripheral mode" - - "IRQ: IRQ3; JTAG/SWD: SWDIO; JTAG/SWD: TMS; TAUJ3: TAUJ3I2; TAUJ3: TAUJ3O0" - I - - 
+      JP0_5 42 - - - - Disabled - - "NMI: NMI; RTCA0: RTCA0OUT; TAUJ3: TAUJ3I3; TAUJ3: TAUJ3O1" - None - - 
+      JP0_6 66 - - - - Disabled - - "DebugTrigger: TRIGOUT" - None - - 
+      P00_0 18 - - - - Disabled - - "CSIH0: CSIH0SSI; EXTCLK0: EXTCLK0O; IRQ: IRQ15; LPS: DPO; LPS: LPSTMOUT3; PWGC10: PWGC10O; RSCFD0: CAN0TX; TAUD0: TAUD0I2; TAUD0: TAUD0O4; TAUJ2: TAUJ2I1; TAUJ2: TAUJ2O3" - None - - 
+      P00_1 19 - - - - Disabled - - "CSIH0: CSIH0SI_A; CSIH0: CSIH0SI_B; IRQ: IRQ0; LPS: APO; LPS: LPSTMOUT4; PWGC11: PWGC11O; RSCFD0: CAN0RX; TAUD0: TAUD0I4; TAUD0: TAUD0O6; TAUJ2: TAUJ2I2; TAUJ2: TAUJ2O0" - None - - 
+      P00_10 67 - - - - Disabled - - "CSIH1: CSIH1CSS1; IRQ: IRQ3; LPS: DPIN11; RSCFD4: CAN4TX; TAUD1: TAUD1I6; TAUD1: TAUD1O8" - None - - 
+      P00_11 26 - - - - Disabled - - "CSIH1: CSIH1CSS2; IRQ: IRQ4; LPS: DPIN12; PWGC34: PWGC34O; RIIC0: RIIC0SDA; TAUD1: TAUD1I8; TAUD1: TAUD1O10" - None - - 
+      P00_12 27 - - - - Disabled - - "IRQ: IRQ13; LPS: DPIN13; PWGC45: PWGC45O; RIIC0: RIIC0SCL; TAUD1: TAUD1I10; TAUD1: TAUD1O0" - None - - 
+      P00_13 28 - - - - Disabled - - "IRQ: IRQ5; IRQ: IRQ10; IRQ: IRQ12; PWGC46: PWGC46O; RLIN32: RLIN32RX; RSCFD5: CAN5RX; TAUD1: TAUD1I12; TAUD1: TAUD1O14" - None - - 
+      P00_14 29 - - - - Disabled - - "IRQ: IRQ17; PWGC47: PWGC47O; RLIN32: RLIN32TX; RSCFD5: CAN5TX; TAUD1: TAUD1I14; TAUD1: TAUD1O12" - None - - 
+      P00_2 20 - - - - Disabled - - "CSIH0: CSIH0SC_B; CSIH0: CSIH0SC_A; CSIH1: CSIH1CSS2_B; CSIH1: CSIH1CSS2_D; CSIH1: CSIH1CSS2_C; IRQ: IRQ1; LPS: DPO; PWGC12: PWGC12O; RLIN30: RLIN30TX; RSCFD1: CAN1RX; TAUD0: TAUD0I6; TAUD0: TAUD0O8; TAUJ2: TAUJ2I3; TAUJ2: TAUJ2O1" - None - - 
+      P00_3 21 - - - - Disabled - - "CSIH0: CSIH0SO_B; CSIH0: CSIH0SO_A; CSIH1: CSIH1RYI_B; CSIH1: CSIH1RYI_C; CSIH1: CSIH1RYI_D; CSIH1: CSIH1RYO_B; CSIH1: CSIH1RYO_C; CSIH1: CSIH1RYO_D; CXP10: CXP10RX; IRQ: IRQ8; IRQ: IRQ10; LPS: DPIN1; PWGC13: PWGC13O; RLIN30: RLIN30RX; RSCFD1: CAN1TX; TAUD0: TAUD0I8; TAUD0: TAUD0O10; TAUJ1: TAUJ1I0; TAUJ1: TAUJ1O2" - None - - 
+      P00_4 23 - - - - Disabled - - "CSIH1: CSIH1SI_A; CSIH1: CSIH1SI_D; CXP11: CXP11RX; IRQ: IRQ9; IRQ: IRQ11; LPS: DPIN8; LPS: LPSTMOUT0; LPS: SELDP0; PWGC10: PWGC10O; RLIN31: RLIN31RX; RSCFD2: CAN2TX; TAUD1: TAUD1I12; TAUD1: TAUD1O14" - None - - 
+      P00_5 24 - - - - Disabled - - "CSIH1: CSIH1SO_D; CSIH1: CSIH1SO_A; CXP11: CXP11TX; IRQ: IRQ2; IRQ: IRQ8; LPS: DPIN9; LPS: LPSTMOUT1; LPS: SELDP1; RLIN31: RLIN31TX; RSCFD2: CAN2RX; TAUD1: TAUD1I14; TAUD1: TAUD1O12" - None - - 
+      P00_6 25 - - - - Disabled - - "CSIH1: CSIH1SC_D; CSIH1: CSIH1SC_A; IRQ: IRQ2; LPS: DPIN10; LPS: LPSTMOUT2; LPS: SELDP2; PWGC35: PWGC35O; TAUD1: TAUD1I0; TAUD1: TAUD1O2" - None - - 
+      P00_7 70 - - - - Disabled - - "CSIH1: CSIH1RYI; CSIH1: CSIH1RYO; EXTCLK0: EXTCLK0O; IRQ: IRQ3; IRQ: IRQ14; LPS: DPIN5; RSCFD3: CAN3RX" - None - - 
+      P00_8 69 - - - - Disabled - - "CSIH1: CSIH1SSI; IRQ: IRQ16; LPS: DPIN6; RSCFD3: CAN3TX; TAUD1: TAUD1I2; TAUD1: TAUD1O4" - None - - 
+      P00_9 68 - - - - Disabled - - "CSIH1: CSIH1CSS0; IRQ: IRQ4; IRQ: IRQ12; LPS: DPIN7; RSCFD4: CAN4RX; TAUD1: TAUD1I4; TAUD1: TAUD1O6" - None - - 
+      P01_0 30 - - - - Disabled - - "IRQ: IRQ11; IRQ: IRQ13; RLIN33: RLIN33RX; TAUJ2: TAUJ2I0; TAUJ2: TAUJ2O2" - None - - 
+      P01_1 31 - - - - Disabled - - "IRQ: IRQ18; RLIN33: RLIN33TX; TAUJ2: TAUJ2I1; TAUJ2: TAUJ2O3" - None - - 
+      P01_10 51 - - - - Disabled - - "ADCK1: ADCK1TRG1; IRQ: IRQ22; LPS: DPIN21" - None - - 
+      P01_11 50 - - - - Disabled - - "ADCK1: ADCK1TRG2; IRQ: IRQ14; LPS: DPIN22" - None - - 
+      P01_12 34 - - - - Disabled - - "IRQ: IRQ4; RLIN36: RLIN36TX; RSCFD4: CAN4RX" - None - - 
+      P01_13 35 - - - - Disabled - - "IRQ: IRQ14; RLIN36: RLIN36RX; RSCFD4: CAN4TX" - None - - 
+      P01_14 78 - - - - Disabled - - "CSIH4: CSIH4RYI; CSIH4: CSIH4RYO" - None - - 
+      P01_15 79 - - - - Disabled - - - - None - - 
+      P01_2 32 - - - - Disabled - - "IRQ: IRQ3; LPS: DPIN19; RSCFD3: CAN3RX; TAUJ2: TAUJ2I2; TAUJ2: TAUJ2O0" - None - - 
+      P01_3 33 - - - - Disabled - - "IRQ: IRQ19; LPS: DPIN23; RSCFD3: CAN3TX; TAUJ2: TAUJ2I3; TAUJ2: TAUJ2O1" - None - - 
+      P01_4 75 - - - - Disabled - - "CSIH4: CSIH4SI; IRQ: IRQ13; IRQ: IRQ15; LPS: DPIN18; RLIN35: RLIN35RX" - None - - 
+      P01_5 74 - - - - Disabled - - "ADCK1: ADCK1TRG0; CSIH4: CSIH4SC; IRQ: IRQ20; LPS: DPIN17; RLIN35: RLIN35TX" - None - - 
+      P01_8 53 - - - - Disabled - - "IRQ: IRQ12; IRQ: IRQ14; RLIN34: RLIN34RX" - None - - 
+      P01_9 52 - - - - Disabled - - "IRQ: IRQ21; LPS: DPIN20; RLIN34: RLIN34TX" - None - - 
+      P02_0 49 - - - - Disabled - - "CSIH4: CSIH4CSS3; IRQ: IRQ6" - None - - 
+      P02_1 48 - - - - Disabled - - "CSIH4: CSIH4CSS2" - None - - 
+      P02_2 65 - - - - Disabled - - "CSIH4: CSIH4CSS0" - None - - 
+      P02_3 64 - - - - Disabled - - "CSIH4: CSIH4CSS1" - None - - 
+      P02_4 76 - - - - Disabled - - "ADCK0: ADCK0SEL0; CSIH4: CSIH4SO; SYSTEM: RSIPMGPIO2" - None - - 
+      P02_5 77 - - - - Disabled - - "ADCK0: ADCK0SEL1; CSIH4: CSIH4SSI; SYSTEM: RSIPMGPIO3" - None - - 
+      P02_6 36 - - - - Disabled - - "ADCK0: ADCK0SEL2" - None - - 
+      P08_0 80 - - - - Disabled - - "ADCK0: ADCK0I0S; CSIH0: CSIH0CSS0; IRQ: IRQ4; IRQ: IRQ6; LPS: DPIN2; PWGC14: PWGC14O; RIIC1: RIIC1SDA; RSENT0: RSENT0RX; TAUD1: TAUD1I2; TAUD1: TAUD1O4; TAUJ0: TAUJ0I0; TAUJ0: TAUJ0O2" - None - - 
+      P08_1 81 - - - - Disabled - - "ADCK0: ADCK0I1S; CSIH1: CSIH1CSS3_C; CSIH1: CSIH1CSS3_D; CSIH1: CSIH1CSS3_A; IRQ: IRQ5; LPS: DPIN0; PIC0: TAPA0ESO; PWGC15: PWGC15O; RIIC1: RIIC1SCL; RSENT0: RSENT0SPCO; TAUD1: TAUD1I4; TAUD1: TAUD1O6; TAUJ0: TAUJ0I1; TAUJ0: TAUJ0O3" - None - - 
+      P08_10 39 - - - - Disabled - - "ADCK0: ADCK0I17S; CSIH3: CSIH3CSS3; IRQ: IRQ15; LPS: DPIN14; PWGC42: PWGC42O; RLIN37: RLIN37RX" - None - - 
+      P08_11 40 - - - - Disabled - - "ADCK0: ADCK0I12S; CSIH1: CSIH1CSS3; LPS: DPIN15; PWGC43: PWGC43O; TAUJ1: TAUJ1I2; TAUJ1: TAUJ1O0" - None - - 
+      P08_12 41 - - - - Disabled - - "ADCK0: ADCK0I13S; IRQ: IRQ23; LPS: DPIN16; PWGC44: PWGC44O; TAUJ1: TAUJ1I3; TAUJ1: TAUJ1O1" - None - - 
+      P08_2 38 - - - - Disabled - - "ADCK0: ADCK0I4S; CSIH0: CSIH0CSS0; ECM: ERRORIN; IRQ: IRQ6; LPS: DPIN2; PWGC22: PWGC22O; RLIN37: RLIN37TX; RSENT0: RSENT0RX; RSENT0: RSENT0SPCO; TAUD1: TAUD1I6; TAUD1: TAUD1O8; TAUJ0: TAUJ0I0; TAUJ0: TAUJ0O2" - None - - 
+      P08_3 82 - - - - Disabled - - "ADCK0: ADCK0I5S; CSIH0: CSIH0CSS1; DebugTrigger: TRIGIN; IRQ: IRQ7; LPS: DPIN3; PWGC23: PWGC23O; RSENT0: RSENT0SPCO; TAUD1: TAUD1I8; TAUD1: TAUD1O10; TAUJ0: TAUJ0I1; TAUJ0: TAUJ0O3" - None - - 
+      P08_4 83 - - - - Disabled - - "ADCK0: ADCK0I6S; CSIH0: CSIH0CSS2_B; CSIH0: CSIH0CSS2_A; EXTCLK0: EXTCLK0O; IRQ: IRQ8; LPS: DPIN4; PWGC36: PWGC36O; TAUD1: TAUD1I10; TAUD1: TAUD1O0; TAUJ0: TAUJ0I2; TAUJ0: TAUJ0O0" - None - - 
+      P08_5 84 - - - - Disabled - - "ADCK0: ADCK0I7S; CSIH0: CSIH0CSS3_A; CSIH0: CSIH0CSS3_B; IRQ: IRQ9; NMI: NMI; PWGC37: PWGC37O; TAUJ0: TAUJ0I3; TAUJ0: TAUJ0O1" - None - - 
+      P08_7 86 - - - - Disabled - - "ADCK0: ADCK0I14S; ADCK0: ADCK0SEL0; CSIH3: CSIH3CSS0; PWGC39: PWGC39O; RTCA0: RTCA0OUT" - None - - 
+      P08_8 87 - - - - Disabled - - "ADCK0: ADCK0I15S; ADCK0: ADCK0SEL1; CSIH3: CSIH3CSS1; IRQ: IRQ12; PWGC40: PWGC40O; RLIN34: RLIN34RX" - None - - 
+      P08_9 88 - - - - Disabled - - "ADCK0: ADCK0I16S; ADCK0: ADCK0SEL2; CSIH3: CSIH3CSS2; PWGC41: PWGC41O; RLIN34: RLIN34TX" - None - - 
+      P09_0 108 - - - - Disabled - - "ADCK0: ADCK0I2S; ADCK0: ADCK0TRG0; CSIH2: CSIH2CSS0_B; CSIH2: CSIH2CSS0_A; IRQ: IRQ16; NMI: NMI; PWGC8: PWGC8O; PWGC20: PWGC20O; RIIC0: RIIC0SDA; RLIN33: RLIN33TX; RLIN38: RLIN38RX; RSENT1: RSENT1RX; RSENT1: RSENT1SPCO; SYSTEM: RSIPMGPIO0; TAUD0: TAUD0I0; TAUD0: TAUD0O2; TAUD2: TAUD2I1; TAUD2: TAUD2O3; TAUJ1: TAUJ1I1; TAUJ1: TAUJ1O3" - None - - 
+      P09_1 109 - - - - Disabled - - "ADCK0: ADCK0I3S; CSIH2: CSIH2CSS1_B; CSIH2: CSIH2CSS1_A; ECM: ERRORIN; IRQ: IRQ11; PWGC9: PWGC9O; PWGC21: PWGC21O; RIIC0: RIIC0SCL; RLIN33: RLIN33RX; RLIN38: RLIN38TX; RSENT1: RSENT1SPCO; SYSTEM: RSIPMGPIO1; TAUD0: TAUD0I2; TAUD0: TAUD0O4; TAUD2: TAUD2I3; TAUD2: TAUD2O5; TAUJ1: TAUJ1I2; TAUJ1: TAUJ1O0" - None - - 
+      P09_2 110 - - - - Disabled - - "ADCK0: ADCK0I9S; CSIH2: CSIH2CSS2; ECM: ERROROUT; EXTCLK1: EXTCLK1O; IRQ: IRQ17; PIC0: TAPA0ESO; PSI50: PSI50RX; PWGC20: PWGC20O; RLIN36: RLIN36TX; RLIN39: RLIN39RX; RSENT2: RSENT2RX; RSENT2: RSENT2SPCO" - None - - 
+      P09_3 111 - - - - Disabled - - "ADCK0: ADCK0I10S; CSIH2: CSIH2CSS3; IRQ: IRQ14; IRQ: IRQ16; PSI50: PSI50TX; PWGC21: PWGC21O; RLIN36: RLIN36RX; RLIN39: RLIN39TX; RSENT2: RSENT2SPCO; TAUJ1: TAUJ1I1; TAUJ1: TAUJ1O3" - None - - 
+      P09_4 112 - - - - Disabled - - "ADCK0: ADCK0I11S; IRQ: IRQ17; IRQ: IRQ18; PWGC33: PWGC33O; RLIN310: RLIN310RX; RSENT7: RSENT7RX; RSENT7: RSENT7SPCO; TAUJ1: TAUJ1I0; TAUJ1: TAUJ1O2" - None - - 
+      P10_0 174 ETNF0_ETS0_RX_MDC - High - "Peripheral mode" - - "CSIH1: CSIH1SI_B; CSIH1: CSIH1SI_C; CSIH7: CSIH7SSI; ETND0: ETH0_MII_TXD3; ETNF0: ETS0_RX_MDC; EXTCLK1: EXTCLK1O; IRQ: IRQ0; IRQ: IRQ6; IRQ: IRQ16; PIC0: TAPA0UP; PWGC0: PWGC0O; RLIN310: RLIN310TX; RSCFD0: CAN0RX; RSENT7: RSENT7SPCO; TAUD0: TAUD0I1; TAUD0: TAUD0O3; TAUD1: TAUD1I9; TAUD1: TAUD1O11; TAUD2: TAUD2O7; TAUJ1: TAUJ1I3; TAUJ1: TAUJ1O1" - IO - - 
+      P10_1 175 ETNF0_ETS0_ED_MDIO - High - "Peripheral mode" - - "CSIH1: CSIH1SC_B; CSIH1: CSIH1SC_C; CSIH7: CSIH7CSS0; ETND0: ETH0_MII_TXD2; ETNF0: ETS0_ED_MDIO; IRQ: IRQ11; IRQ: IRQ18; PIC0: TAPA0UN; PWGC1: PWGC1O; RLIN33: RLIN33RX; RLIN35: RLIN35TX; RSCFD0: CAN0TX; TAUD0: TAUD0I3; TAUD0: TAUD0O5; TAUD1: TAUD1I11; TAUD1: TAUD1O1; TAUD2: TAUD2I5; TAUD2: TAUD2O9; TAUJ3: TAUJ3I0; TAUJ3: TAUJ3O2" - IO - - 
+      P10_10 156 - - - - Disabled - - "ADCK0: ADCK0END1; CSIH0: CSIH0CSS1; CSIH2: CSIH2CSS3; CSIH6: CSIH6SC; CXP10: CXP10TX; ENCA0: ENCA0E1; ETND0: ETH0_MII_RXD2; MMCA0: MMCA0DAT3; PSI51: PSI51RX; PWGC7: PWGC7O; RLIN30: RLIN30TX; SSIF: SSIFACK; TAUD0: TAUD0I14; TAUD0: TAUD0O12; TAUD2: TAUD2I6; TAUD2: TAUD2O8; TAUJ3: TAUJ3I3; TAUJ3: TAUJ3O1" - None - - 
+      P10_11 157 - - - - Disabled - - "ADCK0: ADCK0END2; CSIH1: CSIH1CSS0_D; CSIH1: CSIH1CSS0_C; CSIH1: CSIH1CSS0_B; CSIH2: CSIH2SI; CSIH6: CSIH6RYI; CSIH6: CSIH6RYO; CXP11: CXP11RX; ETND0: ETH0_MII_RX_CLK; IRQ: IRQ9; MMCA0: MMCA0DAT4; PSI51: PSI51TX; PWGC16: PWGC16O; RLIN31: RLIN31RX; TAUD1: TAUD1I1; TAUD1: TAUD1O3; TAUD2: TAUD2I8; TAUD2: TAUD2O10" - None - - 
+      P10_12 158 - - - - Disabled - - "ADCK0: ADCK0END3; CSIH1: CSIH1CSS1_D; CSIH1: CSIH1CSS1_C; CSIH1: CSIH1CSS1_B; CSIH2: CSIH2SC; CSIH3: CSIH3CSS3; CSIH6: CSIH6CSS0; CXP11: CXP11TX; ETND0: ETH0_PHY_INT; ETNF0: ETS0_MDC; IRQ: IRQ24; MMCA0: MMCA0DAT5; PWGC17: PWGC17O; RLIN31: RLIN31TX; TAUD1: TAUD1I3; TAUD1: TAUD1O5; TAUD2: TAUD2I10; TAUD2: TAUD2O0" - None - - 
+      P10_13 159 - - - - Disabled - - "ADCK0: ADCK0END4; CSIH0: CSIH0SSI; CSIH2: CSIH2RYI; CSIH2: CSIH2RYO; CSIH3: CSIH3SO; CSIH6: CSIH6CSS1; ECM: ERRORIN; ETND0: ETH0_LINKSTA; ETNF0: ETS0_MDIO; IRQ: IRQ10; MMCA0: MMCA0DAT6; PWGC18: PWGC18O; RLIN32: RLIN32RX; RLIN34: RLIN34TX; TAUD1: TAUD1I5; TAUD1: TAUD1O7; TAUD2: TAUD2I12; TAUD2: TAUD2O14" - None - - 
+      P10_14 160 - - - - Disabled - - "ADCK1: ADCK1TRG0; CSIH3: CSIH3SSI_B; CSIH3: CSIH3SSI_A; CSIH6: CSIH6SO; ECM: ERROROUT; ETND: ETH_PPS0; ETNF0: ETS0_PPS; IRQ: IRQ12; MMCA0: MMCA0DAT7; PWGC19: PWGC19O; RLIN32: RLIN32TX; RLIN34: RLIN34RX; RLIN312: RLIN312RX; TAUD1: TAUD1I7; TAUD1: TAUD1O9; TAUD2: TAUD2I14; TAUD2: TAUD2O12" - None - - 
+      P10_15 6 - - - - Disabled - - "ADCK1: ADCK1END0; CSIH3: CSIH3RYI_B; CSIH3: CSIH3RYI_A; CSIH3: CSIH3RYO_A; CSIH3: CSIH3RYO_B; CSIH4: CSIH4CSS2; CSIH5: CSIH5SO; IRQ: IRQ22; PWGC24: PWGC24O; RLIN314: RLIN314RX" - None - - 
+      P10_2 176 ETNF0_ETS0_TX - High - "Peripheral mode" - - "ADCK0: ADCK0TRG0; CSIH1: CSIH1SO_B; CSIH1: CSIH1SO_C; CSIH7: CSIH7CSS1; ETND0: ETH0_MII_TX_EN; ETNF0: ETS0_TX; IRQ: IRQ13; PIC0: TAPA0VP; PWGC2: PWGC2O; RI3C0: RI3C0SDA; RLIN33: RLIN33TX; RLIN35: RLIN35RX; RLIN37: RLIN37TX; SSIF0: SSIF0RXD; TAUD0: TAUD0I5; TAUD0: TAUD0O7; TAUD1: TAUD1I13; TAUD1: TAUD1O15; TAUD2: TAUD2I7; TAUD2: TAUD2O11" - O - - 
+      P10_3 1 - - - - Disabled - - "ADCK0: ADCK0TRG1; CSIH1: CSIH1SSI_D; CSIH1: CSIH1SSI_C; CSIH1: CSIH1SSI_B; CSIH7: CSIH7CSS2; ETND0: ETH0_MII_TXD1; ETND0: ETH0_RMII_TXD1; EXTCLK1: EXTCLK1O; IRQ: IRQ15; PIC0: TAPA0VN; PWGC3: PWGC3O; RI3C0: RI3C0SCL; RLIN37: RLIN37RX; RSENT3: RSENT3RX; RSENT3: RSENT3SPCO; SSIF0: SSIF0TXD; TAUD0: TAUD0I7; TAUD0: TAUD0O9; TAUD1: TAUD1I15; TAUD1: TAUD1O13; TAUD2: TAUD2I9; TAUD2: TAUD2O1" - None - - 
+      P10_4 2 - - - - Disabled - - "ADCK0: ADCK0SEL0; ADCK0: ADCK0TRG2; CSIH5: CSIH5SI_A; CSIH5: CSIH5SI_B; CSIH7: CSIH7CSS3; ECM: ERRORIN; ETND0: ETH0_MII_TXD0; ETND0: ETH0_RMII_TXD0; IRQ: IRQ19; PIC0: TAPA0WP; PWGC53: PWGC53O; RLIN311: RLIN311RX; RSENT3: RSENT3SPCO; SSIF0: SSIF0BCK; TAUD0: TAUD0I9; TAUD0: TAUD0O11; TAUD2: TAUD2I11; TAUD2: TAUD2O15" - None - - 
+      P10_5 3 - - - - Disabled - - "ADCK0: ADCK0SEL1; CSIH5: CSIH5SC_B; CSIH5: CSIH5SC_A; ECM: ERROROUT; ETND0: ETH0_MII_TX_CLK; ETND0: ETH0_RevMII_CLK; IRQ: IRQ7; PIC0: TAPA0WN; PWGC54: PWGC54O; RLIN311: RLIN311TX; RSENT4: RSENT4RX; RSENT4: RSENT4SPCO; SSIF0: SSIF0FS; SSIF0: SSIF0LRCK; TAUD0: TAUD0I11; TAUD0: TAUD0O1; TAUD2: TAUD2I13; TAUD2: TAUD2O13" - None - - 
+      P10_6 152 - - - - Disabled - - "ADCK0: ADCK0SEL2; CSIH5: CSIH5RYI_A; CSIH5: CSIH5RYI_B; CSIH5: CSIH5RYO_B; CSIH5: CSIH5RYO_A; ENCA0: ENCA0TIN0; ETND0: ETH0_MII_TX_ER; IRQ: IRQ1; IRQ: IRQ20; MMCA0: MMCA0CLK; RLIN312: RLIN312RX; RSCFD1: CAN1RX; RSENT4: RSENT4SPCO; SSIF1: SSIF1RXD; TAUD0: TAUD0I13; TAUD0: TAUD0O15; TAUD2: TAUD2I15" - None - - 
+      P10_7 153 - - - - Disabled - - "ADCK0: ADCK0TRG3; CSIH2: CSIH2SO; CSIH5: CSIH5CSS0_A; CSIH5: CSIH5CSS0_B; ENCA0: ENCA0TIN1; ETND0: ETH0_MDIO; MMCA0: MMCA0DAT0; PWGC4: PWGC4O; RLIN312: RLIN312TX; RSCFD1: CAN1TX; SSIF1: SSIF1TXD; TAUD0: TAUD0I15; TAUD0: TAUD0O13; TAUD2: TAUD2I0; TAUD2: TAUD2O2; TAUJ3: TAUJ3I1; TAUJ3: TAUJ3O3" - None - - 
+      P10_8 154 - - - - Disabled - - "ADCK0: ADCK0TRG4; CSIH2: CSIH2SSI; CSIH5: CSIH5CSS1_A; CSIH5: CSIH5CSS1_B; ENCA0: ENCA0EC; ETND0: ETH0_MDC; MMCA0: MMCA0DAT1; PWGC5: PWGC5O; SSIF1: SSIF1BCK; SYSTEM: MODE; TAUD0: TAUD0I10; TAUD0: TAUD0O0; TAUD2: TAUD2I2; TAUD2: TAUD2O4; TAUJ3: TAUJ3I2; TAUJ3: TAUJ3O0" - None - - 
+      P10_9 155 - - - - Disabled - - "ADCK0: ADCK0END0; CSIH0: CSIH0RYI_A; CSIH0: CSIH0RYI_B; CSIH0: CSIH0RYO_A; CSIH0: CSIH0RYO_B; CSIH2: CSIH2CSS2; CSIH6: CSIH6SI; CXP10: CXP10RX; ENCA0: ENCA0E0; ETND0: ETH0_MII_RXD3; IRQ: IRQ8; MMCA0: MMCA0DAT2; PWGC6: PWGC6O; RLIN30: RLIN30RX; SSIF1: SSIF1FS; SSIF1: SSIF1LRCK; TAUD0: TAUD0I12; TAUD0: TAUD0O14; TAUD2: TAUD2I4; TAUD2: TAUD2O6" - None - - 
+      P11_0 7 - - - - Disabled - - "ADCK1: ADCK1TRG2; CSIH2: CSIH2RYI; CSIH2: CSIH2RYO; CSIH3: CSIH3SI; CSIH4: CSIH4CSS1; CSIH5: CSIH5SSI; IRQ: IRQ23; PWGC25: PWGC25O; PWGC30: PWGC30O; RLIN314: RLIN314TX" - None - - 
+      P11_1 161 - - - - Disabled - - "ADCK1: ADCK1END1; CSIH2: CSIH2SSI; CSIH3: CSIH3SC; CSIH4: CSIH4CSS0; CSIH6: CSIH6SSI; ETND: ETH_PPS1; IRQ: IRQ20; IRQ: IRQ21; MMCA0: MMCA0CMD; PWGC26: PWGC26O; PWGC31: PWGC31O; RLIN313: RLIN313RX; TAUD1: TAUD1I9; TAUD1: TAUD1O11" - None - - 
+      P11_10 10 - - - - Disabled - - "ADCK1: ADCK1SEL2; CSIH5: CSIH5CSS2; IRQ: IRQ23; PWGC50: PWGC50O; RLIN315: RLIN315RX; TAUD2: TAUD2I15; TAUD2: TAUD2O13" - None - - 
+      P11_11 11 - - - - Disabled - - "CSIH5: CSIH5CSS3; PWGC51: PWGC51O; RLIN315: RLIN315TX; TAUD2: TAUD2I0; TAUD2: TAUD2O2" - None - - 
+      P11_12 12 - - - - Disabled - - "PWGC52: PWGC52O; TAUD2: TAUD2I2; TAUD2: TAUD2O4" - None - - 
+      P11_15 168 - - - - Disabled - - "IRQ: IRQ2; PWGC55: PWGC55O; RLIN36: RLIN36TX; RSCFD2: CAN2RX; TAUD2: TAUD2I8; TAUD2: TAUD2O10" - None - - 
+      P11_2 162 - - - - Disabled - - "ADCK1: ADCK1END2; CSIH2: CSIH2SO; CSIH3: CSIH3CSS0; CSIH4: CSIH4SI; CSIH5: CSIH5CSS2; CSIH6: CSIH6CSS2; ETND0: ETH0_MII_RX_ER; ETND0: ETH0_RMII_ER; IRQ: IRQ10; PWGC27: PWGC27O; RLIN32: RLIN32RX; RLIN313: RLIN313TX; SFMA0: SFMA0IO3; TAUD1: TAUD1I11; TAUD1: TAUD1O1" - None - - 
+      P11_3 163 - - - - Disabled - - "ADCK1: ADCK1END3; CSIH2: CSIH2SC; CSIH3: CSIH3CSS1; CSIH4: CSIH4SO; CSIH5: CSIH5CSS3; CSIH6: CSIH6CSS3; ETND0: ETH0_MII_RXD1; ETND0: ETH0_RMII_RXD1; IRQ: IRQ3; PWGC28: PWGC28O; RLIN32: RLIN32TX; RSCFD3: CAN3RX; RSENT5: RSENT5SPCO; SFMA0: SFMA0IO2; TAUD1: TAUD1I13; TAUD1: TAUD1O13; TAUD2: TAUD2I1; TAUD2: TAUD2O3" - None - - 
+      P11_4 164 - - - - Disabled - - "ADCK1: ADCK1END4; CSIH2: CSIH2SI; CSIH3: CSIH3CSS2; CSIH4: CSIH4SC; CSIH7: CSIH7SI; ETND0: ETH0_MII_RXD0; ETND0: ETH0_RMII_RXD0; IRQ: IRQ21; PWGC29: PWGC29O; RSCFD3: CAN3TX; RSENT5: RSENT5RX; RSENT5: RSENT5SPCO; SFMA0: SFMA0IO1; TAUD1: TAUD1I15; TAUD1: TAUD1O15; TAUD2: TAUD2I3; TAUD2: TAUD2O5" - None - - 
+      P11_5 165 - - - - Disabled - - "ADCK1: ADCK1TRG3; CSIH3: CSIH3SI; CSIH4: CSIH4RYI; CSIH4: CSIH4RYO; CSIH7: CSIH7SO; ETND0: ETH0_MII_RX_DV; ETND0: ETH0_RMII_RX_DV; IRQ: IRQ5; IRQ: IRQ22; PWGC30: PWGC30O; RLIN33: RLIN33TX; RSCFD5: CAN5RX; SFMA0: SFMA0IO0; TAUD2: TAUD2I5; TAUD2: TAUD2O7" - None - - 
+      P11_6 166 - - - - Disabled - - "ADCK1: ADCK1TRG1; CSIH3: CSIH3SO; CSIH4: CSIH4SSI; CSIH7: CSIH7SC; ETND0: ETH0_RMII_TX_EN; IRQ: IRQ11; IRQ: IRQ19; PWGC31: PWGC31O; RLIN33: RLIN33RX; RSCFD5: CAN5TX; RSENT6: RSENT6RX; RSENT6: RSENT6SPCO; SFMA0: SFMA0SSL; TAUD2: TAUD2I7; TAUD2: TAUD2O9" - None - - 
+      P11_7 167 - - - - Disabled - - "ADCK1: ADCK1TRG4; CSIH3: CSIH3SC; CSIH4: CSIH4CSS3; CSIH7: CSIH7RYI; CSIH7: CSIH7RYO; IRQ: IRQ5; PWGC32: PWGC32O; RSENT6: RSENT6SPCO; SFMA0: SFMA0CLK; TAUD2: TAUD2I9; TAUD2: TAUD2O11" - None - - 
+      P11_8 8 - - - - Disabled - - "ADCK1: ADCK1SEL0; CSIH5: CSIH5SO; PWGC48: PWGC48O; RLIN35: RLIN35TX; TAUD2: TAUD2I11; TAUD2: TAUD2O1" - None - - 
+      P11_9 9 - - - - Disabled - - "ADCK1: ADCK1SEL1; CSIH5: CSIH5SSI; IRQ: IRQ13; PWGC49: PWGC49O; RLIN35: RLIN35RX; TAUD2: TAUD2I13; TAUD2: TAUD2O15" - None - - 
+      P12_0 169 - - - - Disabled - - "IRQ: IRQ14; PWGC56: PWGC56O; RLIN36: RLIN36RX; RSCFD2: CAN2TX; TAUD2: TAUD2I10; TAUD2: TAUD2O0" - None - - 
+      P12_1 170 - - - - Disabled - - "IRQ: IRQ12; PWGC57: PWGC57O; RLIN34: RLIN34RX; TAUD2: TAUD2I12; TAUD2: TAUD2O14" - None - - 
+      P12_2 171 - - - - Disabled - - "IRQ: IRQ19; PWGC58: PWGC58O; RLIN34: RLIN34TX; TAUD2: TAUD2I14; TAUD2: TAUD2O12" - None - - 
+      P12_3 15 - - - - Disabled - - "PWGC68: PWGC68O; TAUD2: TAUD2I6; TAUD2: TAUD2O8" - None - - 
+      P12_4 16 - - - - Disabled - - "PWGC69: PWGC69O" - None - - 
+      P12_5 17 - - - - Disabled - - "PWGC70: PWGC70O; TAUD2: TAUD2I4; TAUD2: TAUD2O6" - None - - 
+      P18_0 143 GPIO LED10 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I0S; PWGC61: PWGC61O; TAUJ3: TAUJ3I0; TAUJ3: TAUJ3O2" - IO - - 
+      P18_1 144 GPIO LED11 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I1S; PWGC62: PWGC62O; TAUJ3: TAUJ3I1; TAUJ3: TAUJ3O3" - IO - - 
+      P18_2 145 GPIO LED12 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I2S; PWGC63: PWGC63O; TAUJ3: TAUJ3I2; TAUJ3: TAUJ3O0" - IO - - 
+      P18_3 146 GPIO LED13 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I3S; PWGC71: PWGC71O; TAUJ3: TAUJ3I3; TAUJ3: TAUJ3O1" - IO - - 
+      P18_4 147 GPIO LED14 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I4S" - IO - - 
+      P18_5 148 GPIO LED15 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I5S" - IO - - 
+      P18_6 149 GPIO LED16 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I6S" - IO - - 
+      P18_7 150 GPIO LED17 Low - "Output mode (Initial Low)" - - "ADCK1: ADCK1I7S" - IO - - 
+      P20_0 118 - - - - Disabled - - "IRQ: IRQ7; PWGC64: PWGC64O" - None - - 
+      P20_1 117 - - - - Disabled - - "PWGC65: PWGC65O" - None - - 
+      P20_2 116 - - - - Disabled - - "IRQ: IRQ4; PWGC66: PWGC66O; RSCFD4: CAN4RX" - None - - 
+      P20_3 115 - - - - Disabled - - "PWGC67: PWGC67O; RSCFD4: CAN4TX" - None - - 
+      P20_4 120 - - - - Disabled - - "IRQ: IRQ22; PWGC59: PWGC59O" - None - - 
+      P20_5 119 - - - - Disabled - - "IRQ: IRQ23; PWGC60: PWGC60O" - None - - 
+      P27_0 85 - - - - Disabled - - "ADCK0: ADCK0I8S; PWGC38: PWGC38O; RTCA0: RTCA0OUT; SYSTEM: RESETOUT" - None - - 
+      RESET 54 SYSTEM_RESET - - - - - - - - I "Read only" - 
+      SYSVCC 114 SYSTEM_SYSVCC - - - - - - - - IO "Read only" - 
+      SYSVCC 60 SYSTEM_SYSVCC - - - - - - - - IO "Read only" - 
+      TRST 43 SYSTEM_TRST - - - - - - - - I "Read only" - 
+      VSS 113 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 14 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 142 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 58 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 72 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      X1 62 SYSTEM_X1 - - - - - - - - I "Read only" - 
+      X2 61 SYSTEM_X2 - - - - - - - - O "Read only" - 
+    R7F711002EBFP.pincfg -> 
+      A0VREFH 90 SYSTEM_A0VREFH - - - - - - - - IO "Read only" - 
+      A0VSS 89 SYSTEM_A0VSS - - - - - - - - IO "Read only" - 
+      A1VREFH 138 SYSTEM_A1VREFH - - - - - - - - IO "Read only" - 
+      A1VSS 139 SYSTEM_A1VSS - - - - - - - - IO "Read only" - 
+      AP0_0 106 - - - - Disabled - - "ADCK0: ADCK0I0" - None - - 
+      AP0_1 105 - - - - Disabled - - "ADCK0: ADCK0I1" - None - - 
+      AP0_10 96 - - - - Disabled - - "ADCK0: ADCK0I10" - None - - 
+      AP0_11 95 - - - - Disabled - - "ADCK0: ADCK0I11" - None - - 
+      AP0_12 94 - - - - Disabled - - "ADCK0: ADCK0I12" - None - - 
+      AP0_13 93 - - - - Disabled - - "ADCK0: ADCK0I13" - None - - 
+      AP0_14 92 - - - - Disabled - - "ADCK0: ADCK0I14" - None - - 
+      AP0_15 91 - - - - Disabled - - "ADCK0: ADCK0I15" - None - - 
+      AP0_2 104 - - - - Disabled - - "ADCK0: ADCK0I2" - None - - 
+      AP0_3 103 - - - - Disabled - - "ADCK0: ADCK0I3" - None - - 
+      AP0_4 102 - - - - Disabled - - "ADCK0: ADCK0I4" - None - - 
+      AP0_5 101 - - - - Disabled - - "ADCK0: ADCK0I5" - None - - 
+      AP0_6 100 - - - - Disabled - - "ADCK0: ADCK0I6" - None - - 
+      AP0_7 99 - - - - Disabled - - "ADCK0: ADCK0I7" - None - - 
+      AP0_8 98 - - - - Disabled - - "ADCK0: ADCK0I8" - None - - 
+      AP0_9 97 - - - - Disabled - - "ADCK0: ADCK0I9" - None - - 
+      AP2_0 133 - - - - Disabled - - "ADCK1: ADCK1I0" - None - - 
+      AP2_1 132 - - - - Disabled - - "ADCK1: ADCK1I1" - None - - 
+      AP2_10 123 - - - - Disabled - - "ADCK1: ADCK1I10" - None - - 
+      AP2_11 122 - - - - Disabled - - "ADCK1: ADCK1I11" - None - - 
+      AP2_12 137 - - - - Disabled - - "ADCK1: ADCK1I12" - None - - 
+      AP2_13 136 - - - - Disabled - - "ADCK1: ADCK1I13" - None - - 
+      AP2_14 135 - - - - Disabled - - "ADCK1: ADCK1I14" - None - - 
+      AP2_15 134 - - - - Disabled - - "ADCK1: ADCK1I15" - None - - 
+      AP2_2 131 - - - - Disabled - - "ADCK1: ADCK1I2" - None - - 
+      AP2_3 130 - - - - Disabled - - "ADCK1: ADCK1I3" - None - - 
+      AP2_4 129 - - - - Disabled - - "ADCK1: ADCK1I4" - None - - 
+      AP2_5 128 - - - - Disabled - - "ADCK1: ADCK1I5" - None - - 
+      AP2_6 127 - - - - Disabled - - "ADCK1: ADCK1I6" - None - - 
+      AP2_7 126 - - - - Disabled - - "ADCK1: ADCK1I7" - None - - 
+      AP2_8 125 - - - - Disabled - - "ADCK1: ADCK1I8" - None - - 
+      AP2_9 124 - - - - Disabled - - "ADCK1: ADCK1I9" - None - - 
+      AWOVCL 59 SYSTEM_AWOVCL - - - - - - - - IO "Read only" - 
+      E0VCC 121 SYSTEM_E0VCC - - - - - - - - IO "Read only" - 
+      E0VCC 22 SYSTEM_E0VCC - - - - - - - - IO "Read only" - 
+      E0VCC 55 SYSTEM_E0VCC - - - - - - - - IO "Read only" - 
+      E1VCC 4 SYSTEM_E1VCC - - - - - - - - IO "Read only" - 
+      E1VCC 140 SYSTEM_E1VCC - - - - - - - - IO "Read only" - 
+      E1VCC 172 SYSTEM_E1VCC - - - - - - - - IO "Read only" - 
+      EVSS 5 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 37 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 151 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 173 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 71 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      EVSS 107 SYSTEM_EVSS - - - - - - - - IO "Read only" - 
+      FLMD 63 SYSTEM_FLMD - - - - - - - - I "Read only" - 
+      IP0_0 56 - - - - Disabled - - "SYSTEM: XT1" - None - - 
+      IP0_1 57 - - - - Disabled - - "SYSTEM: XT2" - None - - 
+      ISOVCL 13 SYSTEM_ISOVCL - - - - - - - - IO "Read only" - 
+      ISOVCL 141 SYSTEM_ISOVCL - - - - - - - - IO "Read only" - 
+      ISOVCL 73 SYSTEM_ISOVCL - - - - - - - - IO "Read only" - 
+      JP0_0 47 JTAG/SWD_TDI - Low - "Peripheral mode" - - "Flash_Programming_Interface: FPDR; IRQ: IRQ0; JTAG/SWD: TDI; TAUJ2: TAUJ2I0; TAUJ2: TAUJ2O2" - I - - 
+      JP0_1 46 JTAG/SWD_TDO - High - "Peripheral mode" - - "ETM: SWO; Flash_Programming_Interface: FPDT; IRQ: IRQ1; JTAG/SWD: TDO; TAUJ3: TAUJ3I0; TAUJ3: TAUJ3O2" - O - - 
+      JP0_2 45 JTAG/SWD_TCK - Low - "Peripheral mode" - - "Flash_Programming_Interface: FPCK; IRQ: IRQ2; JTAG/SWD: SWCLK; JTAG/SWD: TCK; TAUJ3: TAUJ3I1; TAUJ3: TAUJ3O3" - I - - 
+      JP0_3 44 JTAG/SWD_TMS - Low - "Peripheral mode" - - "IRQ: IRQ3; JTAG/SWD: SWDIO; JTAG/SWD: TMS; TAUJ3: TAUJ3I2; TAUJ3: TAUJ3O0" - I - - 
+      JP0_5 42 - - - - Disabled - - "NMI: NMI; RTCA0: RTCA0OUT; TAUJ3: TAUJ3I3; TAUJ3: TAUJ3O1" - None - - 
+      JP0_6 66 - - - - Disabled - - "DebugTrigger: TRIGOUT" - None - - 
+      P00_0 18 - - - - Disabled - - "CSIH0: CSIH0SSI; EXTCLK0: EXTCLK0O; IRQ: IRQ15; LPS: DPO; LPS: LPSTMOUT3; PWGC10: PWGC10O; RSCFD0: CAN0TX; TAUD0: TAUD0I2; TAUD0: TAUD0O4; TAUJ2: TAUJ2I1; TAUJ2: TAUJ2O3" - None - - 
+      P00_1 19 - - - - Disabled - - "CSIH0: CSIH0SI_A; CSIH0: CSIH0SI_B; IRQ: IRQ0; LPS: APO; LPS: LPSTMOUT4; PWGC11: PWGC11O; RSCFD0: CAN0RX; TAUD0: TAUD0I4; TAUD0: TAUD0O6; TAUJ2: TAUJ2I2; TAUJ2: TAUJ2O0" - None - - 
+      P00_10 67 - - - - Disabled - - "CSIH1: CSIH1CSS1; IRQ: IRQ3; LPS: DPIN11; RSCFD4: CAN4TX; TAUD1: TAUD1I6; TAUD1: TAUD1O8" - None - - 
+      P00_11 26 - - - - Disabled - - "CSIH1: CSIH1CSS2; IRQ: IRQ4; LPS: DPIN12; PWGC34: PWGC34O; RIIC0: RIIC0SDA; TAUD1: TAUD1I8; TAUD1: TAUD1O10" - None - - 
+      P00_12 27 - - - - Disabled - - "IRQ: IRQ13; LPS: DPIN13; PWGC45: PWGC45O; RIIC0: RIIC0SCL; TAUD1: TAUD1I10; TAUD1: TAUD1O0" - None - - 
+      P00_13 28 - - - - Disabled - - "IRQ: IRQ5; IRQ: IRQ10; IRQ: IRQ12; PWGC46: PWGC46O; RLIN32: RLIN32RX; RSCFD5: CAN5RX; TAUD1: TAUD1I12; TAUD1: TAUD1O14" - None - - 
+      P00_14 29 - - - - Disabled - - "IRQ: IRQ17; PWGC47: PWGC47O; RLIN32: RLIN32TX; RSCFD5: CAN5TX; TAUD1: TAUD1I14; TAUD1: TAUD1O12" - None - - 
+      P00_2 20 - - - - Disabled - - "CSIH0: CSIH0SC_B; CSIH0: CSIH0SC_A; CSIH1: CSIH1CSS2_B; CSIH1: CSIH1CSS2_D; CSIH1: CSIH1CSS2_C; IRQ: IRQ1; LPS: DPO; PWGC12: PWGC12O; RLIN30: RLIN30TX; RSCFD1: CAN1RX; TAUD0: TAUD0I6; TAUD0: TAUD0O8; TAUJ2: TAUJ2I3; TAUJ2: TAUJ2O1" - None - - 
+      P00_3 21 - - - - Disabled - - "CSIH0: CSIH0SO_B; CSIH0: CSIH0SO_A; CSIH1: CSIH1RYI_B; CSIH1: CSIH1RYI_C; CSIH1: CSIH1RYI_D; CSIH1: CSIH1RYO_B; CSIH1: CSIH1RYO_C; CSIH1: CSIH1RYO_D; CXP10: CXP10RX; IRQ: IRQ8; IRQ: IRQ10; LPS: DPIN1; PWGC13: PWGC13O; RLIN30: RLIN30RX; RSCFD1: CAN1TX; TAUD0: TAUD0I8; TAUD0: TAUD0O10; TAUJ1: TAUJ1I0; TAUJ1: TAUJ1O2" - None - - 
+      P00_4 23 - - - - Disabled - - "CSIH1: CSIH1SI_A; CSIH1: CSIH1SI_D; CXP11: CXP11RX; IRQ: IRQ9; IRQ: IRQ11; LPS: DPIN8; LPS: LPSTMOUT0; LPS: SELDP0; PWGC10: PWGC10O; RLIN31: RLIN31RX; RSCFD2: CAN2TX; TAUD1: TAUD1I12; TAUD1: TAUD1O14" - None - - 
+      P00_5 24 - - - - Disabled - - "CSIH1: CSIH1SO_D; CSIH1: CSIH1SO_A; CXP11: CXP11TX; IRQ: IRQ2; IRQ: IRQ8; LPS: DPIN9; LPS: LPSTMOUT1; LPS: SELDP1; RLIN31: RLIN31TX; RSCFD2: CAN2RX; TAUD1: TAUD1I14; TAUD1: TAUD1O12" - None - - 
+      P00_6 25 - - - - Disabled - - "CSIH1: CSIH1SC_D; CSIH1: CSIH1SC_A; IRQ: IRQ2; LPS: DPIN10; LPS: LPSTMOUT2; LPS: SELDP2; PWGC35: PWGC35O; TAUD1: TAUD1I0; TAUD1: TAUD1O2" - None - - 
+      P00_7 70 - - - - Disabled - - "CSIH1: CSIH1RYI; CSIH1: CSIH1RYO; EXTCLK0: EXTCLK0O; IRQ: IRQ3; IRQ: IRQ14; LPS: DPIN5; RSCFD3: CAN3RX" - None - - 
+      P00_8 69 - - - - Disabled - - "CSIH1: CSIH1SSI; IRQ: IRQ16; LPS: DPIN6; RSCFD3: CAN3TX; TAUD1: TAUD1I2; TAUD1: TAUD1O4" - None - - 
+      P00_9 68 - - - - Disabled - - "CSIH1: CSIH1CSS0; IRQ: IRQ4; IRQ: IRQ12; LPS: DPIN7; RSCFD4: CAN4RX; TAUD1: TAUD1I4; TAUD1: TAUD1O6" - None - - 
+      P01_0 30 - - - - Disabled - - "IRQ: IRQ11; IRQ: IRQ13; RLIN33: RLIN33RX; TAUJ2: TAUJ2I0; TAUJ2: TAUJ2O2" - None - - 
+      P01_1 31 - - - - Disabled - - "IRQ: IRQ18; RLIN33: RLIN33TX; TAUJ2: TAUJ2I1; TAUJ2: TAUJ2O3" - None - - 
+      P01_10 51 - - - - Disabled - - "ADCK1: ADCK1TRG1; IRQ: IRQ22; LPS: DPIN21" - None - - 
+      P01_11 50 - - - - Disabled - - "ADCK1: ADCK1TRG2; IRQ: IRQ14; LPS: DPIN22" - None - - 
+      P01_12 34 - - - - Disabled - - "IRQ: IRQ4; RLIN36: RLIN36TX; RSCFD4: CAN4RX" - None - - 
+      P01_13 35 - - - - Disabled - - "IRQ: IRQ14; RLIN36: RLIN36RX; RSCFD4: CAN4TX" - None - - 
+      P01_14 78 - - - - Disabled - - "CSIH4: CSIH4RYI; CSIH4: CSIH4RYO" - None - - 
+      P01_15 79 - - - - Disabled - - - - None - - 
+      P01_2 32 - - - - Disabled - - "IRQ: IRQ3; LPS: DPIN19; RSCFD3: CAN3RX; TAUJ2: TAUJ2I2; TAUJ2: TAUJ2O0" - None - - 
+      P01_3 33 - - - - Disabled - - "IRQ: IRQ19; LPS: DPIN23; RSCFD3: CAN3TX; TAUJ2: TAUJ2I3; TAUJ2: TAUJ2O1" - None - - 
+      P01_4 75 - - - - Disabled - - "CSIH4: CSIH4SI; IRQ: IRQ13; IRQ: IRQ15; LPS: DPIN18; RLIN35: RLIN35RX" - None - - 
+      P01_5 74 - - - - Disabled - - "ADCK1: ADCK1TRG0; CSIH4: CSIH4SC; IRQ: IRQ20; LPS: DPIN17; RLIN35: RLIN35TX" - None - - 
+      P01_8 53 - - - - Disabled - - "IRQ: IRQ12; IRQ: IRQ14; RLIN34: RLIN34RX" - None - - 
+      P01_9 52 - - - - Disabled - - "IRQ: IRQ21; LPS: DPIN20; RLIN34: RLIN34TX" - None - - 
+      P02_0 49 - - - - Disabled - - "CSIH4: CSIH4CSS3; IRQ: IRQ6" - None - - 
+      P02_1 48 - - - - Disabled - - "CSIH4: CSIH4CSS2" - None - - 
+      P02_2 65 - - - - Disabled - - "CSIH4: CSIH4CSS0" - None - - 
+      P02_3 64 - - - - Disabled - - "CSIH4: CSIH4CSS1" - None - - 
+      P02_4 76 - - - - Disabled - - "ADCK0: ADCK0SEL0; CSIH4: CSIH4SO; SYSTEM: RSIPMGPIO2" - None - - 
+      P02_5 77 - - - - Disabled - - "ADCK0: ADCK0SEL1; CSIH4: CSIH4SSI; SYSTEM: RSIPMGPIO3" - None - - 
+      P02_6 36 - - - - Disabled - - "ADCK0: ADCK0SEL2" - None - - 
+      P08_0 80 - - - - Disabled - - "ADCK0: ADCK0I0S; CSIH0: CSIH0CSS0; IRQ: IRQ4; IRQ: IRQ6; LPS: DPIN2; PWGC14: PWGC14O; RIIC1: RIIC1SDA; RSENT0: RSENT0RX; TAUD1: TAUD1I2; TAUD1: TAUD1O4; TAUJ0: TAUJ0I0; TAUJ0: TAUJ0O2" - None - - 
+      P08_1 81 - - - - Disabled - - "ADCK0: ADCK0I1S; CSIH1: CSIH1CSS3_C; CSIH1: CSIH1CSS3_D; CSIH1: CSIH1CSS3_A; IRQ: IRQ5; LPS: DPIN0; PIC0: TAPA0ESO; PWGC15: PWGC15O; RIIC1: RIIC1SCL; RSENT0: RSENT0SPCO; TAUD1: TAUD1I4; TAUD1: TAUD1O6; TAUJ0: TAUJ0I1; TAUJ0: TAUJ0O3" - None - - 
+      P08_10 39 - - - - Disabled - - "ADCK0: ADCK0I17S; CSIH3: CSIH3CSS3; IRQ: IRQ15; LPS: DPIN14; PWGC42: PWGC42O; RLIN37: RLIN37RX" - None - - 
+      P08_11 40 - - - - Disabled - - "ADCK0: ADCK0I12S; CSIH1: CSIH1CSS3; LPS: DPIN15; PWGC43: PWGC43O; TAUJ1: TAUJ1I2; TAUJ1: TAUJ1O0" - None - - 
+      P08_12 41 - - - - Disabled - - "ADCK0: ADCK0I13S; IRQ: IRQ23; LPS: DPIN16; PWGC44: PWGC44O; TAUJ1: TAUJ1I3; TAUJ1: TAUJ1O1" - None - - 
+      P08_2 38 - - - - Disabled - - "ADCK0: ADCK0I4S; CSIH0: CSIH0CSS0; ECM: ERRORIN; IRQ: IRQ6; LPS: DPIN2; PWGC22: PWGC22O; RLIN37: RLIN37TX; RSENT0: RSENT0RX; RSENT0: RSENT0SPCO; TAUD1: TAUD1I6; TAUD1: TAUD1O8; TAUJ0: TAUJ0I0; TAUJ0: TAUJ0O2" - None - - 
+      P08_3 82 - - - - Disabled - - "ADCK0: ADCK0I5S; CSIH0: CSIH0CSS1; DebugTrigger: TRIGIN; IRQ: IRQ7; LPS: DPIN3; PWGC23: PWGC23O; RSENT0: RSENT0SPCO; TAUD1: TAUD1I8; TAUD1: TAUD1O10; TAUJ0: TAUJ0I1; TAUJ0: TAUJ0O3" - None - - 
+      P08_4 83 - - - - Disabled - - "ADCK0: ADCK0I6S; CSIH0: CSIH0CSS2_B; CSIH0: CSIH0CSS2_A; EXTCLK0: EXTCLK0O; IRQ: IRQ8; LPS: DPIN4; PWGC36: PWGC36O; TAUD1: TAUD1I10; TAUD1: TAUD1O0; TAUJ0: TAUJ0I2; TAUJ0: TAUJ0O0" - None - - 
+      P08_5 84 - - - - Disabled - - "ADCK0: ADCK0I7S; CSIH0: CSIH0CSS3_A; CSIH0: CSIH0CSS3_B; IRQ: IRQ9; NMI: NMI; PWGC37: PWGC37O; TAUJ0: TAUJ0I3; TAUJ0: TAUJ0O1" - None - - 
+      P08_7 86 - - - - Disabled - - "ADCK0: ADCK0I14S; ADCK0: ADCK0SEL0; CSIH3: CSIH3CSS0; PWGC39: PWGC39O; RTCA0: RTCA0OUT" - None - - 
+      P08_8 87 - - - - Disabled - - "ADCK0: ADCK0I15S; ADCK0: ADCK0SEL1; CSIH3: CSIH3CSS1; IRQ: IRQ12; PWGC40: PWGC40O; RLIN34: RLIN34RX" - None - - 
+      P08_9 88 - - - - Disabled - - "ADCK0: ADCK0I16S; ADCK0: ADCK0SEL2; CSIH3: CSIH3CSS2; PWGC41: PWGC41O; RLIN34: RLIN34TX" - None - - 
+      P09_0 108 - - - - Disabled - - "ADCK0: ADCK0I2S; ADCK0: ADCK0TRG0; CSIH2: CSIH2CSS0_B; CSIH2: CSIH2CSS0_A; IRQ: IRQ16; NMI: NMI; PWGC8: PWGC8O; PWGC20: PWGC20O; RIIC0: RIIC0SDA; RLIN33: RLIN33TX; RLIN38: RLIN38RX; RSENT1: RSENT1RX; RSENT1: RSENT1SPCO; SYSTEM: RSIPMGPIO0; TAUD0: TAUD0I0; TAUD0: TAUD0O2; TAUD2: TAUD2I1; TAUD2: TAUD2O3; TAUJ1: TAUJ1I1; TAUJ1: TAUJ1O3" - None - - 
+      P09_1 109 - - - - Disabled - - "ADCK0: ADCK0I3S; CSIH2: CSIH2CSS1_B; CSIH2: CSIH2CSS1_A; ECM: ERRORIN; IRQ: IRQ11; PWGC9: PWGC9O; PWGC21: PWGC21O; RIIC0: RIIC0SCL; RLIN33: RLIN33RX; RLIN38: RLIN38TX; RSENT1: RSENT1SPCO; SYSTEM: RSIPMGPIO1; TAUD0: TAUD0I2; TAUD0: TAUD0O4; TAUD2: TAUD2I3; TAUD2: TAUD2O5; TAUJ1: TAUJ1I2; TAUJ1: TAUJ1O0" - None - - 
+      P09_2 110 - - - - Disabled - - "ADCK0: ADCK0I9S; CSIH2: CSIH2CSS2; ECM: ERROROUT; EXTCLK1: EXTCLK1O; IRQ: IRQ17; PIC0: TAPA0ESO; PSI50: PSI50RX; PWGC20: PWGC20O; RLIN36: RLIN36TX; RLIN39: RLIN39RX; RSENT2: RSENT2RX; RSENT2: RSENT2SPCO" - None - - 
+      P09_3 111 - - - - Disabled - - "ADCK0: ADCK0I10S; CSIH2: CSIH2CSS3; IRQ: IRQ14; IRQ: IRQ16; PSI50: PSI50TX; PWGC21: PWGC21O; RLIN36: RLIN36RX; RLIN39: RLIN39TX; RSENT2: RSENT2SPCO; TAUJ1: TAUJ1I1; TAUJ1: TAUJ1O3" - None - - 
+      P09_4 112 - - - - Disabled - - "ADCK0: ADCK0I11S; IRQ: IRQ17; IRQ: IRQ18; PWGC33: PWGC33O; RLIN310: RLIN310RX; RSENT7: RSENT7RX; RSENT7: RSENT7SPCO; TAUJ1: TAUJ1I0; TAUJ1: TAUJ1O2" - None - - 
+      P10_0 174 - - Low - Disabled - - "CSIH1: CSIH1SI_B; CSIH1: CSIH1SI_C; CSIH7: CSIH7SSI; ETND0: ETH0_MII_TXD3; ETNF0: ETS0_RX_MDC; EXTCLK1: EXTCLK1O; IRQ: IRQ0; IRQ: IRQ6; IRQ: IRQ16; PIC0: TAPA0UP; PWGC0: PWGC0O; RLIN310: RLIN310TX; RSCFD0: CAN0RX; RSENT7: RSENT7SPCO; TAUD0: TAUD0I1; TAUD0: TAUD0O3; TAUD1: TAUD1I9; TAUD1: TAUD1O11; TAUD2: TAUD2O7; TAUJ1: TAUJ1I3; TAUJ1: TAUJ1O1" - IO - - 
+      P10_1 175 - - Low - Disabled - - "CSIH1: CSIH1SC_B; CSIH1: CSIH1SC_C; CSIH7: CSIH7CSS0; ETND0: ETH0_MII_TXD2; ETNF0: ETS0_ED_MDIO; IRQ: IRQ11; IRQ: IRQ18; PIC0: TAPA0UN; PWGC1: PWGC1O; RLIN33: RLIN33RX; RLIN35: RLIN35TX; RSCFD0: CAN0TX; TAUD0: TAUD0I3; TAUD0: TAUD0O5; TAUD1: TAUD1I11; TAUD1: TAUD1O1; TAUD2: TAUD2I5; TAUD2: TAUD2O9; TAUJ3: TAUJ3I0; TAUJ3: TAUJ3O2" - IO - - 
+      P10_10 156 - - - - Disabled - - "ADCK0: ADCK0END1; CSIH0: CSIH0CSS1; CSIH2: CSIH2CSS3; CSIH6: CSIH6SC; CXP10: CXP10TX; ENCA0: ENCA0E1; ETND0: ETH0_MII_RXD2; MMCA0: MMCA0DAT3; PSI51: PSI51RX; PWGC7: PWGC7O; RLIN30: RLIN30TX; SSIF: SSIFACK; TAUD0: TAUD0I14; TAUD0: TAUD0O12; TAUD2: TAUD2I6; TAUD2: TAUD2O8; TAUJ3: TAUJ3I3; TAUJ3: TAUJ3O1" - None - - 
+      P10_11 157 - - - - Disabled - - "ADCK0: ADCK0END2; CSIH1: CSIH1CSS0_D; CSIH1: CSIH1CSS0_C; CSIH1: CSIH1CSS0_B; CSIH2: CSIH2SI; CSIH6: CSIH6RYI; CSIH6: CSIH6RYO; CXP11: CXP11RX; ETND0: ETH0_MII_RX_CLK; IRQ: IRQ9; MMCA0: MMCA0DAT4; PSI51: PSI51TX; PWGC16: PWGC16O; RLIN31: RLIN31RX; TAUD1: TAUD1I1; TAUD1: TAUD1O3; TAUD2: TAUD2I8; TAUD2: TAUD2O10" - None - - 
+      P10_12 158 - - - - Disabled - - "ADCK0: ADCK0END3; CSIH1: CSIH1CSS1_D; CSIH1: CSIH1CSS1_C; CSIH1: CSIH1CSS1_B; CSIH2: CSIH2SC; CSIH3: CSIH3CSS3; CSIH6: CSIH6CSS0; CXP11: CXP11TX; ETND0: ETH0_PHY_INT; ETNF0: ETS0_MDC; IRQ: IRQ24; MMCA0: MMCA0DAT5; PWGC17: PWGC17O; RLIN31: RLIN31TX; TAUD1: TAUD1I3; TAUD1: TAUD1O5; TAUD2: TAUD2I10; TAUD2: TAUD2O0" - None - - 
+      P10_13 159 - - - - Disabled - - "ADCK0: ADCK0END4; CSIH0: CSIH0SSI; CSIH2: CSIH2RYI; CSIH2: CSIH2RYO; CSIH3: CSIH3SO; CSIH6: CSIH6CSS1; ECM: ERRORIN; ETND0: ETH0_LINKSTA; ETNF0: ETS0_MDIO; IRQ: IRQ10; MMCA0: MMCA0DAT6; PWGC18: PWGC18O; RLIN32: RLIN32RX; RLIN34: RLIN34TX; TAUD1: TAUD1I5; TAUD1: TAUD1O7; TAUD2: TAUD2I12; TAUD2: TAUD2O14" - None - - 
+      P10_14 160 - - - - Disabled - - "ADCK1: ADCK1TRG0; CSIH3: CSIH3SSI_B; CSIH3: CSIH3SSI_A; CSIH6: CSIH6SO; ECM: ERROROUT; ETND: ETH_PPS0; ETNF0: ETS0_PPS; IRQ: IRQ12; MMCA0: MMCA0DAT7; PWGC19: PWGC19O; RLIN32: RLIN32TX; RLIN34: RLIN34RX; RLIN312: RLIN312RX; TAUD1: TAUD1I7; TAUD1: TAUD1O9; TAUD2: TAUD2I14; TAUD2: TAUD2O12" - None - - 
+      P10_15 6 - - - - Disabled - - "ADCK1: ADCK1END0; CSIH3: CSIH3RYI_B; CSIH3: CSIH3RYI_A; CSIH3: CSIH3RYO_A; CSIH3: CSIH3RYO_B; CSIH4: CSIH4CSS2; CSIH5: CSIH5SO; IRQ: IRQ22; PWGC24: PWGC24O; RLIN314: RLIN314RX" - None - - 
+      P10_2 176 - - Low - Disabled - - "ADCK0: ADCK0TRG0; CSIH1: CSIH1SO_B; CSIH1: CSIH1SO_C; CSIH7: CSIH7CSS1; ETND0: ETH0_MII_TX_EN; ETNF0: ETS0_TX; IRQ: IRQ13; PIC0: TAPA0VP; PWGC2: PWGC2O; RI3C0: RI3C0SDA; RLIN33: RLIN33TX; RLIN35: RLIN35RX; RLIN37: RLIN37TX; SSIF0: SSIF0RXD; TAUD0: TAUD0I5; TAUD0: TAUD0O7; TAUD1: TAUD1I13; TAUD1: TAUD1O15; TAUD2: TAUD2I7; TAUD2: TAUD2O11" - O - - 
+      P10_3 1 - - - - Disabled - - "ADCK0: ADCK0TRG1; CSIH1: CSIH1SSI_D; CSIH1: CSIH1SSI_C; CSIH1: CSIH1SSI_B; CSIH7: CSIH7CSS2; ETND0: ETH0_MII_TXD1; ETND0: ETH0_RMII_TXD1; EXTCLK1: EXTCLK1O; IRQ: IRQ15; PIC0: TAPA0VN; PWGC3: PWGC3O; RI3C0: RI3C0SCL; RLIN37: RLIN37RX; RSENT3: RSENT3RX; RSENT3: RSENT3SPCO; SSIF0: SSIF0TXD; TAUD0: TAUD0I7; TAUD0: TAUD0O9; TAUD1: TAUD1I15; TAUD1: TAUD1O13; TAUD2: TAUD2I9; TAUD2: TAUD2O1" - None - - 
+      P10_4 2 - - - - Disabled - - "ADCK0: ADCK0SEL0; ADCK0: ADCK0TRG2; CSIH5: CSIH5SI_A; CSIH5: CSIH5SI_B; CSIH7: CSIH7CSS3; ECM: ERRORIN; ETND0: ETH0_MII_TXD0; ETND0: ETH0_RMII_TXD0; IRQ: IRQ19; PIC0: TAPA0WP; PWGC53: PWGC53O; RLIN311: RLIN311RX; RSENT3: RSENT3SPCO; SSIF0: SSIF0BCK; TAUD0: TAUD0I9; TAUD0: TAUD0O11; TAUD2: TAUD2I11; TAUD2: TAUD2O15" - None - - 
+      P10_5 3 - - - - Disabled - - "ADCK0: ADCK0SEL1; CSIH5: CSIH5SC_B; CSIH5: CSIH5SC_A; ECM: ERROROUT; ETND0: ETH0_MII_TX_CLK; ETND0: ETH0_RevMII_CLK; IRQ: IRQ7; PIC0: TAPA0WN; PWGC54: PWGC54O; RLIN311: RLIN311TX; RSENT4: RSENT4RX; RSENT4: RSENT4SPCO; SSIF0: SSIF0FS; SSIF0: SSIF0LRCK; TAUD0: TAUD0I11; TAUD0: TAUD0O1; TAUD2: TAUD2I13; TAUD2: TAUD2O13" - None - - 
+      P10_6 152 - - - - Disabled - - "ADCK0: ADCK0SEL2; CSIH5: CSIH5RYI_A; CSIH5: CSIH5RYI_B; CSIH5: CSIH5RYO_B; CSIH5: CSIH5RYO_A; ENCA0: ENCA0TIN0; ETND0: ETH0_MII_TX_ER; IRQ: IRQ1; IRQ: IRQ20; MMCA0: MMCA0CLK; RLIN312: RLIN312RX; RSCFD1: CAN1RX; RSENT4: RSENT4SPCO; SSIF1: SSIF1RXD; TAUD0: TAUD0I13; TAUD0: TAUD0O15; TAUD2: TAUD2I15" - None - - 
+      P10_7 153 - - - - Disabled - - "ADCK0: ADCK0TRG3; CSIH2: CSIH2SO; CSIH5: CSIH5CSS0_A; CSIH5: CSIH5CSS0_B; ENCA0: ENCA0TIN1; ETND0: ETH0_MDIO; MMCA0: MMCA0DAT0; PWGC4: PWGC4O; RLIN312: RLIN312TX; RSCFD1: CAN1TX; SSIF1: SSIF1TXD; TAUD0: TAUD0I15; TAUD0: TAUD0O13; TAUD2: TAUD2I0; TAUD2: TAUD2O2; TAUJ3: TAUJ3I1; TAUJ3: TAUJ3O3" - None - - 
+      P10_8 154 - - - - Disabled - - "ADCK0: ADCK0TRG4; CSIH2: CSIH2SSI; CSIH5: CSIH5CSS1_A; CSIH5: CSIH5CSS1_B; ENCA0: ENCA0EC; ETND0: ETH0_MDC; MMCA0: MMCA0DAT1; PWGC5: PWGC5O; SSIF1: SSIF1BCK; SYSTEM: MODE; TAUD0: TAUD0I10; TAUD0: TAUD0O0; TAUD2: TAUD2I2; TAUD2: TAUD2O4; TAUJ3: TAUJ3I2; TAUJ3: TAUJ3O0" - None - - 
+      P10_9 155 - - - - Disabled - - "ADCK0: ADCK0END0; CSIH0: CSIH0RYI_A; CSIH0: CSIH0RYI_B; CSIH0: CSIH0RYO_A; CSIH0: CSIH0RYO_B; CSIH2: CSIH2CSS2; CSIH6: CSIH6SI; CXP10: CXP10RX; ENCA0: ENCA0E0; ETND0: ETH0_MII_RXD3; IRQ: IRQ8; MMCA0: MMCA0DAT2; PWGC6: PWGC6O; RLIN30: RLIN30RX; SSIF1: SSIF1FS; SSIF1: SSIF1LRCK; TAUD0: TAUD0I12; TAUD0: TAUD0O14; TAUD2: TAUD2I4; TAUD2: TAUD2O6" - None - - 
+      P11_0 7 - - - - Disabled - - "ADCK1: ADCK1TRG2; CSIH2: CSIH2RYI; CSIH2: CSIH2RYO; CSIH3: CSIH3SI; CSIH4: CSIH4CSS1; CSIH5: CSIH5SSI; IRQ: IRQ23; PWGC25: PWGC25O; PWGC30: PWGC30O; RLIN314: RLIN314TX" - None - - 
+      P11_1 161 - - - - Disabled - - "ADCK1: ADCK1END1; CSIH2: CSIH2SSI; CSIH3: CSIH3SC; CSIH4: CSIH4CSS0; CSIH6: CSIH6SSI; ETND: ETH_PPS1; IRQ: IRQ20; IRQ: IRQ21; MMCA0: MMCA0CMD; PWGC26: PWGC26O; PWGC31: PWGC31O; RLIN313: RLIN313RX; TAUD1: TAUD1I9; TAUD1: TAUD1O11" - None - - 
+      P11_10 10 - - - - Disabled - - "ADCK1: ADCK1SEL2; CSIH5: CSIH5CSS2; IRQ: IRQ23; PWGC50: PWGC50O; RLIN315: RLIN315RX; TAUD2: TAUD2I15; TAUD2: TAUD2O13" - None - - 
+      P11_11 11 - - - - Disabled - - "CSIH5: CSIH5CSS3; PWGC51: PWGC51O; RLIN315: RLIN315TX; TAUD2: TAUD2I0; TAUD2: TAUD2O2" - None - - 
+      P11_12 12 - - - - Disabled - - "PWGC52: PWGC52O; TAUD2: TAUD2I2; TAUD2: TAUD2O4" - None - - 
+      P11_15 168 - - - - Disabled - - "IRQ: IRQ2; PWGC55: PWGC55O; RLIN36: RLIN36TX; RSCFD2: CAN2RX; TAUD2: TAUD2I8; TAUD2: TAUD2O10" - None - - 
+      P11_2 162 - - - - Disabled - - "ADCK1: ADCK1END2; CSIH2: CSIH2SO; CSIH3: CSIH3CSS0; CSIH4: CSIH4SI; CSIH5: CSIH5CSS2; CSIH6: CSIH6CSS2; ETND0: ETH0_MII_RX_ER; ETND0: ETH0_RMII_ER; IRQ: IRQ10; PWGC27: PWGC27O; RLIN32: RLIN32RX; RLIN313: RLIN313TX; SFMA0: SFMA0IO3; TAUD1: TAUD1I11; TAUD1: TAUD1O1" - None - - 
+      P11_3 163 - - - - Disabled - - "ADCK1: ADCK1END3; CSIH2: CSIH2SC; CSIH3: CSIH3CSS1; CSIH4: CSIH4SO; CSIH5: CSIH5CSS3; CSIH6: CSIH6CSS3; ETND0: ETH0_MII_RXD1; ETND0: ETH0_RMII_RXD1; IRQ: IRQ3; PWGC28: PWGC28O; RLIN32: RLIN32TX; RSCFD3: CAN3RX; RSENT5: RSENT5SPCO; SFMA0: SFMA0IO2; TAUD1: TAUD1I13; TAUD1: TAUD1O13; TAUD2: TAUD2I1; TAUD2: TAUD2O3" - None - - 
+      P11_4 164 - - - - Disabled - - "ADCK1: ADCK1END4; CSIH2: CSIH2SI; CSIH3: CSIH3CSS2; CSIH4: CSIH4SC; CSIH7: CSIH7SI; ETND0: ETH0_MII_RXD0; ETND0: ETH0_RMII_RXD0; IRQ: IRQ21; PWGC29: PWGC29O; RSCFD3: CAN3TX; RSENT5: RSENT5RX; RSENT5: RSENT5SPCO; SFMA0: SFMA0IO1; TAUD1: TAUD1I15; TAUD1: TAUD1O15; TAUD2: TAUD2I3; TAUD2: TAUD2O5" - None - - 
+      P11_5 165 - - - - Disabled - - "ADCK1: ADCK1TRG3; CSIH3: CSIH3SI; CSIH4: CSIH4RYI; CSIH4: CSIH4RYO; CSIH7: CSIH7SO; ETND0: ETH0_MII_RX_DV; ETND0: ETH0_RMII_RX_DV; IRQ: IRQ5; IRQ: IRQ22; PWGC30: PWGC30O; RLIN33: RLIN33TX; RSCFD5: CAN5RX; SFMA0: SFMA0IO0; TAUD2: TAUD2I5; TAUD2: TAUD2O7" - None - - 
+      P11_6 166 - - - - Disabled - - "ADCK1: ADCK1TRG1; CSIH3: CSIH3SO; CSIH4: CSIH4SSI; CSIH7: CSIH7SC; ETND0: ETH0_RMII_TX_EN; IRQ: IRQ11; IRQ: IRQ19; PWGC31: PWGC31O; RLIN33: RLIN33RX; RSCFD5: CAN5TX; RSENT6: RSENT6RX; RSENT6: RSENT6SPCO; SFMA0: SFMA0SSL; TAUD2: TAUD2I7; TAUD2: TAUD2O9" - None - - 
+      P11_7 167 - - - - Disabled - - "ADCK1: ADCK1TRG4; CSIH3: CSIH3SC; CSIH4: CSIH4CSS3; CSIH7: CSIH7RYI; CSIH7: CSIH7RYO; IRQ: IRQ5; PWGC32: PWGC32O; RSENT6: RSENT6SPCO; SFMA0: SFMA0CLK; TAUD2: TAUD2I9; TAUD2: TAUD2O11" - None - - 
+      P11_8 8 - - - - Disabled - - "ADCK1: ADCK1SEL0; CSIH5: CSIH5SO; PWGC48: PWGC48O; RLIN35: RLIN35TX; TAUD2: TAUD2I11; TAUD2: TAUD2O1" - None - - 
+      P11_9 9 - - - - Disabled - - "ADCK1: ADCK1SEL1; CSIH5: CSIH5SSI; IRQ: IRQ13; PWGC49: PWGC49O; RLIN35: RLIN35RX; TAUD2: TAUD2I13; TAUD2: TAUD2O15" - None - - 
+      P12_0 169 - - - - Disabled - - "IRQ: IRQ14; PWGC56: PWGC56O; RLIN36: RLIN36RX; RSCFD2: CAN2TX; TAUD2: TAUD2I10; TAUD2: TAUD2O0" - None - - 
+      P12_1 170 - - - - Disabled - - "IRQ: IRQ12; PWGC57: PWGC57O; RLIN34: RLIN34RX; TAUD2: TAUD2I12; TAUD2: TAUD2O14" - None - - 
+      P12_2 171 - - - - Disabled - - "IRQ: IRQ19; PWGC58: PWGC58O; RLIN34: RLIN34TX; TAUD2: TAUD2I14; TAUD2: TAUD2O12" - None - - 
+      P12_3 15 - - - - Disabled - - "PWGC68: PWGC68O; TAUD2: TAUD2I6; TAUD2: TAUD2O8" - None - - 
+      P12_4 16 - - - - Disabled - - "PWGC69: PWGC69O" - None - - 
+      P12_5 17 - - - - Disabled - - "PWGC70: PWGC70O; TAUD2: TAUD2I4; TAUD2: TAUD2O6" - None - - 
+      P18_0 143 - LED10 Low - Disabled - - "ADCK1: ADCK1I0S; PWGC61: PWGC61O; TAUJ3: TAUJ3I0; TAUJ3: TAUJ3O2" - IO - - 
+      P18_1 144 - LED11 Low - Disabled - - "ADCK1: ADCK1I1S; PWGC62: PWGC62O; TAUJ3: TAUJ3I1; TAUJ3: TAUJ3O3" - IO - - 
+      P18_2 145 - LED12 Low - Disabled - - "ADCK1: ADCK1I2S; PWGC63: PWGC63O; TAUJ3: TAUJ3I2; TAUJ3: TAUJ3O0" - IO - - 
+      P18_3 146 - LED13 Low - Disabled - - "ADCK1: ADCK1I3S; PWGC71: PWGC71O; TAUJ3: TAUJ3I3; TAUJ3: TAUJ3O1" - IO - - 
+      P18_4 147 - LED14 Low - Disabled - - "ADCK1: ADCK1I4S" - IO - - 
+      P18_5 148 - LED15 Low - Disabled - - "ADCK1: ADCK1I5S" - IO - - 
+      P18_6 149 - LED16 Low - Disabled - - "ADCK1: ADCK1I6S" - IO - - 
+      P18_7 150 - LED17 Low - Disabled - - "ADCK1: ADCK1I7S" - IO - - 
+      P20_0 118 - - - - Disabled - - "IRQ: IRQ7; PWGC64: PWGC64O" - None - - 
+      P20_1 117 - - - - Disabled - - "PWGC65: PWGC65O" - None - - 
+      P20_2 116 - - - - Disabled - - "IRQ: IRQ4; PWGC66: PWGC66O; RSCFD4: CAN4RX" - None - - 
+      P20_3 115 - - - - Disabled - - "PWGC67: PWGC67O; RSCFD4: CAN4TX" - None - - 
+      P20_4 120 - - - - Disabled - - "IRQ: IRQ22; PWGC59: PWGC59O" - None - - 
+      P20_5 119 - - - - Disabled - - "IRQ: IRQ23; PWGC60: PWGC60O" - None - - 
+      P27_0 85 - - - - Disabled - - "ADCK0: ADCK0I8S; PWGC38: PWGC38O; RTCA0: RTCA0OUT; SYSTEM: RESETOUT" - None - - 
+      RESET 54 SYSTEM_RESET - - - - - - - - I "Read only" - 
+      SYSVCC 114 SYSTEM_SYSVCC - - - - - - - - IO "Read only" - 
+      SYSVCC 60 SYSTEM_SYSVCC - - - - - - - - IO "Read only" - 
+      TRST 43 SYSTEM_TRST - - - - - - - - I "Read only" - 
+      VSS 113 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 14 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 142 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 58 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      VSS 72 SYSTEM_VSS - - - - - - - - IO "Read only" - 
+      X1 62 SYSTEM_X1 - - - - - - - - I "Read only" - 
+      X2 61 SYSTEM_X2 - - - - - - - - O "Read only" - 
+    
+  User Events
+    
+  User Event Links
+    
+  Linker Section Mappings
+    
+  Module "I/O Port (r_ioport)"
+    Parameter Checking: Default (BSP)
+    
+  Module "Memory Config Check"
+    MPU/MMU Type: MPU
+    
+  Module "Ethernet T1S (r_ether_t1s)"
+    Parameter Checking: Default (BSP)
+    Update address phys for multicast: Disabled
+    Global time support: Disabled
+    QoS support: Disabled
+    Stream Filtering support: Disabled
+    Read Buffer Size Checking: Disabled
+    
+  Module "Ethernet (r_ether_phy)"
+    Parameter Checking: Default (BSP)
+    User Own Target: Disabled
+    Automatic Phy LSI Initialization: Enabled
+    Bypass PHY Process: Disabled
+    LAN8700 Target: Enabled
+    CT25205-RTL Target: Enabled
+    
+  HAL
+    Instance "g_ioport I/O Port (r_ioport)"
+      Name: g_ioport
+      Pin Configuration Name: g_bsp_pin_cfg
+      
+    Instance "Memory Config Check"
+      Memory Map Mode: Single Map Mode
+      Select bank to flash in Single Map Mode: Flash to bank A
+      
+    Instance "g_ether_t1s0 Ethernet T1S (r_ether_t1s)"
+      General: Name: g_ether_t1s0
+      General: Channel: 0
+      General: Loopback mode: Disable
+      General: Ethernet PHY Interface: T1S
+      General: Network speed: 10Mbps
+      General: Ethernet control mode: Polling
+      General: Zero-copy Mode: Disable
+      Filters: MAC address source: 74:90:50:00:00:00
+      Filters: MAC address filter: MAC target 1: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 2: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 3: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 4: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 5: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 6: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 7: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 8: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 9: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 10: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 11: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 12: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 13: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 14: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 15: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 16: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 17: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 18: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 19: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 20: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 21: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 22: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 23: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 24: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 25: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 26: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 27: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 28: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 29: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 30: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 31: 00:00:00:00:00:00
+      Filters: MAC address filter: MAC target 32: 00:00:00:00:00:00
+      Filters: Filter address type : Add address
+      Filters: Number of address filter: 1
+      Buffers: Header Added: Disable
+      Buffers: Header Added: MAC address destination: 00:00:00:00:00:00
+      Buffers: Header Added: Ether Type: 003E
+      Interrupts: Data interrupt priority: Disabled
+      Interrupts: Management interrupt priority: Disabled
+      Interrupts: Enable or Disable Tx Interrupt: Disable
+      Interrupts: Enable or Disable Rx Interrupt: Disable
+      Interrupts: Callback: NULL
+      Tx Queue Config: Number of Tx Queue: 1
+      Rx Queue Config: Number of Rx Queue: 1
+      Tx Queue Config: Tx Queue 0: Number of Tx buffer: 8
+      Tx Queue Config: Tx Queue 1: Number of Tx buffer: 8
+      Tx Queue Config: Tx Queue 2: Number of Tx buffer: 8
+      Tx Queue Config: Tx Queue 3: Number of Tx buffer: 8
+      Tx Queue Config: Tx Queue 2: Bandwidth Fraction (%): 50
+      Tx Queue Config: Tx Queue 3: Bandwidth Fraction (%): 50
+      Tx Queue Config: Tx Queue 2: Queue Policy: None
+      Tx Queue Config: Tx Queue 3: Queue Policy: None
+      Rx Queue Config: Rx Queue 0: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 1: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 2: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 3: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 4: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 5: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 6: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 7: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 8: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 9: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 10: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 11: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 12: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 13: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 14: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 15: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 16: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 17: Number of Rx buffer: 8
+      Rx Queue Config: Rx Queue 2: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 3: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 4: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 5: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 6: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 7: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 8: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 9: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 10: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 11: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 12: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 13: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 14: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 15: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 16: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Rx Queue 17: Stream Pattern: 00:00:00:00:00:00:00:00
+      Rx Queue Config: Stream filtering Config: Enable Filtering. Non-matching stream frames are handled with queue 0.
+      Rx Queue Config: Rx Network control filtering : Disable
+      Rx Queue Config: Rx Enable timestamp storage (Best Effort): Disable
+      Rx Queue Config: Rx Enable timestamp storage (Stream): Disable
+      Tx Queue Config: Priority: Default Tx Queue: 0
+      Tx Queue Config: Priority: Number of Priorities: 1
+      Tx Queue Config: Priority: Priority 0: Priority value: 0
+      Tx Queue Config: Priority: Priority 1: Priority value: 0
+      Tx Queue Config: Priority: Priority 2: Priority value: 0
+      Tx Queue Config: Priority: Priority 3: Priority value: 0
+      Tx Queue Config: Priority: Priority 4: Priority value: 0
+      Tx Queue Config: Priority: Priority 5: Priority value: 0
+      Tx Queue Config: Priority: Priority 6: Priority value: 0
+      Tx Queue Config: Priority: Priority 7: Priority value: 0
+      Tx Queue Config: Priority: Priority 0: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 1: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 2: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 3: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 4: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 5: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 6: Tx Queue ID: 0
+      Tx Queue Config: Priority: Priority 7: Tx Queue ID: 0
+      T1S control specific: Configures the PMA : FILTERED
+      T1S control specific: Configures the MDIO interface : SHARED
+      T1S control specific: Address of the mdio slave module : 31
+      gPTP Config: Time stamp select : MII timestamp
+      
+      Instance "g_ether_phy0 Ethernet (r_ether_phy)"
+        Name: g_ether_phy0
+        Ethernet registers: ETH T1S
+        Channel: 0
+        PHY-LSI Address: 31
+        PHY-LSI Reset Completion Timeout: 0x00020000
+        Phy LSI type: Kit Component
+        Port Custom Init Function: NULL
+        Port Custom Link Partner Ability Get Function: NULL
+        Custom MDIO Read Function: NULL
+        Custom MDIO Write Function: NULL
+        Register Access Wait-time: 8
+        Flow Control: Disable
+        

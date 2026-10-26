@@ -1,0 +1,668 @@
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 RAM_SELF_START = 0x200E0000
+       0        0        0     1 RAM_SELF_LENGTH = 0x20000
+       0        0        0     1 RAM_START = 0x204E0000
+       0        0        0     1 RAM_LENGTH = 0x20000
+       0        0        0     1 GRAM_START = 0x28000000
+       0        0        0     1 GRAM_LENGTH = 0xB0000
+       0        0        0     1 RRAM_START = 0x2C000000
+       0        0        0     1 RRAM_LENGTH = 0x8000
+       0        0        0     1 DATA_FLASH_START = 0x40000000
+       0        0        0     1 DATA_FLASH_LENGTH = 0x40000
+       0        0        0     1 DATA_FLASH_1_START = 0x400C0000
+       0        0        0     1 DATA_FLASH_1_LENGTH = 0x10000
+       0        0        0     1 OPBYTE_AREA_START = 0x40121300
+       0        0        0     1 OPBYTE_AREA_LENGTH = 0x160
+       0        0        0     1 ROM_SINGLE_BANKA_START = 0x00000000
+       0        0        0     1 ROM_SINGLE_BANKA_LENGTH = 0x200000
+       0        0        0     1 ROM_SINGLE_BANKB_START = 0x00400000
+       0        0        0     1 ROM_SINGLE_BANKB_LENGTH = 0x200000
+       0        0        0     1 ROM_DOUBLE_START = 0x00000000
+       0        0        0     1 ROM_DOUBLE_LENGTH = 0x200000
+       0        0        0     1 MEMORY_TYPE = 0x0
+       0        0        0     1 BANK_SEL = 0x0
+       0        0        0     1 ROM_DOUBLE_START_ = DEFINED(ROM_DOUBLE_START) ? ROM_DOUBLE_START : 0
+       0        0        0     1 ROM_DOUBLE_LENGTH_ = DEFINED(ROM_DOUBLE_LENGTH) ? ROM_DOUBLE_LENGTH : 0
+       0        0        0     1 ROM_SINGLE_BANKA_START_ = DEFINED(ROM_SINGLE_BANKA_START) ? ROM_SINGLE_BANKA_START : 0
+       0        0        0     1 ROM_SINGLE_BANKA_LENGTH_ = DEFINED(ROM_SINGLE_BANKA_LENGTH) ? ROM_SINGLE_BANKA_LENGTH : 0
+       0        0        0     1 ROM_SINGLE_BANKB_START_ = DEFINED(ROM_SINGLE_BANKB_START) ? ROM_SINGLE_BANKB_START : 0
+       0        0        0     1 ROM_SINGLE_BANKB_LENGTH_ = DEFINED(ROM_SINGLE_BANKB_LENGTH) ? ROM_SINGLE_BANKB_LENGTH : 0
+       0        0        0     1 ROM_START = DEFINED(MEMORY_TYPE) ? (MEMORY_TYPE == 1 ? ROM_DOUBLE_START_ : DEFINED(BANK_SEL) ? (BANK_SEL == 1 ? ROM_SINGLE_BANKB_START_ : ROM_SINGLE_BANKA_START_): 0) : 0
+       0        0        0     1 ROM_LENGTH = DEFINED(MEMORY_TYPE) ? (MEMORY_TYPE == 1 ? ROM_DOUBLE_LENGTH_ : DEFINED(BANK_SEL) ? (BANK_SEL == 1 ? ROM_SINGLE_BANKB_LENGTH_ : ROM_SINGLE_BANKA_LENGTH_): 0) : 0
+       0        0        0     1 CLRAM_START_ = DEFINED(CLRAM_START) ? CLRAM_START : 0
+       0        0        0     1 CLRAM_LENGTH_ = DEFINED(CLRAM_LENGTH) ? CLRAM_LENGTH : 0
+       0        0     1460     4 .text
+       0        0        0     1         __ROM_Start = .
+       0        0        0     1         . = ALIGN(32)
+       0        0        0     1         __privileged_functions_start__ = .
+       0        0        0     1         . = ALIGN(1024)
+       0        0        0     1         __Vectors = .
+       0        0       40     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.fixed_vectors)
+      40       40        0     1         __Vectors_End = .
+      40       40        0     1         . = ALIGN(32)
+      40       40        0     1         __privileged_functions_end__ = . - 1
+      40       40        0     1         . = ALIGN(32)
+      40       40        0     1         __syscalls_flash_start__ = .
+      40       40        0     1         . = ALIGN(32)
+      40       40        0     1         __syscalls_flash_end__ = (. > __syscalls_flash_start__) ? (. - 1) : .
+      40       40        0     1         . = ALIGN(32)
+      40       40        0     1         __unprivileged_flash_start__ = .
+      40       40        0     1         . = ALIGN(4)
+      40       40       de     4         ./src/hal_entry.o:(.text.hal_entry)
+      40       40        0     1                 $t
+      41       41       de     1                 hal_entry
+     120      120       28     4         ./src/hal_entry.o:(.text.R_BSP_WarmStart)
+     120      120        0     1                 $t
+     121      121       28     1                 R_BSP_WarmStart
+     148      148        a     4         ./rcarmcuu5x_gen/main.o:(.text.main)
+     148      148        0     1                 $t
+     149      149        a     1                 main
+     154      154       dc     4         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.text.R_IOPORT_Open)
+     154      154        0     1                 $t
+     155      155       dc     1                 R_IOPORT_Open
+     230      230      144     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.text.bsp_clock_driver_init)
+     230      230        0     1                 $t
+     231      231      144     1                 bsp_clock_driver_init
+     374      374       a0     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.text.bsp_cpu_init)
+     374      374        0     1                 $t
+     375      375       a0     1                 bsp_cpu_init
+     414      414        4     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.text.bsp_clock_init)
+     414      414        0     1                 $t
+     415      415        4     1                 bsp_clock_init
+     418      418       16     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.text.SystemCoreClockUpdate)
+     418      418        0     1                 $t
+     419      419       16     1                 SystemCoreClockUpdate
+     430      430       5a     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.text.R_BSP_SoftwareDelay)
+     430      430        0     1                 $t
+     431      431       5a     1                 R_BSP_SoftwareDelay
+     48c      48c        a     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.text.bsp_prv_software_delay_loop)
+     48c      48c        0     1                 sw_delay_loop
+     48c      48c        0     1                 $t
+     48d      48d        a     1                 bsp_prv_software_delay_loop
+     498      498       2e     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.text.NMI_Handler)
+     498      498        0     1                 $t
+     499      499       2e     1                 NMI_Handler
+     4c8      4c8       a6     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.text.R_BSP_GuardEnableAccessAll)
+     4c8      4c8        0     1                 $t
+     4c9      4c9       a6     1                 R_BSP_GuardEnableAccessAll
+     570      570       52     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.text.R_BSP_GuardAccessEnable)
+     570      570        0     1                 $t
+     571      571       52     1                 R_BSP_GuardAccessEnable
+     5c4      5c4       52     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.text.R_BSP_GuardAccessDisable)
+     5c4      5c4        0     1                 $t
+     5c5      5c5       52     1                 R_BSP_GuardAccessDisable
+     618      618       52     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.text.bsp_irq_cfg)
+     618      618        0     1                 $t
+     619      619       52     1                 bsp_irq_cfg
+     66c      66c       4a     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.text.R_BSP_ModuleStandbyEnableAll)
+     66c      66c        0     1                 $t
+     66d      66d       4a     1                 R_BSP_ModuleStandbyEnableAll
+     6b8      6b8       40     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.text.R_BSP_CheckChipStandByMode)
+     6b8      6b8        0     1                 $t
+     6b9      6b9       40     1                 R_BSP_CheckChipStandByMode
+     6f8      6f8        c     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.text.R_BSP_GetChipStandByMode)
+     6f8      6f8        0     1                 $t
+     6f9      6f9        c     1                 R_BSP_GetChipStandByMode
+     704      704       fc     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.text.R_BSP_MPUEnable)
+     704      704        0     1                 $t
+     705      705       fc     1                 R_BSP_MPUEnable
+     800      800       4c     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.text.RAM_Init)
+     800      800        0     1                 $t
+     801      801       3c     1                 RAM_Init
+     82e      82e        0     1                 FillDefaultValue
+     834      834        0     1                 LoopFillDefaultValue
+     83a      83a        0     1                 skip_init_gram
+     83c      83c        0     1                 $d
+     84c      84c        e     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.text.Reset_Handler)
+     84c      84c        0     1                 $t
+     84d      84d        e     1                 Reset_Handler
+     85c      85c        4     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.text.Default_Handler)
+     85c      85c        0     1                 $t
+     85d      85d        4     1                 Default_Handler
+     85d      85d        4     1                 HardFault_Handler
+     85d      85d        4     1                 MemManage_Handler
+     85d      85d        4     1                 BusFault_Handler
+     85d      85d        4     1                 UsageFault_Handler
+     85d      85d        4     1                 SecureFault_Handler
+     85d      85d        4     1                 SVC_Handler
+     85d      85d        4     1                 DebugMon_Handler
+     85d      85d        4     1                 PendSV_Handler
+     85d      85d        4     1                 SysTick_Handler
+     860      860       da     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.text.SystemInit)
+     860      860        0     1                 $t
+     861      861       da     1                 SystemInit
+     93c      93c        2     4         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.text.bsp_init)
+     93c      93c        0     1                 $t
+     93d      93d        2     1                 bsp_init
+     93e      93e        8     2         G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(bzero.c.o):(.text.bzero)
+     93e      93e        0     1                 $t
+     93f      93f        8     1                 bzero
+     93f      93f        8     1                 __aeabi_memclr4
+     93f      93f        8     1                 __aeabi_memclr8
+     93f      93f        8     1                 __aeabi_memclr
+     946      946       12     2         G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memcpy.c.o):(.text.memcpy)
+     946      946        0     1                 $t
+     947      947       12     1                 memcpy
+     947      947       12     1                 __aeabi_memcpy4
+     947      947       12     1                 __aeabi_memcpy8
+     947      947       12     1                 __aeabi_memcpy
+     958      958        e     2         G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memset.c.o):(.text.memset)
+     958      958        0     1                 $t
+     959      959        e     1                 memset
+     968      968       42     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.version)
+     968      968        4     1                 g_fsp_version
+     96c      96c        6     1                 g_fsp_version_string
+     972      972       38     1                 g_fsp_version_build_string
+     9ac      9ac       60     4         ./rcarmcuu5x_gen/pin_data.o:(.rodata.g_bsp_pin_cfg_data)
+     9ac      9ac       60     1                 g_bsp_pin_cfg_data
+     a0c      a0c        c     4         ./rcarmcuu5x_gen/pin_data.o:(.rodata.g_bsp_pin_cfg)
+     a0c      a0c        c     1                 g_bsp_pin_cfg
+     a18      a18       1c     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.rodata.g_gear_up_repetitions_arr)
+     a18      a18       1c     1                 g_gear_up_repetitions_arr
+     a34      a34       50     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.rodata.g_pbgprot_baseaddress)
+     a34      a34       50     1                 g_pbgprot_baseaddress
+     a84      a84       50     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.rodata.g_pbgkcprot_baseaddress)
+     a84      a84       50     1                 g_pbgkcprot_baseaddress
+     ad4      ad4      100     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.rodata.g_bsp_module_pbg_info_table)
+     ad4      ad4      100     1                 g_bsp_module_pbg_info_table
+     bd4      bd4      6a4     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o:(.rodata.g_bsp_imf_infor_isr_table)
+     bd4      bd4      6a4     1                 g_bsp_imf_infor_isr_table
+    1278     1278       c0     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o:(.rodata.g_msr_info_table)
+    1278     1278       c0     1                 g_msr_info_table
+    1338     1338        8     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.rodata.g_bsp_mpu_mair_attributes)
+    1338     1338        8     1                 g_bsp_mpu_mair_attributes
+    1340     1340        8     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.rodata.g_bsp_mpu_config)
+    1340     1340        8     1                 g_bsp_mpu_config
+    1348     1348       63     1         <internal>:(.rodata.str1.1)
+    13ac     13ac       8c     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.rodata.mpu_regions)
+    13ac     13ac       8c     1                 mpu_regions
+    1438     1438       20     4         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.rodata.g_bsp_prv_leds)
+    1438     1438       20     1                 g_bsp_prv_leds
+    1458     1458        8     4         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.rodata.g_bsp_leds)
+    1458     1458        8     1                 g_bsp_leds
+    1460     1460        0     1         . = ALIGN(32)
+    1460     1460        0     1         __unprivileged_flash_end__ = . - 1
+    1460     1460        0     1         __ROM_End = .
+    1460     1460        0     1 __Vectors_Size = __Vectors_End - __Vectors
+    1460     1460        0     1 . = .
+    1460     1460        0     1 __exidx_start = .
+    1460     1460       10     4 .ARM.exidx
+    1460     1460       10     4         <internal>:(.ARM.exidx)
+    1470     1470        0     1 __exidx_end = .
+    1470     1470        0     1 __etext = .
+204e0000     1470      240     4 .data
+204e0000     1470        0     1         __data_start__ = .
+204e0000     1470        0     1         . = ALIGN(4)
+204e0000     1470        0     1         . = ALIGN(32)
+204e0000     1470        0     1         __privileged_ram_start__ = .
+204e0000     1470        0     1         . = ALIGN(32)
+204e0000     1470        0     1         __privileged_ram_end__ = (. > __privileged_ram_start__) ? (. - 1) : .
+204e0000     1470        0     1         __Code_In_RAM_Start = .
+204e0000     1470        0     1         __Code_In_RAM_End = .
+204e0000     1470       b8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.data.g_clock_freq)
+204e0000     1470       b8     1                 g_clock_freq
+204e00b8     1528       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral)
+204e00b8     1528       10     1                 .compoundliteral
+204e00c8     1538       18     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.1)
+204e00c8     1538       18     1                 .compoundliteral.1
+204e00e0     1550        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.2)
+204e00e0     1550        8     1                 .compoundliteral.2
+204e00e8     1558        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.3)
+204e00e8     1558        8     1                 .compoundliteral.3
+204e00f0     1560       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.4)
+204e00f0     1560       10     1                 .compoundliteral.4
+204e0100     1570       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.5)
+204e0100     1570       10     1                 .compoundliteral.5
+204e0110     1580       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.6)
+204e0110     1580       10     1                 .compoundliteral.6
+204e0120     1590        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.7)
+204e0120     1590        8     1                 .compoundliteral.7
+204e0128     1598        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.8)
+204e0128     1598        8     1                 .compoundliteral.8
+204e0130     15a0        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.9)
+204e0130     15a0        8     1                 .compoundliteral.9
+204e0138     15a8        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.10)
+204e0138     15a8        8     1                 .compoundliteral.10
+204e0140     15b0       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.11)
+204e0140     15b0       10     1                 .compoundliteral.11
+204e0150     15c0        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.12)
+204e0150     15c0        8     1                 .compoundliteral.12
+204e0158     15c8        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.13)
+204e0158     15c8        8     1                 .compoundliteral.13
+204e0160     15d0        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.14)
+204e0160     15d0        8     1                 .compoundliteral.14
+204e0168     15d8       18     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.15)
+204e0168     15d8       18     1                 .compoundliteral.15
+204e0180     15f0       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.16)
+204e0180     15f0       10     1                 .compoundliteral.16
+204e0190     1600       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.17)
+204e0190     1600       10     1                 .compoundliteral.17
+204e01a0     1610        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.18)
+204e01a0     1610        8     1                 .compoundliteral.18
+204e01a8     1618        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.19)
+204e01a8     1618        8     1                 .compoundliteral.19
+204e01b0     1620        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.20)
+204e01b0     1620        8     1                 .compoundliteral.20
+204e01b8     1628       20     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.21)
+204e01b8     1628       20     1                 .compoundliteral.21
+204e01d8     1648       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.22)
+204e01d8     1648       10     1                 .compoundliteral.22
+204e01e8     1658        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.23)
+204e01e8     1658        8     1                 .compoundliteral.23
+204e01f0     1660        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.24)
+204e01f0     1660        8     1                 .compoundliteral.24
+204e01f8     1668        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.25)
+204e01f8     1668        8     1                 .compoundliteral.25
+204e0200     1670        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.26)
+204e0200     1670        8     1                 .compoundliteral.26
+204e0208     1678       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.27)
+204e0208     1678       10     1                 .compoundliteral.27
+204e0218     1688        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.28)
+204e0218     1688        8     1                 .compoundliteral.28
+204e0220     1690        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.29)
+204e0220     1690        8     1                 .compoundliteral.29
+204e0228     1698        8     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.30)
+204e0228     1698        8     1                 .compoundliteral.30
+204e0230     16a0       10     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.data..compoundliteral.31)
+204e0230     16a0       10     1                 .compoundliteral.31
+204e0240     16b0        0     1         . = ALIGN(4)
+204e0240     16b0        0     1         . = ALIGN(4)
+204e0240     16b0        0     1         PROVIDE_HIDDEN (__init_array_start = .)
+204e0240     16b0        0     1         PROVIDE_HIDDEN (__init_array_end = .)
+204e0240     16b0        0     1         . = ALIGN(4)
+204e0240     16b0        0     1         . = ALIGN(4)
+204e0240     16b0        0     1         __data_end__ = .
+204e0240     16b0        0     1 __data_load_start__ = LOADADDR(.data)
+204e0240     16b0        0     1 . = .
+204e0240 204e0240        0     1 .noinit
+204e0240 204e0240        0     1         . = ALIGN(4)
+204e0240 204e0240        0     1         __noinit_start = .
+204e0240 204e0240        0     1         . = ALIGN(8)
+204e0240 204e0240        0     1         __noinit_end = .
+204e0240 204e0240       14     4 .bss
+204e0240 204e0240        0     1         . = ALIGN(4)
+204e0240 204e0240        0     1         __bss_start__ = .
+204e0240 204e0240        8     4         ./rcarmcuu5x_gen/common_data.o:(.bss.g_ioport_ctrl)
+204e0240 204e0240        8     1                 g_ioport_ctrl
+204e0248 204e0248        1     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.bss.g_chip_standby_mode)
+204e0248 204e0248        1     1                 g_chip_standby_mode
+204e024c 204e024c        4     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.bss.g_bsp_group_irq_sources)
+204e024c 204e024c        4     1                 g_bsp_group_irq_sources
+204e0250 204e0250        4     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.bss.SystemCoreClock)
+204e0250 204e0250        4     1                 SystemCoreClock
+204e0254 204e0254        0     1         . = ALIGN(4)
+204e0254 204e0254        0     1         __bss_end__ = .
+28000000 28000000        0     1 .gram_bss
+28000000 28000000        0     1         . = ALIGN(4)
+28000000 28000000        0     1         __gram_bss_start__ = .
+28000000 28000000        0     1         . = ALIGN(4)
+28000000 28000000        0     1         __gram_bss_end__ = .
+204e0258 204e0258      400     8 .heap
+204e0258 204e0258        0     1         . = ALIGN(8)
+204e0258 204e0258        0     1         __HeapBase = .
+204e0258 204e0258      400     8         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.heap)
+204e0258 204e0258      400     1                 g_heap
+204e0658 204e0658        0     1         __HeapLimit = .
+204e0658 204e0658      400     8 .stack_dummy
+204e0658 204e0658        0     1         . = ALIGN(8)
+204e0658 204e0658        0     1         __StackLimit = .
+204e0658 204e0658      400     8         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.stack)
+204e0658 204e0658      400     1                 g_main_stack
+204e0a58 204e0a58        0     1         __StackTop = .
+204e0a58 204e0a58        0     1         __StackTopAll = .
+204e0a58 204e0a58        0     1 PROVIDE(__stack = __StackTopAll)
+204e0a58 204e0a58        0     1 __RAM_segment_used_end__ = ALIGN(__StackTopAll , 4)
+40000000 40000000        0     1 .data_flash
+40000000 40000000        0     1         . = ORIGIN(DATA_FLASH)
+40000000 40000000        0     1         __Data_Flash_Start = .
+40000000 40000000        0     1         __Data_Flash_End = .
+       0        0       3e     1 .ARM.attributes
+       0        0       3e     1         G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\crt0.o:(.ARM.attributes)
+       0        0     1153     1 .debug_loclists
+       0        0      11d     1         ./src/hal_entry.o:(.debug_loclists)
+     11d      11d      4c1     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_loclists)
+     5de      5de       36     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_loclists)
+     614      614       20     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_loclists)
+     634      634       1d     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_loclists)
+     651      651       d7     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_loclists)
+     728      728       29     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_loclists)
+     751      751      413     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_loclists)
+     b64      b64       74     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_loclists)
+     bd8      bd8       37     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_loclists)
+     c0f      c0f       98     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_loclists)
+     ca7      ca7      1a4     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_loclists)
+     e4b      e4b      2a8     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_loclists)
+    10f3     10f3       37     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_loclists)
+    112a     112a       29     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_loclists)
+       0        0     2025     1 .debug_abbrev
+       0        0      269     1         ./src/hal_entry.o:(.debug_abbrev)
+     269      269      136     1         ./rcarmcuu5x_gen/common_data.o:(.debug_abbrev)
+     39f      39f       4d     1         ./rcarmcuu5x_gen/hal_data.o:(.debug_abbrev)
+     3ec      3ec       3c     1         ./rcarmcuu5x_gen/main.o:(.debug_abbrev)
+     428      428       ac     1         ./rcarmcuu5x_gen/pin_data.o:(.debug_abbrev)
+     4d4      4d4      359     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_abbrev)
+     82d      82d      18c     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_abbrev)
+     9b9      9b9      160     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_abbrev)
+     b19      b19       b8     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.debug_abbrev)
+     bd1      bd1       8d     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o:(.debug_abbrev)
+     c5e      c5e       89     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o:(.debug_abbrev)
+     ce7      ce7       c1     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_abbrev)
+     da8      da8      128     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_abbrev)
+     ed0      ed0       a4     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_abbrev)
+     f74      f74      19b     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_abbrev)
+    110f     110f      265     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_abbrev)
+    1374     1374       44     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_io.o:(.debug_abbrev)
+    13b8     13b8      137     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_abbrev)
+    14ef     14ef      15f     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_abbrev)
+    164e     164e       c2     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_abbrev)
+    1710     1710      2d7     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_abbrev)
+    19e7     19e7      2de     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_abbrev)
+    1cc5     1cc5       85     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_abbrev)
+    1d4a     1d4a       b9     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_abbrev)
+    1e03     1e03      14e     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_abbrev)
+    1f51     1f51       43     1         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.debug_abbrev)
+    1f94     1f94       91     1         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.debug_abbrev)
+       0        0     fd36     1 .debug_info
+       0        0     3f70     1         ./src/hal_entry.o:(.debug_info)
+    3f70     3f70      8f8     1         ./rcarmcuu5x_gen/common_data.o:(.debug_info)
+    4868     4868       3a     1         ./rcarmcuu5x_gen/hal_data.o:(.debug_info)
+    48a2     48a2       37     1         ./rcarmcuu5x_gen/main.o:(.debug_info)
+    48d9     48d9      44c     1         ./rcarmcuu5x_gen/pin_data.o:(.debug_info)
+    4d25     4d25     45ee     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_info)
+    9313     9313      cad     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_info)
+    9fc0     9fc0      6d7     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_info)
+    a697     a697      203     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.debug_info)
+    a89a     a89a      604     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o:(.debug_info)
+    ae9e     ae9e       86     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o:(.debug_info)
+    af24     af24      11d     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_info)
+    b041     b041      37d     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_info)
+    b3be     b3be       e4     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_info)
+    b4a2     b4a2      39e     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_info)
+    b840     b840      a3d     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_info)
+    c27d     c27d       43     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_io.o:(.debug_info)
+    c2c0     c2c0      25c     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_info)
+    c51c     c51c      2f2     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_info)
+    c80e     c80e      3c4     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_info)
+    cbd2     cbd2     1f47     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_info)
+    eb19     eb19      bae     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_info)
+    f6c7     f6c7       90     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_info)
+    f757     f757       b0     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_info)
+    f807     f807      46c     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_info)
+    fc73     fc73       3b     1         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.debug_info)
+    fcae     fcae       88     1         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.debug_info)
+       0        0      35b     1 .debug_rnglists
+       0        0       3a     1         ./src/hal_entry.o:(.debug_rnglists)
+      3a       3a       da     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_rnglists)
+     114      114       19     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_rnglists)
+     12d      12d       22     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_rnglists)
+     14f      14f       1a     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_rnglists)
+     169      169       1a     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_rnglists)
+     183      183       17     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_rnglists)
+     19a      19a       17     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_rnglists)
+     1b1      1b1       77     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_rnglists)
+     228      228       17     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_rnglists)
+     23f      23f       27     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_rnglists)
+     266      266       26     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_rnglists)
+     28c      28c       46     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_rnglists)
+     2d2      2d2       57     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_rnglists)
+     329      329       1a     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_rnglists)
+     343      343       18     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_rnglists)
+       0        0     5830     1 .debug_str_offsets
+       0        0     1380     1         ./src/hal_entry.o:(.debug_str_offsets)
+    1380     1380      570     1         ./rcarmcuu5x_gen/common_data.o:(.debug_str_offsets)
+    18f0     18f0       1c     1         ./rcarmcuu5x_gen/hal_data.o:(.debug_str_offsets)
+    190c     190c       1c     1         ./rcarmcuu5x_gen/main.o:(.debug_str_offsets)
+    1928     1928      2a8     1         ./rcarmcuu5x_gen/pin_data.o:(.debug_str_offsets)
+    1bd0     1bd0     1438     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_str_offsets)
+    3008     3008      2e0     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_str_offsets)
+    32e8     32e8      1b8     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_str_offsets)
+    34a0     34a0      108     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.debug_str_offsets)
+    35a8     35a8      3f8     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o:(.debug_str_offsets)
+    39a0     39a0       3c     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o:(.debug_str_offsets)
+    39dc     39dc       fc     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_str_offsets)
+    3ad8     3ad8      298     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_str_offsets)
+    3d70     3d70       6c     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_str_offsets)
+    3ddc     3ddc      27c     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_str_offsets)
+    4058     4058      424     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_str_offsets)
+    447c     447c       24     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_io.o:(.debug_str_offsets)
+    44a0     44a0       a0     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_str_offsets)
+    4540     4540       f8     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_str_offsets)
+    4638     4638      2b4     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_str_offsets)
+    48ec     48ec      6f4     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_str_offsets)
+    4fe0     4fe0      40c     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_str_offsets)
+    53ec     53ec       44     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_str_offsets)
+    5430     5430       40     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_str_offsets)
+    5470     5470      368     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_str_offsets)
+    57d8     57d8       1c     1         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.debug_str_offsets)
+    57f4     57f4       3c     1         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.debug_str_offsets)
+       0        0     a516     1 .debug_str
+       0        0     a516     1         <internal>:(.debug_str)
+       0        0      39c     1 .debug_addr
+       0        0       28     1         ./src/hal_entry.o:(.debug_addr)
+      28       28       14     1         ./rcarmcuu5x_gen/common_data.o:(.debug_addr)
+      3c       3c        c     1         ./rcarmcuu5x_gen/hal_data.o:(.debug_addr)
+      48       48        c     1         ./rcarmcuu5x_gen/main.o:(.debug_addr)
+      54       54       10     1         ./rcarmcuu5x_gen/pin_data.o:(.debug_addr)
+      64       64       88     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_addr)
+      ec       ec       24     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_addr)
+     110      110       20     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_addr)
+     130      130       2c     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.debug_addr)
+     15c      15c       10     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o:(.debug_addr)
+     16c      16c        c     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o:(.debug_addr)
+     178      178       14     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_addr)
+     18c      18c       20     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_addr)
+     1ac      1ac       18     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_addr)
+     1c4      1c4       1c     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_addr)
+     1e0      1e0       30     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_addr)
+     210      210        c     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_io.o:(.debug_addr)
+     21c      21c       10     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_addr)
+     22c      22c       18     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_addr)
+     244      244       24     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_addr)
+     268      268       54     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_addr)
+     2bc      2bc       74     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_addr)
+     330      330       10     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_addr)
+     340      340       20     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_addr)
+     360      360       20     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_addr)
+     380      380        c     1         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.debug_addr)
+     38c      38c       10     1         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.debug_addr)
+       0        0       29     1 .comment
+       0        0       29     1         <internal>:(.comment)
+       0        0      7d0     4 .debug_frame
+       0        0       40     4         ./src/hal_entry.o:(.debug_frame)
+      40       40       24     4         ./rcarmcuu5x_gen/common_data.o:(.debug_frame)
+      64       64       24     4         ./rcarmcuu5x_gen/hal_data.o:(.debug_frame)
+      88       88       2c     4         ./rcarmcuu5x_gen/main.o:(.debug_frame)
+      b4       b4      140     4         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_frame)
+     1f4      1f4       54     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_frame)
+     248      248       64     4         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_frame)
+     2ac      2ac       44     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_frame)
+     2f0      2f0       44     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_frame)
+     334      334       34     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_frame)
+     368      368       40     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_frame)
+     3a8      3a8       d4     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_frame)
+     47c      47c       2c     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_frame)
+     4a8      4a8       44     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_frame)
+     4ec      4ec       84     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_frame)
+     570      570       bc     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_frame)
+     62c      62c       ac     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_frame)
+     6d8      6d8       2c     4         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_frame)
+     704      704       44     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_frame)
+     748      748       40     4         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_frame)
+     788      788       24     4         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.debug_frame)
+     7ac      7ac       24     4         G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(libc_picolib_machine_arm_read_tp.S.o):(.debug_frame)
+       0        0     29d4     1 .debug_line
+       0        0      230     1         ./src/hal_entry.o:(.debug_line)
+     230      230      10d     1         ./rcarmcuu5x_gen/common_data.o:(.debug_line)
+     33d      33d       81     1         ./rcarmcuu5x_gen/hal_data.o:(.debug_line)
+     3be      3be       71     1         ./rcarmcuu5x_gen/main.o:(.debug_line)
+     42f      42f       bc     1         ./rcarmcuu5x_gen/pin_data.o:(.debug_line)
+     4eb      4eb      713     1         ./rcarmcu/fsp/src/r_ioport/r_ioport.o:(.debug_line)
+     bfe      bfe      300     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o:(.debug_line)
+     efe      efe      25a     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o:(.debug_line)
+    1158     1158       a7     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o:(.debug_line)
+    11ff     11ff       8a     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o:(.debug_line)
+    1289     1289       a7     1         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o:(.debug_line)
+    1330     1330       f0     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o:(.debug_line)
+    1420     1420      10e     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o:(.debug_line)
+    152e     152e      11f     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o:(.debug_line)
+    164d     164d      134     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o:(.debug_line)
+    1781     1781      3f7     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o:(.debug_line)
+    1b78     1b78       8e     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_io.o:(.debug_line)
+    1c06     1c06       f8     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o:(.debug_line)
+    1cfe     1cfe      13a     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mcu_reset.o:(.debug_line)
+    1e38     1e38      132     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mdlc.o:(.debug_line)
+    1f6a     1f6a      277     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o:(.debug_line)
+    21e1     21e1      37f     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o:(.debug_line)
+    2560     2560      10a     1         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o:(.debug_line)
+    266a     266a       d5     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o:(.debug_line)
+    273f     273f      180     1         ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o:(.debug_line)
+    28bf     28bf       6e     1         ./rcarmcu/board/u5l4_176_pb/board_init.o:(.debug_line)
+    292d     292d       a7     1         ./rcarmcu/board/u5l4_176_pb/board_leds.o:(.debug_line)
+       0        0      e3d     1 .debug_line_str
+       0        0      e3d     1         <internal>:(.debug_line_str)
+       0        0      ef0     4 .symtab
+       0        0      ef0     4         <internal>:(.symtab)
+       0        0      10e     1 .shstrtab
+       0        0      10e     1         <internal>:(.shstrtab)
+       0        0      de4     1 .strtab
+       0        0      de4     1         <internal>:(.strtab)
+
+Cross Reference Table
+
+Symbol                                            File
+memcpy                                            G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memcpy.c.o)
+                                                  G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\crt0.o
+memset                                            G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memset.c.o)
+                                                  G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\crt0.o
+                                                  G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(bzero.c.o)
+main                                              ./rcarmcuu5x_gen/main.o
+                                                  G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\crt0.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+hal_entry                                         ./src/hal_entry.o
+                                                  ./rcarmcuu5x_gen/main.o
+g_bsp_leds                                        ./rcarmcu/board/u5l4_176_pb/board_leds.o
+                                                  ./src/hal_entry.o
+R_BSP_SoftwareDelay                               ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o
+                                                  ./src/hal_entry.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o
+R_BSP_WarmStart                                   ./src/hal_entry.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+R_BSP_GuardEnableAccessAll                        ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o
+                                                  ./src/hal_entry.o
+R_BSP_ModuleStandbyEnableAll                      ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o
+                                                  ./src/hal_entry.o
+g_ioport_ctrl                                     ./rcarmcuu5x_gen/common_data.o
+                                                  ./src/hal_entry.o
+g_bsp_pin_cfg                                     ./rcarmcuu5x_gen/pin_data.o
+                                                  ./src/hal_entry.o
+                                                  ./rcarmcuu5x_gen/common_data.o
+R_IOPORT_Open                                     ./rcarmcu/fsp/src/r_ioport/r_ioport.o
+                                                  ./src/hal_entry.o
+g_bsp_pin_cfg_data                                ./rcarmcuu5x_gen/pin_data.o
+bsp_clock_driver_init                             ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o
+g_gear_up_repetitions_arr                         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o
+g_clock_freq                                      ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o
+g_chip_standby_mode                               ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_clocks_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o
+bsp_cpu_init                                      ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__Vectors                                         G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:83
+                                                  ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_cpu.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+g_pbgprot_baseaddress                             ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o
+g_pbgkcprot_baseaddress                           ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o
+g_bsp_module_pbg_info_table                       ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_guard_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o
+g_bsp_imf_infor_isr_table                         ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_imf_table.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o
+g_msr_info_table                                  ./rcarmcu/fsp/src/bsp/mcu/rcarmcuu5l/bsp_module_standby_driver.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o
+bsp_clock_init                                    ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+SystemCoreClockUpdate                             ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+SystemCoreClock                                   ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_clocks.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o
+bsp_init                                          ./rcarmcu/board/u5l4_176_pb/board_init.o
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_common.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+bsp_prv_software_delay_loop                       ./rcarmcu/fsp/src/bsp/mcu/all/bsp_delay.o
+g_bsp_group_irq_sources                           ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o
+NMI_Handler                                       ./rcarmcu/fsp/src/bsp/mcu/all/bsp_group_irq.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+R_BSP_GuardAccessEnable                           ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+R_BSP_GuardAccessDisable                          ./rcarmcu/fsp/src/bsp/mcu/all/bsp_guard.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+bsp_irq_cfg                                       ./rcarmcu/fsp/src/bsp/mcu/all/bsp_irq.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+R_BSP_CheckChipStandByMode                        ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+R_BSP_GetChipStandByMode                          ./rcarmcu/fsp/src/bsp/mcu/all/bsp_module_standby.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+R_BSP_MPUEnable                                   ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+g_bsp_mpu_mair_attributes                         ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o
+g_bsp_mpu_config                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_mpu.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__HeapBase                                        G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:263
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o
+__HeapLimit                                       G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:266
+                                                  ./rcarmcu/fsp/src/bsp/mcu/all/bsp_sbrk.o
+RAM_Init                                          ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+Reset_Handler                                     ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+SystemInit                                        ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+Default_Handler                                   ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+HardFault_Handler                                 ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+MemManage_Handler                                 ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+BusFault_Handler                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+UsageFault_Handler                                ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+SecureFault_Handler                               ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+SVC_Handler                                       ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+DebugMon_Handler                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+PendSV_Handler                                    ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+SysTick_Handler                                   ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+g_heap                                            ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+RAM_START                                         memory_regions.lld:4
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+RAM_LENGTH                                        memory_regions.lld:5
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+GRAM_START                                        memory_regions.lld:6
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+GRAM_LENGTH                                       memory_regions.lld:7
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/startup.o
+__bss_start__                                     G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:244
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__bss_end__                                       G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:248
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__aeabi_memclr4                                   G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(bzero.c.o)
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__gram_bss_start__                                G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:254
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__gram_bss_end__                                  G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:257
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__data_start__                                    G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:172
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__data_end__                                      G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:223
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__data_load_start__                               G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:226
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__aeabi_memcpy4                                   G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memcpy.c.o)
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+__aeabi_memclr                                    G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(bzero.c.o)
+                                                  ./rcarmcu/fsp/src/bsp/cmsis/Device/RENESAS/Source/system.o
+bzero                                             G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(bzero.c.o)
+__aeabi_memclr8                                   G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(bzero.c.o)
+__aeabi_memcpy8                                   G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memcpy.c.o)
+__aeabi_memcpy                                    G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(memcpy.c.o)
+__stack                                           G:\SW_Workspace\workspaceRenesas_e2Studio_U5L\RCarU5L4176_10BASET1S_FSP130/script\fsp.lld:282
+                                                  G:\Renesas\e2_studio_u5l\toolchains\llvm_arm\ATfE-21.1.1-Windows-x86_64\bin\..\lib\clang-runtimes/arm-none-eabi/armv8m.main_hard_fp_exn_rtti_unaligned_size\lib\libc.a(libc_picolib_machine_arm_interrupt.c.o)

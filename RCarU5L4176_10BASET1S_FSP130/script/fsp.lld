@@ -1,0 +1,303 @@
+/*
+                  Linker File for Renesas FSP
+*/
+
+INCLUDE memory_regions.lld
+
+
+ROM_DOUBLE_START_ = DEFINED(ROM_DOUBLE_START) ? ROM_DOUBLE_START : 0;
+ROM_DOUBLE_LENGTH_ = DEFINED(ROM_DOUBLE_LENGTH) ? ROM_DOUBLE_LENGTH : 0;
+ROM_SINGLE_BANKA_START_ = DEFINED(ROM_SINGLE_BANKA_START) ? ROM_SINGLE_BANKA_START : 0;
+ROM_SINGLE_BANKA_LENGTH_ = DEFINED(ROM_SINGLE_BANKA_LENGTH) ? ROM_SINGLE_BANKA_LENGTH : 0;
+ROM_SINGLE_BANKB_START_ = DEFINED(ROM_SINGLE_BANKB_START) ? ROM_SINGLE_BANKB_START : 0;
+ROM_SINGLE_BANKB_LENGTH_ = DEFINED(ROM_SINGLE_BANKB_LENGTH) ? ROM_SINGLE_BANKB_LENGTH : 0;
+ROM_START = DEFINED(MEMORY_TYPE) ?
+            (MEMORY_TYPE == 1 ? ROM_DOUBLE_START_ :
+            DEFINED(BANK_SEL) ? (BANK_SEL == 1 ? ROM_SINGLE_BANKB_START_ : ROM_SINGLE_BANKA_START_): 0)
+            : 0;
+ROM_LENGTH = DEFINED(MEMORY_TYPE) ?
+            (MEMORY_TYPE == 1 ? ROM_DOUBLE_LENGTH_ :
+            DEFINED(BANK_SEL) ? (BANK_SEL == 1 ? ROM_SINGLE_BANKB_LENGTH_ : ROM_SINGLE_BANKA_LENGTH_): 0)
+            : 0;
+
+CLRAM_START_ = DEFINED(CLRAM_START) ? CLRAM_START : 0;
+CLRAM_LENGTH_ = DEFINED(CLRAM_LENGTH) ? CLRAM_LENGTH : 0;
+
+/* Define memory regions. */
+MEMORY
+{
+  RAM (rwx)               : ORIGIN = RAM_START, LENGTH = RAM_LENGTH
+  CLRAM (rwx)             : ORIGIN = CLRAM_START_, LENGTH = CLRAM_LENGTH_
+  GRAM (rwx)              : ORIGIN = GRAM_START, LENGTH = GRAM_LENGTH
+  DATA_FLASH (r)          : ORIGIN = DATA_FLASH_START, LENGTH = DATA_FLASH_LENGTH
+  ROM (rx)                : ORIGIN = ROM_START, LENGTH = ROM_LENGTH
+  OPBT_Area (r)           : ORIGIN = OPBYTE_AREA_START, LENGTH = OPBYTE_AREA_LENGTH
+}
+
+/* Linker script to place sections and symbol values. Should be used together
+ * with other linker script that defines memory regions FLASH and RAM.
+ * It references following symbols, which must be DEFINED in code:
+ *   Reset_Handler : Entry of reset handler
+ *
+ * It defines following symbols, which code can use without definition:
+ *   __exidx_start
+ *   __exidx_end
+ *   __copy_table_start__
+ *   __copy_table_end__
+ *   __zero_table_start__
+ *   __zero_table_end__
+ *   __etext
+ *   __data_load_start__
+ *   __data_start__
+ *   __preinit_array_start
+ *   __preinit_array_end
+ *   __init_array_start
+ *   __init_array_end
+ *   __fini_array_start
+ *   __fini_array_end
+ *   __data_end__
+ *   __bss_start__
+ *   __bss_end__
+ *   __HeapLimit
+ *   __StackLimit
+ *   __StackTop
+ *   __stack
+ *   __Vectors_End
+ *   __Vectors_Size
+ */
+ENTRY(Reset_Handler)
+
+SECTIONS
+{
+    .text :
+    {
+        __ROM_Start = .;
+
+        /* FreeRTOS MPU privileged functions region.
+         * Keep the interrupt table data and privileged/kernel code in this protected region. */
+        . = ALIGN(32);
+        __privileged_functions_start__ = .;
+
+        /* Vector table MUST be aligned to 1024-byte boundary */
+        . = ALIGN(1024);
+        __Vectors = .;
+
+        /* Allocate region for vectors table */
+        KEEP(*(.fixed_vectors*))
+        KEEP(*(.application_vectors*))
+        __Vectors_End = .;
+
+        /* Keep all functions explicitly placed in privileged_functions sections.
+         * Protect the selected functions as kernel-level code with the FreeRTOS MPU. */
+        KEEP(*(privileged_functions*))
+
+        /* End the FreeRTOS MPU privileged functions region.
+         * Use an inclusive end address when the region contains data. */
+        . = ALIGN(32);
+        __privileged_functions_end__ = . - 1;
+
+        /* FreeRTOS MPU system-call wrapper region.
+         * Allow unprivileged tasks to call FreeRTOS APIs through SVC/system-call. */
+        . = ALIGN(32);
+        __syscalls_flash_start__ = .;
+
+        /* Keep all functions explicitly placed in freertos_system_calls sections.
+         * Provide controlled entry points from User mode to kernel services. */
+        KEEP(*(freertos_system_calls*))
+
+        /* End the FreeRTOS MPU system-call wrapper region.
+         * Use an inclusive end address when the region contains data. */
+        . = ALIGN(32);
+        __syscalls_flash_end__ = (. > __syscalls_flash_start__) ? (. - 1) : .;
+
+        /* FreeRTOS MPU unprivileged flash region.
+         * Normal application code is placed after this symbol. */
+        . = ALIGN(32);
+        __unprivileged_flash_start__ = .;
+
+        . = ALIGN(4);
+        *(.text*)
+
+        KEEP(*(.version))
+        KEEP(*(.init))
+        KEEP(*(.fini))
+
+        /* .ctors */
+        *crtbegin.o(.ctors)
+        *crtbegin?.o(.ctors)
+        *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+        *(SORT(.ctors.*))
+        *(.ctors)
+
+        /* .dtors */
+        *crtbegin.o(.dtors)
+        *crtbegin?.o(.dtors)
+        *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+        *(SORT(.dtors.*))
+        *(.dtors)
+
+        *(.rodata*)
+
+        KEEP(*(.eh_frame*))
+
+        /* End the FreeRTOS MPU unprivileged flash region.
+         * Use an inclusive end address when the region contains data. */
+        . = ALIGN(32);
+        __unprivileged_flash_end__ = . - 1;
+
+        __ROM_End = .;
+    } > ROM = 0xFF
+
+    __Vectors_Size = __Vectors_End - __Vectors;
+
+    . = .;
+
+    .ARM.extab :
+    {
+        *(.ARM.extab* .gnu.linkonce.armextab.*)
+    } > ROM
+
+    __exidx_start = .;
+    .ARM.exidx :
+    {
+        *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+    } > ROM
+    __exidx_end = .;
+
+    __etext = .;
+
+    /* Initialized data section. */
+    .data :
+    {
+        __data_start__ = .;
+        . = ALIGN(4);
+
+        /* FreeRTOS MPU privileged data region.
+         * Keep the region inside the initialized data range,
+         * so that startup code can copy the initial values correctly. */
+        . = ALIGN(32);
+        __privileged_ram_start__ = .;
+
+        /* Keep all data explicitly placed in privileged_data sections.
+         * Protect the selected variables as kernel-level data with the FreeRTOS MPU. */
+        KEEP(*(privileged_data*))
+
+        /* End the FreeRTOS MPU privileged data region.
+         * Use an inclusive end address when the region contains data. */
+        . = ALIGN(32);
+        __privileged_ram_end__ = (. > __privileged_ram_start__) ? (. - 1) : .;
+
+        __Code_In_RAM_Start = .;
+
+        KEEP(*(.code_in_ram*))
+        __Code_In_RAM_End = .;
+
+        *(vtable)
+        /* Don't use *(.data*) because it will place data meant for .data_flash in this section. */
+        *(.data.*)
+        *(.data)
+
+        . = ALIGN(4);
+        /* preinit data */
+        PROVIDE_HIDDEN (__preinit_array_start = .);
+        KEEP(*(.preinit_array))
+        PROVIDE_HIDDEN (__preinit_array_end = .);
+
+        . = ALIGN(4);
+        /* init data */
+        PROVIDE_HIDDEN (__init_array_start = .);
+        KEEP(*(SORT(.init_array.*)))
+        KEEP(*(.init_array))
+        PROVIDE_HIDDEN (__init_array_end = .);
+
+        . = ALIGN(4);
+        /* finit data */
+        PROVIDE_HIDDEN (__fini_array_start = .);
+        KEEP(*(SORT(.fini_array.*)))
+        KEEP(*(.fini_array))
+        PROVIDE_HIDDEN (__fini_array_end = .);
+
+        . = ALIGN(4);
+
+        /* All data end */
+        __data_end__ = .;
+
+    } > RAM AT > ROM
+    __data_load_start__ = LOADADDR(.data);
+
+    . = .;
+
+    .noinit (NOLOAD):
+    {
+        . = ALIGN(4);
+        __noinit_start = .;
+        KEEP(*(.noinit*))
+        . = ALIGN(8);
+        /* Place the FreeRTOS heap here so that the __HeapLimit calculation does not include the freertos heap. */
+        KEEP(*(.heap.*))
+        __noinit_end = .;
+    } > RAM
+
+    .bss :
+    {
+        . = ALIGN(4);
+        __bss_start__ = .;
+        *(.bss*)
+        *(COMMON)
+        . = ALIGN(4);
+        __bss_end__ = .;
+    } > RAM
+
+    .gram_bss (NOLOAD):
+    {
+        . = ALIGN(4);
+        __gram_bss_start__ = .;
+        *(.gram_bss*)
+        . = ALIGN(4);
+        __gram_bss_end__ = .;
+    } > GRAM
+
+    .heap (NOLOAD):
+    {
+        . = ALIGN(8);
+        __HeapBase = .;
+        /* Place the STD heap here. */
+        KEEP(*(.heap))
+        __HeapLimit = .;
+    } > RAM
+
+    /* Stacks are stored in this section. */
+    .stack_dummy (NOLOAD):
+    {
+        . = ALIGN(8);
+        __StackLimit = .;
+        /* Main stack */
+        KEEP(*(.stack))
+        __StackTop = .;
+        /* Thread stacks */
+        KEEP(*(.stack*))
+        __StackTopAll = .;
+    } > RAM
+
+    PROVIDE(__stack = __StackTopAll);
+    PROVIDE(__stack_limit = ORIGIN(RAM) + LENGTH(RAM));
+
+    /* This symbol represents the end of user allocated RAM. The RAM after this symbol can be used
+       at run time for things such as ThreadX memory pool allocations. */
+    __RAM_segment_used_end__ = ALIGN(__StackTopAll , 4);
+
+    /* Data flash. */
+    .data_flash :
+    {
+        . = ORIGIN(DATA_FLASH);
+        __Data_Flash_Start = .;
+        KEEP(*(.data_flash*))
+        __Data_Flash_End = .;
+    } > DATA_FLASH
+
+    /* OPBT */
+    .OPBT0_top :
+    {
+        KEEP(*(.OPBT0_top*))
+    } > OPBT_Area
+}

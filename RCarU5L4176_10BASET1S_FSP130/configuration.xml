@@ -1,0 +1,847 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<raConfiguration version="12">
+  <generalSettings>
+    <option key="#Board#" value="board.u5l4_176_pb_eth_t1s"/>
+    <option key="CPU" value="RCARU5L4"/>
+    <option key="Core" value="CM33"/>
+    <option key="#TargetName#" value="R7F711002EBFP"/>
+    <option key="#TargetARCHITECTURE#" value="cortex-m33"/>
+    <option key="#DeviceCommand#" value="R7F711002EBFP"/>
+    <option key="#RTOS#" value="_none"/>
+    <option key="#pinconfiguration#" value="R7F711002EBFP.pincfg"/>
+    <option key="#FSPVersion#" value="1.3.0"/>
+    <option key="#ConfigurationFragments#" value="Renesas##BSP##Board##u5l4_176_pb_eth_t1s##"/>
+    <option key="#SELECTED_TOOLCHAIN#" value="clang_arm"/>
+    <option key="#ToolchainVersion#" value="21.1.1"/>
+  </generalSettings>
+  <raBspConfiguration>
+    <config id="config.bsp.rcaru5l.R7F711002EBFP">
+      <property id="config.bsp.part_number" value="config.bsp.part_number.value"/>
+      <property id="config.bsp.global_ram_size_bytes" value="config.bsp.global_ram_size_bytes.value"/>
+      <property id="config.bsp.global_ram_size_bytes_hidden" value="720896"/>
+      <property id="config.bsp.cpu_ram_size_bytes" value="config.bsp.cpu_ram_size_bytes.value"/>
+      <property id="config.bsp.rram_size_bytes" value="config.bsp.rram_size_bytes.value"/>
+      <property id="config.bsp.tram_size_bytes" value="config.bsp.tram_size_bytes.value"/>
+      <property id="config.bsp.icram_size_bytes" value="config.bsp.icram_size_bytes.value"/>
+      <property id="config.bsp.package_style" value="config.bsp.package_style.value"/>
+      <property id="config.bsp.package_pins" value="config.bsp.package_pins.value"/>
+      <property id="config.bsp.irq_count_hidden" value="197"/>
+      <property id="config.bsp.vlab_hardware_based_used" value="config.bsp.vlab_hardware_based_used.false"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_channels" value="6"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_channels.unit0" value="6"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_channels.unit1" value="0"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_channels.unit2" value="0"/>
+      <property id="config.bsp.fsp.mcu.canfd.mram_size.unit0" value="46272"/>
+      <property id="config.bsp.fsp.mcu.canfd.mram_size.unit1" value="0"/>
+      <property id="config.bsp.fsp.mcu.canfd.mram_size.unit2" value="0"/>
+      <property id="config.bsp.fsp.mcu.canfd.afl_rule.unit0" value="768"/>
+      <property id="config.bsp.fsp.mcu.canfd.afl_rule.unit1" value="0"/>
+      <property id="config.bsp.fsp.mcu.canfd.afl_rule.unit2" value="0"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_txmb_per_Channel" value="32"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_afl_per_Channel" value="255"/>
+      <property id="config.bsp.fsp.mcu.canfd.num_pnf_per_Channel" value="20"/>
+      <property id="config.bsp.guard.crg" value="config.bsp.guard.crg.enable"/>
+      <property id="config.bsp.guard.grg" value="config.bsp.guard.grg.enable"/>
+      <property id="config.bsp.guard.rrg" value="config.bsp.guard.rrg.enable"/>
+      <property id="config.bsp.guard.ibg" value="config.bsp.guard.ibg.enable"/>
+      <property id="config.bsp.guard.dts" value="config.bsp.guard.dts.enable"/>
+      <property id="config.bsp.guard.dma" value="config.bsp.guard.dma.enable"/>
+      <property id="config.bsp.guard.bsp" value="config.bsp.guard.bsp.enable"/>
+      <property id="config.bsp.guard.vmon" value="config.bsp.guard.vmon.enable"/>
+      <property id="config.bsp.guard.clma" value="config.bsp.guard.clma.enable"/>
+      <property id="config.bsp.guard.ioport" value="config.bsp.guard.ioport.enable"/>
+      <property id="config.bsp.guard.wdt" value="config.bsp.guard.wdt.enable"/>
+      <property id="config.bsp.guard.rtca" value="config.bsp.guard.rtca.enable"/>
+      <property id="config.bsp.guard.rsent" value="config.bsp.guard.rsent.enable"/>
+      <property id="config.bsp.guard.crc" value="config.bsp.guard.crc.enable"/>
+      <property id="config.bsp.guard.ostm" value="config.bsp.guard.ostm.enable"/>
+      <property id="config.bsp.guard.enca" value="config.bsp.guard.enca.enable"/>
+      <property id="config.bsp.guard.taud" value="config.bsp.guard.taud.enable"/>
+      <property id="config.bsp.guard.tauj" value="config.bsp.guard.tauj.enable"/>
+      <property id="config.bsp.guard.tapa" value="config.bsp.guard.tapa.enable"/>
+      <property id="config.bsp.guard.pic" value="config.bsp.guard.pic.enable"/>
+      <property id="config.bsp.guard.rlin" value="config.bsp.guard.rlin.enable"/>
+      <property id="config.bsp.guard.cxpi" value="config.bsp.guard.cxpi.enable"/>
+      <property id="config.bsp.guard.psi5" value="config.bsp.guard.psi5.enable"/>
+      <property id="config.bsp.guard.mmca" value="config.bsp.guard.mmca.enable"/>
+      <property id="config.bsp.guard.ecm" value="config.bsp.guard.ecm.enable"/>
+      <property id="config.bsp.guard.csih" value="config.bsp.guard.csih.enable"/>
+      <property id="config.bsp.guard.ssif" value="config.bsp.guard.ssif.enable"/>
+      <property id="config.bsp.guard.adc" value="config.bsp.guard.adc.enable"/>
+      <property id="config.bsp.guard.tsn" value="config.bsp.guard.tsn.enable"/>
+      <property id="config.bsp.guard.etht1s" value="config.bsp.guard.etht1s.enable"/>
+      <property id="config.bsp.guard.ethtsn" value="config.bsp.guard.ethtsn.enable"/>
+      <property id="config.bsp.guard.i3c" value="config.bsp.guard.i3c.enable"/>
+      <property id="config.bsp.guard.canfd" value="config.bsp.guard.canfd.enable"/>
+      <property id="config.bsp.guard.pwmdiag" value="config.bsp.guard.pwmdiag.enable"/>
+      <property id="config.bsp.guard.i2c" value="config.bsp.guard.i2c.enable"/>
+      <property id="config.bsp.guard.sfma" value="config.bsp.guard.sfma.enable"/>
+      <property id="config.bsp.modulestandby.adc" value="config.bsp.modulestandby.adc.enable"/>
+      <property id="config.bsp.modulestandby.canfd" value="config.bsp.modulestandby.canfd.enable"/>
+      <property id="config.bsp.modulestandby.csih" value="config.bsp.modulestandby.csih.enable"/>
+      <property id="config.bsp.modulestandby.cxpi" value="config.bsp.modulestandby.cxpi.enable"/>
+      <property id="config.bsp.modulestandby.enca" value="config.bsp.modulestandby.enca.enable"/>
+      <property id="config.bsp.modulestandby.etht1s" value="config.bsp.modulestandby.etht1s.enable"/>
+      <property id="config.bsp.modulestandby.ethtsn" value="config.bsp.modulestandby.ethtsn.enable"/>
+      <property id="config.bsp.modulestandby.i2c" value="config.bsp.modulestandby.i2c.enable"/>
+      <property id="config.bsp.modulestandby.i3c" value="config.bsp.modulestandby.i3c.enable"/>
+      <property id="config.bsp.modulestandby.mmca" value="config.bsp.modulestandby.mmca.enable"/>
+      <property id="config.bsp.modulestandby.ostm" value="config.bsp.modulestandby.ostm.enable"/>
+      <property id="config.bsp.modulestandby.psi5" value="config.bsp.modulestandby.psi5.enable"/>
+      <property id="config.bsp.modulestandby.pwmdiag" value="config.bsp.modulestandby.pwmdiag.enable"/>
+      <property id="config.bsp.modulestandby.rlin" value="config.bsp.modulestandby.rlin.enable"/>
+      <property id="config.bsp.modulestandby.rsent" value="config.bsp.modulestandby.rsent.enable"/>
+      <property id="config.bsp.modulestandby.rtca" value="config.bsp.modulestandby.rtca.enable"/>
+      <property id="config.bsp.modulestandby.sfma" value="config.bsp.modulestandby.sfma.enable"/>
+      <property id="config.bsp.modulestandby.ssif" value="config.bsp.modulestandby.ssif.enable"/>
+      <property id="config.bsp.modulestandby.tapa" value="config.bsp.modulestandby.tapa.enable"/>
+      <property id="config.bsp.modulestandby.taud" value="config.bsp.modulestandby.taud.enable"/>
+      <property id="config.bsp.modulestandby.tauj" value="config.bsp.modulestandby.tauj.enable"/>
+      <property id="config.bsp.modulestandby.wdt" value="config.bsp.modulestandby.wdt.enable"/>
+      <property id="config.bsp.chipstandbymode.cyclicrun_mode" value="config.bsp.chipstandbymode.cyclicrun_mode.disable"/>
+      <property id="config.bsp.opbt.setting" value="config.bsp.opbt.setting.disabled"/>
+      <property id="config.bsp.sw_cfg_opbt.n_0" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_1" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_2" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_3" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_4" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_5" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_6" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_7" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_8" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_9" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_10" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_11" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_12" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_13" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_14" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_15" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_16" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_17" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_18" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_19" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_20" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_21" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_22" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_23" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_24" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_25" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_26" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_27" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_28" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_29" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_30" value="0x00000000"/>
+      <property id="config.bsp.sw_cfg_opbt.n_31" value="0x00000000"/>
+      <property id="config.bsp.vect_base_address.cpu0" value="0x00000000"/>
+      <property id="config.bsp.opbt0.bit_opwdruna" value="config.bsp.opbt0.bit_opwdruna.opt0"/>
+      <property id="config.bsp.opbt0.bit_opwdwmsa" value="config.bsp.opbt0.bit_opwdwmsa.opt0"/>
+      <property id="config.bsp.opbt0.bit_opwdovfa" value="config.bsp.opbt0.bit_opwdovfa.opt111"/>
+      <property id="config.bsp.opbt0.bit_opwdinta" value="config.bsp.opbt0.bit_opwdinta.opt1"/>
+      <property id="config.bsp.opbt0.bit_opwdwsa" value="config.bsp.opbt0.bit_opwdwsa.opt11"/>
+      <property id="config.bsp.opbt0.bit_wdtbares_en" value="config.bsp.opbt0.bit_wdtbares_en.opt1"/>
+      <property id="config.bsp.opbt0.bit_opwdvaca" value="config.bsp.opbt0.bit_opwdvaca.opt0"/>
+      <property id="config.bsp.opbt0.bit_opwdena" value="config.bsp.opbt0.bit_opwdena.opt1"/>
+      <property id="config.bsp.opbt0.bit_bit_opwdwosta" value="0x0010"/>
+      <property id="config.bsp.opbt1.bit_opwdrun0" value="config.bsp.opbt1.bit_opwdrun0.opt0"/>
+      <property id="config.bsp.opbt1.bit_opwdwms0" value="config.bsp.opbt1.bit_opwdwms0.opt0"/>
+      <property id="config.bsp.opbt1.bit_opwdovf" value="config.bsp.opbt1.bit_opwdovf.opt111"/>
+      <property id="config.bsp.opbt1.bit_opwdint0" value="config.bsp.opbt1.bit_opwdint0.opt1"/>
+      <property id="config.bsp.opbt1.bit_opwdvac" value="config.bsp.opbt1.bit_opwdvac.opt1"/>
+      <property id="config.bsp.opbt1.bit_opwdws0" value="config.bsp.opbt1.bit_opwdws0.opt00"/>
+      <property id="config.bsp.opbt1.bit_opwdwisa" value="0x0000"/>
+      <property id="config.bsp.opbt3.bit_stmsel" value="config.bsp.opbt3.bit_stmsel.opt0"/>
+      <property id="config.bsp.opbt4.bit_isovddhde" value="config.bsp.opbt4.bit_isovddhde.opt1"/>
+      <property id="config.bsp.opbt4.bit_isovddlde" value="config.bsp.opbt4.bit_isovddlde.opt1"/>
+      <property id="config.bsp.opbt6.bit_osc_usertrm" value="0x1FF"/>
+      <property id="config.bsp.opbt8.bit_etnd0_if_sel" value="config.bsp.opbt8.bit_etnd0_if_sel.opt00"/>
+      <property id="config.bsp.opbt8.bit_clma1sel" value="config.bsp.opbt8.bit_clma1sel.opt1"/>
+      <property id="config.bsp.opbt8.bit_reset_pd_en" value="config.bsp.opbt8.bit_reset_pd_en.opt1"/>
+      <property id="config.bsp.opbt10.bit_mosc_exclkinput" value="config.bsp.opbt10.bit_mosc_exclkinput.opt1"/>
+      <property id="config.bsp.opbt10.bit_mosc_freq" value="config.bsp.opbt10.bit_mosc_freq.opt010"/>
+      <property id="config.bsp.opbt10.bit_mosc_amp_sel_a" value="0x7"/>
+      <property id="config.bsp.opbt10.bit_mosc_amp_sel_b" value="0x7"/>
+      <property id="config.bsp.opbt10.bit_mosc_rd_sel_a" value="0x0"/>
+      <property id="config.bsp.opbt10.bit_mosc_rd_sel_b" value="0x0"/>
+      <property id="config.bsp.opbt10.bit_sosc_xmsel" value="config.bsp.opbt10.bit_sosc_xmsel.opt0"/>
+      <property id="config.bsp.opbt10.bit_mosc_shtstby_a" value="config.bsp.opbt10.bit_mosc_shtstby_a.opt1"/>
+      <property id="config.bsp.opbt10.bit_mosc_shtstby_b" value="config.bsp.opbt10.bit_mosc_shtstby_b.opt0"/>
+      <property id="config.bsp.opbt11.bit_ckdivmd" value="config.bsp.opbt11.bit_ckdivmd.opt11"/>
+      <property id="config.bsp.opbt11.bit_startuppll" value="config.bsp.opbt11.bit_startuppll.opt0"/>
+      <property id="config.bsp.opbt12.bit_mapmode" value="config.bsp.opbt12.bit_mapmode.opt01"/>
+      <property id="config.bsp.opbt13.bit_dbmapsw0" value="config.bsp.opbt13.bit_dbmapsw0.opt1"/>
+      <property id="config.bsp.opbt26.bit_opwdwost0" value="0x0010"/>
+      <property id="config.bsp.opbt27.bit_opwdwis0" value="0x0000"/>
+      <property id="config.bsp.opbt42.bit_adck0endp" value="config.bsp.opbt42.bit_adck0endp.opt1"/>
+      <property id="config.bsp.opbt43.bit_oui_upper" value="0x0A"/>
+      <property id="config.bsp.opbt43.bit_ic_model" value="0x30"/>
+      <property id="config.bsp.opbt43.bit_ic_revision" value="0x1"/>
+      <property id="config.bsp.opbt43.bit_oui_lower" value="0xB824"/>
+      <property id="config.bsp.opbt44.bit_resv0_crun" value="0x00000000"/>
+      <property id="config.bsp.opbt45.bit_gram_size" value="config.bsp.opbt45.bit_gram_size.opt1"/>
+      <property id="config.bsp.opbt45.bit_rram_size" value="config.bsp.opbt45.bit_rram_size.opt11"/>
+      <property id="config.bsp.opbt47.bit_decome" value="config.bsp.opbt47.bit_decome.opt1"/>
+      <property id="config.bsp.sw_cfg_opbt.n_0.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_1.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_2.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_3.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_4.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_5.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_6.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_7.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_8.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_9.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_10.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_11.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_12.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_13.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_14.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_15.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_16.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_17.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_18.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_19.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_20.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_21.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_22.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_23.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_24.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_25.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_26.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_27.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_28.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_29.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_30.value" value="0"/>
+      <property id="config.bsp.sw_cfg_opbt.n_31.value" value="0"/>
+      <property id="config.bsp.vect_base_address.cpu0.value" value="0"/>
+      <property id="config.bsp.opbt0.value" value="0"/>
+      <property id="config.bsp.opbt1.value" value="0"/>
+      <property id="config.bsp.opbt3.value" value="0"/>
+      <property id="config.bsp.opbt4.value" value="0"/>
+      <property id="config.bsp.opbt6.value" value="0"/>
+      <property id="config.bsp.opbt8.value" value="0"/>
+      <property id="config.bsp.opbt10.value" value="0"/>
+      <property id="config.bsp.opbt11.value" value="0"/>
+      <property id="config.bsp.opbt12.value" value="0"/>
+      <property id="config.bsp.opbt13.value" value="0"/>
+      <property id="config.bsp.opbt26.value" value="0"/>
+      <property id="config.bsp.opbt27.value" value="0"/>
+      <property id="config.bsp.opbt42.value" value="0"/>
+      <property id="config.bsp.opbt43.value" value="0"/>
+      <property id="config.bsp.opbt44.value" value="0"/>
+      <property id="config.bsp.opbt45.value" value="0"/>
+      <property id="config.bsp.opbt47.value" value="0"/>
+    </config>
+    <config id="config.bsp.rcaru5l.cpu_mpu.u5l4">
+      <property id="config.bsp.cpumpu.attr.attr0.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr0.normalmem.inner.indirection.writethrough_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr0.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr0.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr0.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr0.normalmem.inner.write.non_allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr0.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr0.normalmem.outer.indirection.writethrough_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr0.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr0.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr0.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr0.normalmem.outer.write.non_allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr0.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr0.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr0.memtype" value="config.bsp.cpumpu.attr.attr0.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr1.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr1.normalmem.inner.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr1.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr1.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr1.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr1.normalmem.inner.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr1.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr1.normalmem.outer.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr1.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr1.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr1.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr1.normalmem.outer.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr1.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr1.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr1.memtype" value="config.bsp.cpumpu.attr.attr1.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr2.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr2.normalmem.inner.indirection.non_cacheable"/>
+      <property id="config.bsp.cpumpu.attr.attr2.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr2.normalmem.inner.read.non_allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr2.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr2.normalmem.inner.write.non_allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr2.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr2.normalmem.outer.indirection.non_cacheable"/>
+      <property id="config.bsp.cpumpu.attr.attr2.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr2.normalmem.outer.read.non_allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr2.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr2.normalmem.outer.write.non_allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr2.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr2.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr2.memtype" value="config.bsp.cpumpu.attr.attr2.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr3.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr3.normalmem.inner.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr3.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr3.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr3.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr3.normalmem.inner.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr3.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr3.normalmem.outer.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr3.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr3.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr3.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr3.normalmem.outer.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr3.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr3.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr3.memtype" value="config.bsp.cpumpu.attr.attr3.memtype.device_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr4.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr4.normalmem.inner.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr4.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr4.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr4.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr4.normalmem.inner.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr4.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr4.normalmem.outer.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr4.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr4.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr4.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr4.normalmem.outer.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr4.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr4.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr4.memtype" value="config.bsp.cpumpu.attr.attr4.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr5.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr5.normalmem.inner.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr5.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr5.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr5.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr5.normalmem.inner.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr5.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr5.normalmem.outer.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr5.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr5.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr5.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr5.normalmem.outer.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr5.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr5.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr5.memtype" value="config.bsp.cpumpu.attr.attr5.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr6.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr6.normalmem.inner.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr6.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr6.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr6.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr6.normalmem.inner.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr6.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr6.normalmem.outer.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr6.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr6.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr6.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr6.normalmem.outer.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr6.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr6.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr6.memtype" value="config.bsp.cpumpu.attr.attr6.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.attr.attr7.normalmem.inner.indirection" value="config.bsp.cpumpu.attr.attr7.normalmem.inner.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr7.normalmem.inner.read" value="config.bsp.cpumpu.attr.attr7.normalmem.inner.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr7.normalmem.inner.write" value="config.bsp.cpumpu.attr.attr7.normalmem.inner.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr7.normalmem.outer.indirection" value="config.bsp.cpumpu.attr.attr7.normalmem.outer.indirection.writeback_nontransient"/>
+      <property id="config.bsp.cpumpu.attr.attr7.normalmem.outer.read" value="config.bsp.cpumpu.attr.attr7.normalmem.outer.read.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr7.normalmem.outer.write" value="config.bsp.cpumpu.attr.attr7.normalmem.outer.write.allocate"/>
+      <property id="config.bsp.cpumpu.attr.attr7.devicemem.devicetype" value="config.bsp.cpumpu.attr.attr7.devicemem.devicetype.nrngne"/>
+      <property id="config.bsp.cpumpu.attr.attr7.memtype" value="config.bsp.cpumpu.attr.attr7.memtype.normal_mem"/>
+      <property id="config.bsp.cpumpu.region.region00.name" value="CODE_FLASH_0"/>
+      <property id="config.bsp.cpumpu.region.region00.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region00.size" value="0x00200000"/>
+      <property id="config.bsp.cpumpu.region.region00.sharebility" value="config.bsp.cpumpu.region.region00.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region00.permission" value="config.bsp.cpumpu.region.region00.permission.ro_all"/>
+      <property id="config.bsp.cpumpu.region.region00.execute" value="config.bsp.cpumpu.region.region00.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region00.attr" value="config.bsp.cpumpu.region.region00.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region00.enable" value="config.bsp.cpumpu.region.region00.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region01.name" value="CODE_FLASH_1"/>
+      <property id="config.bsp.cpumpu.region.region01.base" value="0x00400000"/>
+      <property id="config.bsp.cpumpu.region.region01.size" value="0x00200000"/>
+      <property id="config.bsp.cpumpu.region.region01.sharebility" value="config.bsp.cpumpu.region.region01.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region01.permission" value="config.bsp.cpumpu.region.region01.permission.ro_all"/>
+      <property id="config.bsp.cpumpu.region.region01.execute" value="config.bsp.cpumpu.region.region01.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region01.attr" value="config.bsp.cpumpu.region.region01.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region01.enable" value="config.bsp.cpumpu.region.region01.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region02.name" value="RAM_CPU0"/>
+      <property id="config.bsp.cpumpu.region.region02.base" value="0x204E0000"/>
+      <property id="config.bsp.cpumpu.region.region02.size" value="0x00020000"/>
+      <property id="config.bsp.cpumpu.region.region02.sharebility" value="config.bsp.cpumpu.region.region02.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region02.permission" value="config.bsp.cpumpu.region.region02.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region02.execute" value="config.bsp.cpumpu.region.region02.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region02.attr" value="config.bsp.cpumpu.region.region02.attr.1"/>
+      <property id="config.bsp.cpumpu.region.region02.enable" value="config.bsp.cpumpu.region.region02.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region03.name" value="GLOBAL_RAM"/>
+      <property id="config.bsp.cpumpu.region.region03.base" value="0x28000000"/>
+      <property id="config.bsp.cpumpu.region.region03.size" value="0x000B0000"/>
+      <property id="config.bsp.cpumpu.region.region03.sharebility" value="config.bsp.cpumpu.region.region03.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region03.permission" value="config.bsp.cpumpu.region.region03.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region03.execute" value="config.bsp.cpumpu.region.region03.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region03.attr" value="config.bsp.cpumpu.region.region03.attr.1"/>
+      <property id="config.bsp.cpumpu.region.region03.enable" value="config.bsp.cpumpu.region.region03.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region04.name" value="RETENTION_RAM"/>
+      <property id="config.bsp.cpumpu.region.region04.base" value="0x2C000000"/>
+      <property id="config.bsp.cpumpu.region.region04.size" value="0x00008000"/>
+      <property id="config.bsp.cpumpu.region.region04.sharebility" value="config.bsp.cpumpu.region.region04.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region04.permission" value="config.bsp.cpumpu.region.region04.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region04.execute" value="config.bsp.cpumpu.region.region04.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region04.attr" value="config.bsp.cpumpu.region.region04.attr.1"/>
+      <property id="config.bsp.cpumpu.region.region04.enable" value="config.bsp.cpumpu.region.region04.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region05.name" value="PERIPHERAL"/>
+      <property id="config.bsp.cpumpu.region.region05.base" value="0x40400000"/>
+      <property id="config.bsp.cpumpu.region.region05.size" value="0x1EC00000"/>
+      <property id="config.bsp.cpumpu.region.region05.sharebility" value="config.bsp.cpumpu.region.region05.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region05.permission" value="config.bsp.cpumpu.region.region05.permission.rw_priv"/>
+      <property id="config.bsp.cpumpu.region.region05.execute" value="config.bsp.cpumpu.region.region05.execute.disable"/>
+      <property id="config.bsp.cpumpu.region.region05.attr" value="config.bsp.cpumpu.region.region05.attr.3"/>
+      <property id="config.bsp.cpumpu.region.region05.enable" value="config.bsp.cpumpu.region.region05.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region06.name" value="CODE_FLASH_BLANK_CHECK_AREA"/>
+      <property id="config.bsp.cpumpu.region.region06.base" value="0x0C000000"/>
+      <property id="config.bsp.cpumpu.region.region06.size" value="0x00600000"/>
+      <property id="config.bsp.cpumpu.region.region06.sharebility" value="config.bsp.cpumpu.region.region06.sharebility.non_shareable"/>
+      <property id="config.bsp.cpumpu.region.region06.permission" value="config.bsp.cpumpu.region.region06.permission.ro_all"/>
+      <property id="config.bsp.cpumpu.region.region06.execute" value="config.bsp.cpumpu.region.region06.execute.disable"/>
+      <property id="config.bsp.cpumpu.region.region06.attr" value="config.bsp.cpumpu.region.region06.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region06.enable" value="config.bsp.cpumpu.region.region06.enable.enable"/>
+      <property id="config.bsp.cpumpu.region.region07.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region07.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region07.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region07.sharebility" value="config.bsp.cpumpu.region.region07.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region07.permission" value="config.bsp.cpumpu.region.region07.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region07.execute" value="config.bsp.cpumpu.region.region07.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region07.attr" value="config.bsp.cpumpu.region.region07.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region07.enable" value="config.bsp.cpumpu.region.region07.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region08.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region08.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region08.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region08.sharebility" value="config.bsp.cpumpu.region.region08.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region08.permission" value="config.bsp.cpumpu.region.region08.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region08.execute" value="config.bsp.cpumpu.region.region08.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region08.attr" value="config.bsp.cpumpu.region.region08.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region08.enable" value="config.bsp.cpumpu.region.region08.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region09.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region09.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region09.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region09.sharebility" value="config.bsp.cpumpu.region.region09.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region09.permission" value="config.bsp.cpumpu.region.region09.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region09.execute" value="config.bsp.cpumpu.region.region09.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region09.attr" value="config.bsp.cpumpu.region.region09.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region09.enable" value="config.bsp.cpumpu.region.region09.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region10.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region10.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region10.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region10.sharebility" value="config.bsp.cpumpu.region.region10.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region10.permission" value="config.bsp.cpumpu.region.region10.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region10.execute" value="config.bsp.cpumpu.region.region10.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region10.attr" value="config.bsp.cpumpu.region.region10.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region10.enable" value="config.bsp.cpumpu.region.region10.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region11.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region11.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region11.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region11.sharebility" value="config.bsp.cpumpu.region.region11.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region11.permission" value="config.bsp.cpumpu.region.region11.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region11.execute" value="config.bsp.cpumpu.region.region11.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region11.attr" value="config.bsp.cpumpu.region.region11.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region11.enable" value="config.bsp.cpumpu.region.region11.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region12.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region12.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region12.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region12.sharebility" value="config.bsp.cpumpu.region.region12.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region12.permission" value="config.bsp.cpumpu.region.region12.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region12.execute" value="config.bsp.cpumpu.region.region12.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region12.attr" value="config.bsp.cpumpu.region.region12.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region12.enable" value="config.bsp.cpumpu.region.region12.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region13.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region13.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region13.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region13.sharebility" value="config.bsp.cpumpu.region.region13.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region13.permission" value="config.bsp.cpumpu.region.region13.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region13.execute" value="config.bsp.cpumpu.region.region13.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region13.attr" value="config.bsp.cpumpu.region.region13.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region13.enable" value="config.bsp.cpumpu.region.region13.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region14.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region14.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region14.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region14.sharebility" value="config.bsp.cpumpu.region.region14.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region14.permission" value="config.bsp.cpumpu.region.region14.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region14.execute" value="config.bsp.cpumpu.region.region14.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region14.attr" value="config.bsp.cpumpu.region.region14.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region14.enable" value="config.bsp.cpumpu.region.region14.enable.disable"/>
+      <property id="config.bsp.cpumpu.region.region15.name" value="Not Used"/>
+      <property id="config.bsp.cpumpu.region.region15.base" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region15.size" value="0x00000000"/>
+      <property id="config.bsp.cpumpu.region.region15.sharebility" value="config.bsp.cpumpu.region.region15.sharebility.outer_shareable"/>
+      <property id="config.bsp.cpumpu.region.region15.permission" value="config.bsp.cpumpu.region.region15.permission.rw_all"/>
+      <property id="config.bsp.cpumpu.region.region15.execute" value="config.bsp.cpumpu.region.region15.execute.enable"/>
+      <property id="config.bsp.cpumpu.region.region15.attr" value="config.bsp.cpumpu.region.region15.attr.0"/>
+      <property id="config.bsp.cpumpu.region.region15.enable" value="config.bsp.cpumpu.region.region15.enable.disable"/>
+      <property id="config.bsp.memory_config.mpu_enable" value="config.bsp.memory_config.mpu_enable.enable"/>
+      <property id="bsp.cpumpu.attr.attr0.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr1.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr2.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr3.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr4.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr5.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr6.value" value="0"/>
+      <property id="bsp.cpumpu.attr.attr7.value" value="0"/>
+      <property id="bsp.cpumpu.region.region00.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region01.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region02.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region03.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region04.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region05.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region06.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region07.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region08.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region09.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region10.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region11.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region12.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region13.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region14.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.region15.rbar_value" value="0"/>
+      <property id="bsp.cpumpu.region.number_region" value="0"/>
+    </config>
+    <config id="config.bsp.rcaru5l.fsp">
+      <property id="config.bsp.fsp.core.cache.icache" value="config.bsp.fsp.core.cache.icache.enabled"/>
+      <property id="config.bsp.fsp.mcu.rlin3_uart.max_baud" value="10000000"/>
+      <property id="config.bsp.fsp.mcu.rlin3_lin.max_baud" value="20000"/>
+      <property id="config.bsp.fsp.mcu.iic_master.rate.rate_fastplus" value="1"/>
+      <property id="config.bsp.fsp.mcu.csih.max_baud" value="20000000"/>
+    </config>
+    <config id="config.bsp.rcar">
+      <property id="config.bsp.common.main" value="0x400"/>
+      <property id="config.bsp.common.heap" value="0x400"/>
+      <property id="config.bsp.common.vcc" value="3300"/>
+      <property id="config.bsp.common.checking" value="config.bsp.common.checking.disabled"/>
+      <property id="config.bsp.common.assert" value="config.bsp.common.assert.none"/>
+      <property id="config.bsp.common.error_log" value="config.bsp.common.error_log.none"/>
+      <property id="config.bsp.common.c_runtime_init" value="config.bsp.common.c_runtime_init.enabled"/>
+      <property id="config.bsp.common.early_init" value="config.bsp.common.early_init.disabled"/>
+      <property id="config.bsp.common.heap_zeroinit" value="config.bsp.common.heap_zeroinit.enabled"/>
+    </config>
+  </raBspConfiguration>
+  <raClockConfiguration>
+    <node id="board.clock.lsiosc.freq" option="board.clock.lsiosc.freq.value"/>
+    <node id="board.clock.hsiosc.freq" option="board.clock.hsiosc.freq.value"/>
+    <node id="board.clock.mosc.in" option="board.clock.mosc.in.20"/>
+    <node id="board.clock.mosc.freq" option="board.clock.mosc.freq.enabled"/>
+    <node id="board.clock.sosc.in" option="board.clock.sosc.in.value"/>
+    <node id="board.clock.sosc.freq" option="board.clock.sosc.freq.disabled"/>
+    <node id="board.clock.iosc0.src" option="board.clock.iosc0.src.hsiosc_div2"/>
+    <node id="board.clock.iosc0.freq" option="board.clock.iosc0.src.value"/>
+    <node id="board.clock.iosc1.src" option="board.clock.iosc1.src.hsiosc"/>
+    <node id="board.clock.iosc1.freq" option="board.clock.iosc1.src.value"/>
+    <node id="board.clock.pllin.src" option="board.clock.pllin.src.mosc"/>
+    <node id="board.clock.pll0.freq" option="board.clock.pll0.freq.480"/>
+    <node id="board.clock.pll1.freq" option="board.clock.pll1.freq.800"/>
+    <node id="board.clk.pll0o.freq" option="board.clk.pll0o.value"/>
+    <node id="board.clock.sys0.src" option="board.clock.sys0.src.pll0o"/>
+    <node id="board.clk.sys0.freq" option="board.clk.sys0.value"/>
+    <node id="board.clk.pll1o.freq" option="board.clk.pll1o.value"/>
+    <node id="board.clock.sys1.src" option="board.clock.sys1.src.pll1o"/>
+    <node id="board.clk.sys1.freq" option="board.clk.sys1.value"/>
+    <node id="board.clock.cpu.freq" option="board.clock.cpu.freq.value"/>
+    <node id="board.clock.bus2.freq" option="board.clock.bus2.freq.value"/>
+    <node id="board.clock.bus4.freq" option="board.clock.bus4.freq.value"/>
+    <node id="board.clock.bus8.freq" option="board.clock.bus8.freq.value"/>
+    <node id="board.clock.bus16.freq" option="board.clock.bus16.freq.value"/>
+    <node id="board.clock.p100.freq" option="board.clock.p100.freq.value"/>
+    <node id="board.clock.p160.freq" option="board.clock.p160.freq.value"/>
+    <node id="board.clock.p080.freq" option="board.clock.p080.freq.value"/>
+    <node id="board.clock.p040.freq" option="board.clock.p040.freq.value"/>
+    <node id="board.clock.fli.freq" option="board.clock.fli.freq."/>
+    <node id="board.clock.faci.freq" option="board.clock.faci.freq."/>
+    <node id="board.clock.rtca.src" option="board.clock.rtca.src.lsiosc"/>
+    <node id="board.clock.rtca.freq" option="board.clock.rtca.freq."/>
+    <node id="board.clock.rlin3.src" option="board.clock.rlin3.src.mosc"/>
+    <node id="board.clock.rlin3.freq" option="board.clock.rlin3.freq."/>
+    <node id="board.clock.wdtb.div" option="board.clock.wdtb.div.64"/>
+    <node id="board.clock.wdtb.freq" option="board.clock.wdtb.freq.value"/>
+    <node id="board.clock.wdtba.div" option="board.clock.wdtb.div.64"/>
+    <node id="board.clock.wdtba.freq" option="board.clock.wdtb.freq.value"/>
+    <node id="board.clock.extclk0.src" option="board.clock.extclk0.src.hsiosc_div2"/>
+    <node id="board.clock.extclk0.div" option="board.clock.extclk0.div.disabled"/>
+    <node id="board.clock.extclk0.freq" option="board.clock.extclk0.freq."/>
+    <node id="board.clock.extclk1.src" option="board.clock.extclk1.src.bus8"/>
+    <node id="board.clock.extclk1.div" option="board.clock.extclk1.div.disabled"/>
+    <node id="board.clock.extclk1.freq" option="board.clock.extclk1.freq."/>
+    <node id="board.clock.lps.src" option="board.clock.lps.src.iosc0"/>
+    <node id="board.clock.lps.freq" option="board.clock.lps.freq."/>
+    <node id="board.clock.adc0.src" option="board.clock.adc0.src.p040"/>
+    <node id="board.clock.adc0.freq" option="board.clock.adc0.freq."/>
+    <node id="board.clock.ecm.div" option="board.clock.ecm.div.2"/>
+    <node id="board.clock.ecm.freq" option="board.clock.ecm.freq.value"/>
+    <node id="board.clock.operation.runmode" option="board.clock.operation.runmode.mode"/>
+    <node id="board.clock.sys0_cyclicrun.src" option="board.clock.sys0_cyclicrun.src.hsintosc"/>
+    <node id="board.clock.sys1_cyclicrun.src" option="board.clock.sys1_cyclicrun.src.hsintosc"/>
+    <node id="board.clock.cpu_cyclicrun.freq" option="board.clock.cpu_cyclicrun.freq.value"/>
+    <node id="board.clock.bus2_cyclicrun.freq" option="board.clock.bus2_cyclicrun.freq.value"/>
+    <node id="board.clock.bus4_cyclicrun.freq" option="board.clock.bus4_cyclicrun.freq.value"/>
+    <node id="board.clock.bus8_cyclicrun.freq" option="board.clock.bus8_cyclicrun.freq.value"/>
+    <node id="board.clock.bus16_cyclicrun.freq" option="board.clock.bus16_cyclicrun.freq.value"/>
+    <node id="board.clock.fli_cyclicrun.freq" option="board.clock.fli_cyclicrun.freq"/>
+    <node id="board.clock.faci_cyclicrun.freq" option="board.clock.faci_cyclicrun.freq"/>
+    <node id="board.clock.p100_cyclicrun.freq" option="board.clock.p100_cyclicrun.freq.value"/>
+    <node id="board.clock.p160_cyclicrun.freq" option="board.clock.p160_cyclicrun.freq.value"/>
+    <node id="board.clock.p080_cyclicrun.freq" option="board.clock.p080_cyclicrun.freq.value"/>
+    <node id="board.clock.p040_cyclicrun.freq" option="board.clock.p040_cyclicrun.freq.value"/>
+    <node id="board.clock.rlin3_cyclicrun.src" option="board.clock.rlin3_cyclicrun.src.mosc"/>
+    <node id="board.clock.rlin3_cyclicrun.freq" option="board.clock.rlin3_cyclicrun.freq."/>
+    <node id="board.clock.extclk1_cyclicrun.src" option="board.clock.extclk1_cyclicrun.src.bus8"/>
+    <node id="board.clock.extclk1_cyclicrun.div" option="board.clock.extclk1_cyclicrun.div.disabled"/>
+    <node id="board.clock.extclk1_cyclicrun.freq" option="board.clock.extclk1_cyclicrun.freq"/>
+    <node id="board.clock.adc0_cyclicrun.src" option="board.clock.adc0_cyclicrun.src.p040"/>
+    <node id="board.clock.adc0_cyclicrun.freq" option="board.clock.adc0_cyclicrun.freq."/>
+  </raClockConfiguration>
+  <raComponentSelection>
+    <component apiversion="" class="BSP" condition="" group="rcaru5l" subgroup="device" variant="R7F711002EBFP" vendor="Renesas" version="1.3.0">
+      <description>Board support package for R7F711002EBFP</description>
+      <originalPack>Renesas.rcarmcu_mcu_rcarmcuu5l.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rcaru5l" subgroup="device" variant="" vendor="Renesas" version="1.3.0">
+      <description>Board support package for R-Car MCU U5L Device</description>
+      <originalPack>Renesas.rcarmcu_mcu_rcarmcuu5l.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rcaru5l" subgroup="events" variant="" vendor="Renesas" version="1.3.0">
+      <description>Board support package for R-Car MCU U5L Events</description>
+      <originalPack>Renesas.rcarmcu_mcu_rcarmcuu5l.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rcaru5l4" subgroup="clock" variant="" vendor="Renesas" version="1.3.0">
+      <description>Board support package for R-Car MCU U5L4 Clock</description>
+      <originalPack>Renesas.rcarmcu_mcu_rcarmcuu5l.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="rcaru5l" subgroup="fsp" variant="" vendor="Renesas" version="1.3.0">
+      <description>Board support package for R-Car MCU U5L - FSP Data</description>
+      <originalPack>Renesas.rcarmcu_mcu_rcarmcuu5l.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="CMSIS" condition="" group="CMSIS6" subgroup="CoreM" variant="" vendor="Arm" version="1.3.0">
+      <description>Arm CMSIS Version 6 - Core (M)</description>
+      <originalPack>Arm.CMSIS6.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="BSP" condition="" group="Board" subgroup="u5l4_176_pb_eth_t1s" variant="" vendor="Renesas" version="1.3.0">
+      <description>PB R-Car U5L4 176pin ETH-T1S Board Support Files</description>
+      <originalPack>Renesas.u5l4_176_pb_eth_t1s.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Common" condition="" group="all" subgroup="fsp_common" variant="" vendor="Renesas" version="1.3.0">
+      <description>Board Support Package Common Files</description>
+      <originalPack>Renesas.rcarmcu.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_ioport" variant="" vendor="Renesas" version="1.3.0">
+      <description>I/O Port</description>
+      <originalPack>Renesas.rcarmcu.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="Projects" condition="" group="all" subgroup="baremetal_blinky" variant="" vendor="Renesas" version="1.3.0">
+      <description>Simple application that blinks an LED. No RTOS included.</description>
+      <originalPack>Renesas.rcarmcu_baremetal_blinky.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_ether_t1s" variant="" vendor="Renesas" version="1.3.0">
+      <description>Ethernet T1S (ETNF)</description>
+      <originalPack>Renesas.rcarmcu.1.3.0.pack</originalPack>
+    </component>
+    <component apiversion="" class="HAL Drivers" condition="" group="all" subgroup="r_ether_phy" variant="" vendor="Renesas" version="1.3.0">
+      <description>Ethernet PHY</description>
+      <originalPack>Renesas.rcarmcu.1.3.0.pack</originalPack>
+    </component>
+  </raComponentSelection>
+  <raElcConfiguration/>
+  <raIcuConfiguration/>
+  <raLinkMapConfiguration/>
+  <raModuleConfiguration>
+    <module id="module.driver.ioport_on_ioport.0">
+      <property id="module.driver.ioport.name" value="g_ioport"/>
+      <property id="module.driver.ioport.pincfg" value="g_bsp_pin_cfg"/>
+    </module>
+    <module id="module.bsp.memory_config.0">
+      <property id="config.bsp.memory_config.mem_map_mode" value="config.bsp.memory_config.mem_map_mode.single"/>
+      <property id="config.bsp.memory_config.bank_sel_single" value="config.bsp.memory_config.bank_sel_single.banka"/>
+    </module>
+    <module id="module.driver.ether_t1s_on_ether.806960030">
+      <property id="module.driver.ether_t1s.name" value="g_ether_t1s0"/>
+      <property id="module.driver.ether_t1s.channel" value="enum.mcu.ether_t1s.external.channels.0"/>
+      <property id="module.driver.ether_t1s.loopback" value="module.driver.ether_t1s.loopback.0"/>
+      <property id="module.driver.ether_t1s.ethernet_phy_interface" value="enum.mcu.ether_t1s.ethernet_phy_interface.t1s"/>
+      <property id="module.driver.ether_t1s.network_speed" value="enum.mcu.ether_t1s.external.network_speed.10Mbps"/>
+      <property id="module.driver.ether_t1s.ethernet_control_mode" value="module.driver.ether_t1s.ethernet_control_mode.polling"/>
+      <property id="module.driver.ether_t1s.zerocopy" value="module.driver.ether_t1s.zerocopy.0"/>
+      <property id="module.driver.ether_t1s.mac_address_source" value="74:90:50:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_1" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_2" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_3" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_4" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_5" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_6" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_7" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_8" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_9" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_10" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_11" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_12" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_13" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_14" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_15" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_16" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_17" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_18" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_19" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_20" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_21" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_22" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_23" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_24" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_25" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_26" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_27" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_28" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_29" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_30" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_31" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_filter_32" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.filter_type" value="module.driver.ether_t1s.filter_type.0"/>
+      <property id="module.driver.ether_t1s.number_of_addr_filter" value="1"/>
+      <property id="module.driver.ether_t1s.header_data_custom" value="module.driver.ether_t1s.header_data_custom.0"/>
+      <property id="module.driver.ether_t1s.mac_address_destination" value="00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.ether_type" value="003E"/>
+      <property id="module.driver.ether_t1s.interrupt.interrupt_priority" value="_disabled"/>
+      <property id="module.driver.ether_t1s.interrupt.other_interrupt_priority" value="_disabled"/>
+      <property id="module.driver.ether_t1s.config_tx" value="module.driver.ether_t1s.config_tx.0"/>
+      <property id="module.driver.ether_t1s.config_rx" value="module.driver.ether_t1s.config_rx.0"/>
+      <property id="module.driver.ether_t1s.p_callback" value="NULL"/>
+      <property id="module.driver.ether_t1s.tx_queue" value="1"/>
+      <property id="module.driver.ether_t1s.rx_queue" value="1"/>
+      <property id="module.driver.ether_t1s.tx_buf0" value="8"/>
+      <property id="module.driver.ether_t1s.tx_buf1" value="8"/>
+      <property id="module.driver.ether_t1s.tx_buf2" value="8"/>
+      <property id="module.driver.ether_t1s.tx_buf3" value="8"/>
+      <property id="module.driver.ether_t1s.civ2" value="50"/>
+      <property id="module.driver.ether_t1s.civ3" value="50"/>
+      <property id="module.driver.ether_t1s.queue_policy2" value="module.driver.ether_t1s.queue_policy2.0"/>
+      <property id="module.driver.ether_t1s.queue_policy3" value="module.driver.ether_t1s.queue_policy3.0"/>
+      <property id="module.driver.ether_t1s.rx_buf0" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf1" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf2" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf3" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf4" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf5" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf6" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf7" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf8" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf9" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf10" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf11" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf12" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf13" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf14" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf15" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf16" value="8"/>
+      <property id="module.driver.ether_t1s.rx_buf17" value="8"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream2" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream3" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream4" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream5" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream6" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream7" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream8" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream9" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream10" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream11" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream12" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream13" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream14" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream15" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream16" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.rx_pattern_stream17" value="00:00:00:00:00:00:00:00"/>
+      <property id="module.driver.ether_t1s.esf" value="module.driver.ether_t1s.esf.2"/>
+      <property id="module.driver.ether_t1s.encf" value="module.driver.ether_t1s.encf.0"/>
+      <property id="module.driver.ether_t1s.ets0" value="module.driver.ether_t1s.ets0.0"/>
+      <property id="module.driver.ether_t1s.ets2" value="module.driver.ether_t1s.ets2.0"/>
+      <property id="module.driver.ether_t1s.dfl_tx_queue" value="0"/>
+      <property id="module.driver.ether_t1s.number_of_priorities" value="1"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value0" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value1" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value2" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value3" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value4" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value5" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value6" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_priority_value7" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id0" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id1" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id2" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id3" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id4" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id5" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id6" value="0"/>
+      <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id7" value="0"/>
+      <property id="module.driver.ether_t1s.pma" value="module.driver.ether_t1s.pma.1"/>
+      <property id="module.driver.ether_t1s.mdio" value="module.driver.ether_t1s.mdio.1"/>
+      <property id="module.driver.ether_t1s.addr_mdio_slave" value="31"/>
+      <property id="module.driver.ether_t1s.time_stamp_sel" value="module.driver.ether_t1s.time_stamp_sel.0"/>
+    </module>
+    <module id="module.driver.ether_phy_on_ether_phy.886328488">
+      <property id="module.driver.ether_phy.name" value="g_ether_phy0"/>
+      <property id="module.driver.ether_phy.eth_reg" value="enum.mcu.ether_phy.external.eth_reg.eth_tsn"/>
+      <property id="module.driver.ether_phy.channel" value="enum.mcu.ether_phy.external.channels.0"/>
+      <property id="module.driver.ether_phy.phy_lsi_address" value="31"/>
+      <property id="module.driver.ether_phy.phy_reset_wait_time" value="0x00020000"/>
+      <property id="module.driver.ether_phy.phy_lsi_type" value="module.driver.ether_phy.phy_lsi_type.kit_component"/>
+      <property id="module.driver.ether_phy.target_init" value="NULL"/>
+      <property id="module.driver.ether_phy.target_link_partner_ability_get" value="NULL"/>
+      <property id="module.driver.ether_phy.mdio_read" value="NULL"/>
+      <property id="module.driver.ether_phy.mdio_write" value="NULL"/>
+      <property id="module.driver.ether_phy.mii_bit_access_wait_time" value="8"/>
+      <property id="module.driver.ether_phy.flow_control" value="module.driver.ether_phy.flow_control.0"/>
+    </module>
+    <context id="_hal.0">
+      <stack module="module.driver.ioport_on_ioport.0"/>
+      <stack module="module.bsp.memory_config.0"/>
+      <stack module="module.driver.ether_t1s_on_ether.806960030">
+        <stack module="module.driver.ether_phy_on_ether_phy.886328488" requires="module.driver.ether_t1s.requires.ether_phy"/>
+      </stack>
+    </context>
+    <config id="config.driver.ether_phy">
+      <property id="config.driver.ether_phy.param_checking_enable" value="config.driver.ether_phy.param_checking_enable.bsp"/>
+      <property id="config.driver.ether_phy.use_custom_phy_lsi" value="config.driver.ether_phy.use_custom_phy_lsi.disabled"/>
+      <property id="config.driver.ether_phy.init_phy_lsi_automatic" value="config.driver.ether_phy.init_phy_lsi_automatic.enabled"/>
+      <property id="config.driver.ether_phy.bypass_enable" value="config.driver.ether_phy.bypass_enable.disabled"/>
+      <property id="config.driver.ether_phy.target_lan8700" value="config.driver.ether_phy.target_lan8700.enabled"/>
+      <property id="config.driver.ether_phy.target_ct25205rtl" value="config.driver.ether_phy.target_ct25205rtl.enabled"/>
+    </config>
+    <config id="config.driver.ioport">
+      <property id="config.driver.ioport.checking" value="config.driver.ioport.checking.system"/>
+    </config>
+    <config id="config.driver.ether_t1s">
+      <property id="config.driver.ether_t1s.param_checking_enable" value="config.driver.ether_t1s.param_checking_enable.bsp"/>
+      <property id="config.driver.ether_t1s.update_phys_address_filter" value="config.driver.ether_t1s.update_phys_address_filter.disabled"/>
+      <property id="config.driver.ether_t1s.global_time_support" value="config.driver.ether_t1s.global_time_support.disabled"/>
+      <property id="config.driver.ether_t1s.qos" value="config.driver.ether_t1s.qos.disabled"/>
+      <property id="config.driver.ether_t1s.stream_filter" value="config.driver.ether_t1s.stream_filter.disabled"/>
+      <property id="config.driver.ether_t1s.read_buffer_size_check" value="config.driver.ether_t1s.read_buffer_size_check.disabled"/>
+    </config>
+    <config id="config.bsp.memory_config">
+      <property id="config.bsp.memory_config.mpu_type" value="config.bsp.memory_config.mpu_type.mpu"/>
+    </config>
+  </raModuleConfiguration>
+  <raPinConfiguration>
+    <symbolicName propertyId="p18_0.symbolic_name" value="LED10"/>
+    <symbolicName propertyId="p18_1.symbolic_name" value="LED11"/>
+    <symbolicName propertyId="p18_2.symbolic_name" value="LED12"/>
+    <symbolicName propertyId="p18_3.symbolic_name" value="LED13"/>
+    <symbolicName propertyId="p18_4.symbolic_name" value="LED14"/>
+    <symbolicName propertyId="p18_5.symbolic_name" value="LED15"/>
+    <symbolicName propertyId="p18_6.symbolic_name" value="LED16"/>
+    <symbolicName propertyId="p18_7.symbolic_name" value="LED17"/>
+    <pincfg active="true" name="U5L4_176_PB_ETH_T1S.pincfg" selected="true" symbol="g_bsp_pin_cfg">
+      <configSetting altId="etnf0.ets0_ed_mdio.p10_1" configurationId="etnf0.ets0_ed_mdio"/>
+      <configSetting altId="etnf0.ets0_rx_mdc.p10_0" configurationId="etnf0.ets0_rx_mdc"/>
+      <configSetting altId="etnf0.ets0_tx.p10_2" configurationId="etnf0.ets0_tx"/>
+      <configSetting altId="etnf0.mode.enabled.free" configurationId="etnf0.mode"/>
+      <configSetting altId="jp0_0.jtag_fslash_swd.tdi" configurationId="jp0_0"/>
+      <configSetting altId="jp0_0.gpio_mode.gpio_mode_peripheral" configurationId="jp0_0.gpio_mode"/>
+      <configSetting altId="jp0_1.jtag_fslash_swd.tdo" configurationId="jp0_1"/>
+      <configSetting altId="jp0_1.gpio_speed.gpio_speed_high" configurationId="jp0_1.gpio_drivecapacity"/>
+      <configSetting altId="jp0_1.gpio_mode.gpio_mode_peripheral" configurationId="jp0_1.gpio_mode"/>
+      <configSetting altId="jp0_2.jtag_fslash_swd.tck" configurationId="jp0_2"/>
+      <configSetting altId="jp0_2.gpio_mode.gpio_mode_peripheral" configurationId="jp0_2.gpio_mode"/>
+      <configSetting altId="jp0_3.jtag_fslash_swd.tms" configurationId="jp0_3"/>
+      <configSetting altId="jp0_3.gpio_mode.gpio_mode_peripheral" configurationId="jp0_3.gpio_mode"/>
+      <configSetting altId="jtag_fslash_swd.mode.jtag.free" configurationId="jtag_fslash_swd.mode"/>
+      <configSetting altId="jtag_fslash_swd.tck.jp0_2" configurationId="jtag_fslash_swd.tck"/>
+      <configSetting altId="jtag_fslash_swd.tdi.jp0_0" configurationId="jtag_fslash_swd.tdi"/>
+      <configSetting altId="jtag_fslash_swd.tdo.jp0_1" configurationId="jtag_fslash_swd.tdo"/>
+      <configSetting altId="jtag_fslash_swd.tms.jp0_3" configurationId="jtag_fslash_swd.tms"/>
+      <configSetting altId="p10_0.etnf0.ets0_rx_mdc" configurationId="p10_0"/>
+      <configSetting altId="p10_0.gpio_speed.gpio_speed_high" configurationId="p10_0.gpio_drivecapacity"/>
+      <configSetting altId="p10_0.gpio_mode.gpio_mode_peripheral" configurationId="p10_0.gpio_mode"/>
+      <configSetting altId="p10_0.pipc.pipc_peripheral" configurationId="p10_0.pipc"/>
+      <configSetting altId="p10_1.etnf0.ets0_ed_mdio" configurationId="p10_1"/>
+      <configSetting altId="p10_1.gpio_speed.gpio_speed_high" configurationId="p10_1.gpio_drivecapacity"/>
+      <configSetting altId="p10_1.gpio_mode.gpio_mode_peripheral" configurationId="p10_1.gpio_mode"/>
+      <configSetting altId="p10_1.pipc.pipc_peripheral" configurationId="p10_1.pipc"/>
+      <configSetting altId="p10_2.etnf0.ets0_tx" configurationId="p10_2"/>
+      <configSetting altId="p10_2.gpio_speed.gpio_speed_high" configurationId="p10_2.gpio_drivecapacity"/>
+      <configSetting altId="p10_2.gpio_mode.gpio_mode_peripheral" configurationId="p10_2.gpio_mode"/>
+      <configSetting altId="p18_0.output.low" configurationId="p18_0"/>
+      <configSetting altId="p18_0.gpio_mode.gpio_mode_out.low" configurationId="p18_0.gpio_mode"/>
+      <configSetting altId="p18_1.output.low" configurationId="p18_1"/>
+      <configSetting altId="p18_1.gpio_mode.gpio_mode_out.low" configurationId="p18_1.gpio_mode"/>
+      <configSetting altId="p18_2.output.low" configurationId="p18_2"/>
+      <configSetting altId="p18_2.gpio_mode.gpio_mode_out.low" configurationId="p18_2.gpio_mode"/>
+      <configSetting altId="p18_3.output.low" configurationId="p18_3"/>
+      <configSetting altId="p18_3.gpio_mode.gpio_mode_out.low" configurationId="p18_3.gpio_mode"/>
+      <configSetting altId="p18_4.output.low" configurationId="p18_4"/>
+      <configSetting altId="p18_4.gpio_mode.gpio_mode_out.low" configurationId="p18_4.gpio_mode"/>
+      <configSetting altId="p18_5.output.low" configurationId="p18_5"/>
+      <configSetting altId="p18_5.gpio_mode.gpio_mode_out.low" configurationId="p18_5.gpio_mode"/>
+      <configSetting altId="p18_6.output.low" configurationId="p18_6"/>
+      <configSetting altId="p18_6.gpio_mode.gpio_mode_out.low" configurationId="p18_6.gpio_mode"/>
+      <configSetting altId="p18_7.output.low" configurationId="p18_7"/>
+      <configSetting altId="p18_7.gpio_mode.gpio_mode_out.low" configurationId="p18_7.gpio_mode"/>
+    </pincfg>
+    <pincfg active="false" name="R7F711002EBFP.pincfg" selected="false" symbol="">
+      <configSetting altId="jp0_0.jtag_fslash_swd.tdi" configurationId="jp0_0"/>
+      <configSetting altId="jp0_0.gpio_mode.gpio_mode_peripheral" configurationId="jp0_0.gpio_mode"/>
+      <configSetting altId="jp0_1.jtag_fslash_swd.tdo" configurationId="jp0_1"/>
+      <configSetting altId="jp0_1.gpio_speed.gpio_speed_high" configurationId="jp0_1.gpio_drivecapacity"/>
+      <configSetting altId="jp0_1.gpio_mode.gpio_mode_peripheral" configurationId="jp0_1.gpio_mode"/>
+      <configSetting altId="jp0_2.jtag_fslash_swd.tck" configurationId="jp0_2"/>
+      <configSetting altId="jp0_2.gpio_mode.gpio_mode_peripheral" configurationId="jp0_2.gpio_mode"/>
+      <configSetting altId="jp0_3.jtag_fslash_swd.tms" configurationId="jp0_3"/>
+      <configSetting altId="jp0_3.gpio_mode.gpio_mode_peripheral" configurationId="jp0_3.gpio_mode"/>
+      <configSetting altId="jtag_fslash_swd.mode.jtag.free" configurationId="jtag_fslash_swd.mode"/>
+      <configSetting altId="jtag_fslash_swd.tck.jp0_2" configurationId="jtag_fslash_swd.tck"/>
+      <configSetting altId="jtag_fslash_swd.tdi.jp0_0" configurationId="jtag_fslash_swd.tdi"/>
+      <configSetting altId="jtag_fslash_swd.tdo.jp0_1" configurationId="jtag_fslash_swd.tdo"/>
+      <configSetting altId="jtag_fslash_swd.tms.jp0_3" configurationId="jtag_fslash_swd.tms"/>
+    </pincfg>
+  </raPinConfiguration>
+</raConfiguration>
