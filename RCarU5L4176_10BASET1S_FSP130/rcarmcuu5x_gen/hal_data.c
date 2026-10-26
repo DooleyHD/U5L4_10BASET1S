@@ -4,7 +4,7 @@
 ether_phy_instance_ctrl_t g_ether_phy0_ctrl;
 
 const ether_phy_lsi_cfg_t g_ether_phy0_phy_lsi_cfg_list =
-{ .address = 31, .type = ETHER_PHY_LSI_TYPE_CT25205_RTL, };
+{ .address = 2, .type = ETHER_PHY_LSI_TYPE_CT25205_RTL, };
 
 const ether_phy_extended_cfg_t g_ether_phy0_extended_cfg =
 { .p_target_init = NULL,
@@ -18,7 +18,7 @@ const ether_phy_cfg_t g_ether_phy0_cfg =
 {
 
 .channel = 0,
-  .phy_lsi_address = 31, .phy_reset_wait_time = 0x00020000, .mii_bit_access_wait_time = 8, .phy_lsi_type =
+  .phy_lsi_address = 2, .phy_reset_wait_time = 0x00020000, .mii_bit_access_wait_time = 8, .phy_lsi_type =
           ETHER_PHY_LSI_TYPE_CT25205_RTL,
   .flow_control = ETHER_PHY_FLOW_CONTROL_DISABLE, .p_context = NULL, .p_extend = &g_ether_phy0_extended_cfg,
 
@@ -32,9 +32,9 @@ uint8_t g_ether_t1s0_mem_pool_buffer_0[25500] BSP_PLACE_IN_SECTION(BSP_SECTION_G
 ether_t1s_instance_ctrl_t g_ether_t1s0_ctrl;
 
 uint8_t g_ether_t1s0_mac_address_source[6] =
-{ 0x74, 0x90, 0x50, 0x00, 0x00, 0x00 };
+{ 0x74, 0x90, 0x50, 0x00, 0x00, 0x01 };
 uint8_t g_ether_t1s0_mac_address_destination[6] =
-{ 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 };
+{ 0x74, 0x90, 0x50, 0x00, 0x00, 0x00 };
 #if (ETHER_T1S_CFG_UPDATE_PHYS_ADDR_FILTER)
             uint8_t g_ether_t1s0_mac_address_filter[32][6] = { {0x00,0x00,0x00,0x00,0x00,0x00}, \
                                                                               {0x00,0x00,0x00,0x00,0x00,0x00},  \
@@ -279,7 +279,7 @@ const ether_t1s_etnf_config_type g_ether_t1s0_hw_unit_configuration_etnf =
 
 const ether_t1s_extended_cfg_t g_ether_t1s0_extended_cfg =
         { .eth_mac_addr =
-        { 0x74, 0x90, 0x50, 0x00, 0x00, 0x00 },
+        { 0x74, 0x90, 0x50, 0x00, 0x00, 0x01 },
           .ether_t1s_cfg_type_tx_isr = ETHER_T1S_CTRL_POLLING_MODE, .ether_t1s_cfg_type_rx_isr =
                   ETHER_T1S_CTRL_POLLING_MODE,
           .ether_t1s_ctl_mode = ETHER_T1S_CTRL_POLLING_MODE,
@@ -288,7 +288,7 @@ const ether_t1s_extended_cfg_t g_ether_t1s0_extended_cfg =
                 .ether_t1s_filter_action_type = ETHER_T1S_ADD_TO_FILTER,
                 #endif
           .header_data_custom = ETHER_T1S_HEADER_CUSTOM,
-          .ether_type = 0x003E, .p_hw_unit_config = &g_ether_t1s0_hw_unit_configuration_etnf, .ether_loopback_config =
+          .ether_type = 0x0800, .p_hw_unit_config = &g_ether_t1s0_hw_unit_configuration_etnf, .ether_loopback_config =
                   ETHER_T1S_LOOPBACK_OFF,
           .ether_network_speed = ETHER_T1S_SPEED_10MBPS, .ether_phy_interface = ETHER_T1S_MODE,
 #if (ETHER_T1S_CFG_UPDATE_PHYS_ADDR_FILTER)
@@ -297,7 +297,7 @@ const ether_t1s_extended_cfg_t g_ether_t1s0_extended_cfg =
           .p_mac_address_target = g_ether_t1s0_mac_address_destination,
 
           .pma_type = ETHER_T1S_PMA_FILTERED,
-          .mdio_interface_type = ETHER_T1S_MDIO_INTERFACE_SHARED, .mdio_slave_address = 31, .ether_t1s_ram_size = 25500U, .p_mem_pool_buffer_table =
+          .mdio_interface_type = ETHER_T1S_MDIO_INTERFACE_SHARED, .mdio_slave_address = 2, .ether_t1s_ram_size = 25500U, .p_mem_pool_buffer_table =
                   g_ether_t1s0_mem_pool_buffer_0,
 #if defined(VECTOR_NUMBER_INTETNF0MNG)
                 .other_irq = VECTOR_NUMBER_INTETNF0MNG,

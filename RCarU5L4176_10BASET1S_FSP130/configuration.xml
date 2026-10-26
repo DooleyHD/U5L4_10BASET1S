@@ -613,7 +613,7 @@
       <property id="module.driver.ether_t1s.network_speed" value="enum.mcu.ether_t1s.external.network_speed.10Mbps"/>
       <property id="module.driver.ether_t1s.ethernet_control_mode" value="module.driver.ether_t1s.ethernet_control_mode.polling"/>
       <property id="module.driver.ether_t1s.zerocopy" value="module.driver.ether_t1s.zerocopy.0"/>
-      <property id="module.driver.ether_t1s.mac_address_source" value="74:90:50:00:00:00"/>
+      <property id="module.driver.ether_t1s.mac_address_source" value="74:90:50:00:00:01"/>
       <property id="module.driver.ether_t1s.mac_address_filter_1" value="00:00:00:00:00:00"/>
       <property id="module.driver.ether_t1s.mac_address_filter_2" value="00:00:00:00:00:00"/>
       <property id="module.driver.ether_t1s.mac_address_filter_3" value="00:00:00:00:00:00"/>
@@ -649,8 +649,8 @@
       <property id="module.driver.ether_t1s.filter_type" value="module.driver.ether_t1s.filter_type.0"/>
       <property id="module.driver.ether_t1s.number_of_addr_filter" value="1"/>
       <property id="module.driver.ether_t1s.header_data_custom" value="module.driver.ether_t1s.header_data_custom.0"/>
-      <property id="module.driver.ether_t1s.mac_address_destination" value="00:00:00:00:00:00"/>
-      <property id="module.driver.ether_t1s.ether_type" value="003E"/>
+      <property id="module.driver.ether_t1s.mac_address_destination" value="74:90:50:00:00:00"/>
+      <property id="module.driver.ether_t1s.ether_type" value="0800"/>
       <property id="module.driver.ether_t1s.interrupt.interrupt_priority" value="_disabled"/>
       <property id="module.driver.ether_t1s.interrupt.other_interrupt_priority" value="_disabled"/>
       <property id="module.driver.ether_t1s.config_tx" value="module.driver.ether_t1s.config_tx.0"/>
@@ -724,14 +724,14 @@
       <property id="module.driver.ether_t1s.eth_ctrl_tx_queue_id7" value="0"/>
       <property id="module.driver.ether_t1s.pma" value="module.driver.ether_t1s.pma.1"/>
       <property id="module.driver.ether_t1s.mdio" value="module.driver.ether_t1s.mdio.1"/>
-      <property id="module.driver.ether_t1s.addr_mdio_slave" value="31"/>
+      <property id="module.driver.ether_t1s.addr_mdio_slave" value="2"/>
       <property id="module.driver.ether_t1s.time_stamp_sel" value="module.driver.ether_t1s.time_stamp_sel.0"/>
     </module>
     <module id="module.driver.ether_phy_on_ether_phy.886328488">
       <property id="module.driver.ether_phy.name" value="g_ether_phy0"/>
       <property id="module.driver.ether_phy.eth_reg" value="enum.mcu.ether_phy.external.eth_reg.eth_tsn"/>
       <property id="module.driver.ether_phy.channel" value="enum.mcu.ether_phy.external.channels.0"/>
-      <property id="module.driver.ether_phy.phy_lsi_address" value="31"/>
+      <property id="module.driver.ether_phy.phy_lsi_address" value="2"/>
       <property id="module.driver.ether_phy.phy_reset_wait_time" value="0x00020000"/>
       <property id="module.driver.ether_phy.phy_lsi_type" value="module.driver.ether_phy.phy_lsi_type.kit_component"/>
       <property id="module.driver.ether_phy.target_init" value="NULL"/>
