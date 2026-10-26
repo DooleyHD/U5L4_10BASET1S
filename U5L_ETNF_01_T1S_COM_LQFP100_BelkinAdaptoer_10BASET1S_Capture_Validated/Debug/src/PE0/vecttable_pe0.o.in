@@ -1,0 +1,1 @@
+-mcpu=cortex-m33 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g -x assembler-with-cpp -MMD -MP -MF"src/PE0/vecttable_pe0.d" -MT"src/PE0/vecttable_pe0.o" -c -o "src/PE0/vecttable_pe0.o" "../src/PE0/vecttable_pe0.s"

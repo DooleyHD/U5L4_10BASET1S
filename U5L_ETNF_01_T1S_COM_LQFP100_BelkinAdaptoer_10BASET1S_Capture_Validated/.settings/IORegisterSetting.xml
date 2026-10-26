@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Configs>
+    <History>
+        <Keyword>PCR10_10</Keyword>
+        <Keyword>RESF</Keyword>
+        <Keyword>WUF0EN_A0</Keyword>
+        <Keyword>MOSCSTPMSK</Keyword>
+        <Keyword>MOSCCSTPMSK</Keyword>
+        <Keyword>HSOSCSTPMSK</Keyword>
+        <Keyword>STBCKCPROT</Keyword>
+        <Keyword>HSOSCSTPM</Keyword>
+        <Keyword>WAITTR0</Keyword>
+        <Keyword>ADCK0WAITTR0</Keyword>
+    </History>
+</Configs>
